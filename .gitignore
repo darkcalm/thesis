@@ -57,3 +57,21 @@ Thumbs.db
 *.tmp
 *.bak
 *.swp
+
+# Personal/Sensitive files
+docs/chat-export-2026-01-21T21-06-01-314Z/cv.pdf
+cv.pdf
+
+# Telegram session files
+*.session
+*.session-journal
+
+# Environment files
+.telegram_env
+.env
+*_env
+.env.*
+
+# Download logs
+*_log*.txt
+download_log*.txt
