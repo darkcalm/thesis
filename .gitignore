@@ -75,3 +75,7 @@ cv.pdf
 # Download logs
 *_log*.txt
 download_log*.txt
+
+# Ignored directory
+.ignored/
+docs/.ignored/
