@@ -1,0 +1,315 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+\definecolor{linkcolor}{RGB}{0,102,204}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    citecolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+\title{\textbf{Potential Research Directions:}\\Intelligent Scheduling for Automated Chemical Workflows with Focus on Molecular Solar Thermal Energy Storage}
+\author{Context Map Analysis\\Supervisor: Kasper Moth-Poulsen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+
+\section*{Executive Summary}
+
+
+
+This document identifies potential research directions for a Master's/PhD thesis focused on developing intelligent scheduling systems for automated chemical workflows. The research builds upon two complementary foundation areas:
+
+
+
+\begin{itemize}[leftmargin=*]
+
+    \item \textbf{Domain Foundation}: Molecular Solar Thermal (MOST) energy storage systems, specifically photoswitch characterization platforms for norbornadiene-quadricyclane and azobenzene systems
+
+    \item \textbf{Technical Foundation}: Autonomous chemistry research encompassing robotic platforms, AI/ML-driven optimization, and real-time control systems
+
+\end{itemize}
+
+
+
+Each research direction connects specific technologies from the autonomous chemistry landscape to concrete applications in MOST photoswitch development, with explicit references to source publications via context map tags.
+
+\newpage
+
+
+\section{Research Direction 1: Bayesian Optimization for Adaptive Multi-Sample Photoswitch Characterization}
+
+\subsection{Core Problem}
+
+The current automated photo-isomerization platform (Moth-Poulsen \texttt{184.001}) operates sequentially on individual samples. When screening a library of photoswitch candidates, the system provides no mechanism to prioritize characterization based on early indicators of promising performance. This results in uniform resource allocation across all candidates regardless of their potential.
+
+\subsection{Proposed Solution}
+
+Develop an adaptive scheduling system that integrates Bayesian optimization (Perplexity \texttt{001.037}) with multi-objective criteria (Perplexity \texttt{001.038}) to dynamically prioritize sample characterization order. The system would:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Early data acquisition}: Measure initial photoconversion quantum yield and absorption onset for each sample in the queue
+    \item \textbf{Gaussian process modeling}: Build surrogate models predicting full characterization outcomes from preliminary measurements
+    \item \textbf{Acquisition function optimization}: Use expected improvement criteria to select which sample receives detailed thermal kinetics characterization next
+    \item \textbf{Multi-objective balancing}: Simultaneously optimize for high energy density (Moth-Poulsen \texttt{099.001}), solar spectrum match (Moth-Poulsen \texttt{171.001}), and kinetic stability (Moth-Poulsen \texttt{151.001})
+\end{enumerate}
+
+\subsection{Technical Approach}
+
+\textbf{Workflow Integration:}
+\begin{itemize}[leftmargin=*]
+    \item Extend the existing Python GUI (Moth-Poulsen \texttt{184.001}) with a Bayesian optimization layer using GPyTorch or BoTorch
+    \item Implement non-blocking experiment queues that yield control during thermal back-conversion waiting periods
+    \item Interface with the 16-position Knauer valve system for automated sample switching
+\end{itemize}
+
+\textbf{Performance Metrics:}
+\begin{itemize}[leftmargin=*]
+    \item Reduction in total laboratory time to identify top 10\% candidates from a 50-sample library
+    \item Number of full characterizations required to achieve 95\% confidence in Pareto frontier identification
+    \item Comparison against random, round-robin, and greedy (best-first) scheduling baselines
+\end{itemize}
+
+\subsection{Connection to Autonomous Chemistry}
+
+This direction directly implements high-throughput screening methodologies (Perplexity \texttt{001.026}, \texttt{001.032}) while leveraging Bayesian optimization principles proven in materials discovery contexts. The adaptive sampling strategy mirrors approaches in autonomous robotic platforms like ARChemist (Perplexity \texttt{001.010}) and ORGANA (Perplexity \texttt{001.009}).
+
+\subsection{Expected Outcomes}
+
+\begin{itemize}[leftmargin=*]
+    \item 40-60\% reduction in characterization time for photoswitch library screening
+    \item Validated Bayesian optimization framework generalizable to other molecular property optimization problems
+    \item Open-source scheduling software compatible with the Digital Discovery platform ecosystem
+\end{itemize}
+
+\newpage
+
+
+\section{Research Direction 2: Control Barrier Functions for Safety-Constrained Automated Workflows}
+
+\subsection{Core Problem}
+
+Automated chemical systems face safety-critical constraints: temperature-sensitive samples can degrade (Moth-Poulsen \texttt{098.001} shows solvent-dependent thermal stability), flow cells can clog causing pressure build-up, and LED arrays can overheat. Current automation frameworks use ad-hoc timeout mechanisms and boolean error flags, providing no formal guarantees that safety constraints remain satisfied during schedule execution.
+
+\subsection{Proposed Solution}
+
+Apply Control Barrier Functions (Perplexity \texttt{003.011}) to chemical workflow scheduling, providing mathematically rigorous safety certificates. CBFs would encode:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Temperature envelope constraints}: Ensure sample temperature remains within stability limits during thermal kinetics measurements
+    \item \textbf{Pressure safety margins}: Monitor flow cell pressure and preemptively halt pumping before membrane rupture thresholds
+    \item \textbf{Equipment thermal budgets}: Track cumulative LED irradiation time and enforce mandatory cooling periods
+    \item \textbf{Chemical compatibility}: Prevent solvent cross-contamination through enforced purge sequences
+\end{enumerate}
+
+\subsection{Technical Approach}
+
+\textbf{Modeling Framework:}
+\begin{itemize}[leftmargin=*]
+    \item Formulate discrete-time CBF constraints for chemical workflow state machines
+    \item Implement filtered CBFs (Perplexity \texttt{003.002}) to handle non-smooth control inputs (e.g., valve switching, pump on/off)
+    \item Integrate with feasibility assurance mechanisms (Perplexity \texttt{003.001}) to guarantee CBF-QP solvability at each scheduling decision
+\end{itemize}
+
+\textbf{Safety Constraint Examples:}
+\begin{itemize}[leftmargin=*]
+    \item $h_1(x) = T_{\text{max}} - T_{\text{sample}}(t) \geq 0$ (temperature upper bound)
+    \item $h_2(x) = t_{\text{cool}} - t_{\text{LED\_cumulative}} \geq 0$ (thermal management)
+    \item $h_3(x) = P_{\text{rupture}} - P_{\text{cell}}(t) \geq \alpha$ (pressure safety margin)
+\end{itemize}
+
+\subsection{Connection to Control Theory}
+
+Leverages recent advances in CBF handling of uncertainty (Perplexity \texttt{003.012}), real-time constraints (Perplexity \texttt{003.019}), and robust control (Perplexity \texttt{003.010}). Addresses the identified challenge in CBF literature regarding feasibility under complex multi-constraint scenarios.
+
+\subsection{Expected Outcomes}
+
+\begin{itemize}[leftmargin=*]
+    \item Formal proof of safety constraint satisfaction throughout workflow execution
+    \item Reduction in equipment damage incidents and sample loss during unattended operation
+    \item Certified controller suitable for regulatory submission in pharmaceutical/industrial contexts
+    \item Publication-quality contribution to CBF application in chemical automation
+\end{itemize}
+
+\newpage
+
+
+\section{Research Direction 3: Digital Twin-Enabled Predictive Scheduling for Flow Chemistry}
+
+\subsection{Core Problem}
+
+Flow-based photoswitch characterization (Moth-Poulsen \texttt{177.001}, \texttt{184.001}) involves complex fluid dynamics: Taylor dispersion during sample injection, residence time distribution effects, and thermal equilibration transients. The current system treats the flow cell as a black box, leading to conservative wait times and suboptimal throughput.
+
+\subsection{Proposed Solution}
+
+Develop a digital twin (Perplexity \texttt{001.002}) of the flow characterization platform that simulates:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Microfluidic transport}: CFD modeling of sample plug propagation through tubing and flow cell (Perplexity \texttt{001.042})
+    \item \textbf{Photochemical conversion}: Spatially-resolved photoconversion accounting for light absorption gradients
+    \item \textbf{Thermal dynamics}: Temperature controller response and sample heating/cooling profiles
+    \item \textbf{Spectroscopic measurement}: Ray tracing to predict measurement artifacts from flow cell geometry
+\end{enumerate}
+
+The twin enables \textbf{model predictive control} (MPC) for scheduling: simulate candidate action sequences, select the trajectory that minimizes total characterization time while maintaining measurement accuracy.
+
+\subsection{Technical Approach}
+
+\textbf{Simulation Components:}
+\begin{itemize}[leftmargin=*]
+    \item Physics-based models (Perplexity \texttt{001.006}): 1D advection-diffusion PDE for concentration profiles
+    \item Data-driven surrogate models: Neural networks trained on experimental data to correct physics model errors
+    \item Sim-to-real transfer (Perplexity \texttt{001.002}): Bayesian calibration using periodic experimental validation runs
+\end{itemize}
+
+\textbf{Integration with MATTERIX Framework:}
+Leverage GPU-accelerated simulation infrastructure (Perplexity \texttt{001.002}) and the multi-scale physics approach. Extend to include photochemical reactions specific to norbornadiene-quadricyclane systems (Moth-Poulsen \texttt{097.001}, \texttt{180.001}).
+
+\subsection{Connection to Flow Chemistry}
+
+Builds on continuous processing methodologies (Perplexity \texttt{001.029}), inline PAT (Perplexity \texttt{001.046}), and scalable synthesis approaches (Moth-Poulsen \texttt{134.001}, \texttt{162.001}). Addresses the gap between batch reactor HTE and continuous flow optimization.
+
+\subsection{Expected Outcomes}
+
+\begin{itemize}[leftmargin=*]
+    \item 20-30\% throughput improvement through optimized pump sequencing and reduced dead time
+    \item Digital twin validated to within 5\% error on key metrics (residence time, conversion efficiency)
+    \item MPC controller that adapts to equipment drift and degradation over multi-day campaigns
+    \item Framework generalizable to other flow chemistry automation platforms
+\end{itemize}
+
+\newpage
+
+
+\section{Research Direction 4: LLM-Driven Protocol Translation for Heterogeneous Workflow Orchestration}
+
+\subsection{Core Problem}
+
+Chemical synthesis procedures in literature (e.g., Moth-Poulsen \texttt{180.001} "Practical Synthesis of Multi-Site Functionalized Norbornadiene") are written in natural language with implicit assumptions. Translating these into executable scheduler instructions requires expert knowledge and manual protocol decomposition. This creates a bottleneck when integrating new synthetic routes into automated platforms.
+
+\subsection{Proposed Solution}
+
+Develop an LLM-based system (Perplexity \texttt{001.021}) that:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Parses literature protocols}: Extract reaction steps, timing constraints, equipment requirements, and safety considerations from unstructured text
+    \item \textbf{Generates workflow graphs}: Convert procedures into directed acyclic graphs (DAGs) with explicit dependencies
+    \item \textbf{Maps to hardware capabilities}: Match abstract operations (e.g., "heat to reflux") to available equipment (temperature-controlled cuvette holder, heating rates)
+    \item \textbf{Synthesizes scheduler instructions}: Output Python/domain-specific language code compatible with the existing automation framework
+\end{enumerate}
+
+\subsection{Technical Approach}
+
+\textbf{LLM Architecture:}
+\begin{itemize}[leftmargin=*]
+    \item Fine-tune Llama-3.1-70B (inspired by ChemAgents architecture, Perplexity \texttt{002.004}) on corpus of synthetic organic chemistry procedures
+    \item Implement retrieval-augmented generation (RAG) with chemistry literature database mining (Perplexity \texttt{001.024})
+    \item Multi-agent design: Literature Reader agent, Equipment Mapping agent, Safety Verification agent, Code Generation agent
+\end{itemize}
+
+\textbf{Validation Strategy:}
+\begin{itemize}[leftmargin=*]
+    \item Test on 20 published photoswitch synthesis protocols from Moth-Poulsen group papers
+    \item Metrics: Syntactic correctness (code compiles), semantic correctness (produces intended product), safety compliance (no hazardous operations)
+    \item Human-in-the-loop validation for critical decision points
+\end{itemize}
+
+\subsection{Connection to Autonomous Chemistry}
+
+Directly implements LLM-driven agent concepts (Perplexity \texttt{001.021}, \texttt{002.004}) and collaborative intelligence frameworks (Perplexity \texttt{001.024}). Addresses the challenge of task coordination (Perplexity \texttt{001.055}) across heterogeneous equipment.
+
+\subsection{Expected Outcomes}
+
+\begin{itemize}[leftmargin=*]
+    \item 10x reduction in time required to port literature protocols to automated platform
+    \item Success rate $>$80\% on protocol translation benchmark
+    \item Open-source tool applicable to any chemistry automation framework with API access
+    \item Contribution to standardization efforts (Perplexity \texttt{001.052}) in chemical automation languages
+\end{itemize}
+
+\newpage
+
+
+\section{Research Direction 5: Reinforcement Learning for Multi-Instrument Resource Allocation}
+
+\subsection{Core Problem}
+
+When characterizing photoswitches, multiple experiments compete for shared resources: spectrometer time, heating stages, LED light sources, and pump access. Static scheduling heuristics (round-robin, priority queues) fail to adapt to:
+
+\begin{itemize}[leftmargin=*]
+    \item Variable experiment durations (Moth-Poulsen \texttt{151.001}: some photoswitches require hours for thermal kinetics)
+    \item Equipment failures requiring dynamic rescheduling
+    \item Measurement quality feedback suggesting early experiment termination or extension
+\end{itemize}
+
+\subsection{Proposed Solution}
+
+Frame workflow scheduling as a Markov Decision Process (MDP) and train a reinforcement learning agent (Perplexity \texttt{001.073}) to learn optimal resource allocation policies from experience.
+
+\textbf{State Space:}
+\begin{itemize}[leftmargin=*]
+    \item Current experiment progress (conversion percentages, elapsed time)
+    \item Resource availability (spectrometer: busy/idle, LED: thermal budget remaining)
+    \item Queue status (samples waiting, priority levels)
+    \item Historical performance (average success rate per sample type)
+\end{itemize}
+
+\textbf{Action Space:}
+\begin{itemize}[leftmargin=*]
+    \item Select next sample to characterize
+    \item Allocate spectrometer measurement frequency (high-frequency for fast reactions, sparse for slow)
+    \item Preempt running experiments to prioritize high-value candidates
+    \item Trigger calibration/cleaning routines
+\end{itemize}
+
+\textbf{Reward Function:}
+\begin{itemize}[leftmargin=*]
+    \item Maximize number of fully characterized samples per unit time
+    \item Penalize incomplete characterizations and equipment idle time
+    \item Bonus for early identification of high-performance candidates (energy density $>$0.4 MJ/kg)
+\end{itemize}
+
+\subsection{Technical Approach}
+
+\textbf{Algorithm Selection:}
+\begin{itemize}[leftmargin=*]
+    \item Proximal Policy Optimization (PPO) or Deep Q-Networks (DQN) depending on action space dimensionality
+    \item Model-based RL: Learn transition dynamics model to enable planning
+    \item Reward shaping (Perplexity \texttt{001.073}) to accelerate convergence
+\end{itemize}
+
+\textbf{Training Strategy:}
+\begin{itemize}[leftmargin=*]
+    \item Simulation-based pre-training using digital twin (Research Direction 3)
+    \item Sim-to-real transfer via domain randomization and system identification
+    \item Online learning from real experimental data with safety constraints (Research Direction 2)
+\end{itemize}
+
+\subsection{Connection to Autonomous Research}
+
+Implements reinforcement learning frameworks proven in materials discovery (Perplexity \texttt{001.073}, \texttt{001.012}). Builds on autonomous decision-making paradigms (Perplexity \texttt{001.017}) and real-time adaptation (Perplexity \texttt{003.003}). Aligns with automated research platform concepts (Moth-Poulsen \texttt{179.001}).
+
+\subsection{Expected Outcomes}
+
+\begin{itemize}[leftmargin=*]
+    \item 30-40\% improvement in multi-sample throughput versus rule-based scheduling
+    \item Learned policy that generalizes across different photoswitch families (NBD, azobenzene, BOD)
+    \item Interpretable policy analysis revealing optimal scheduling principles for human operators
+    \item Integration with broader self-driving laboratory ecosystems
+\end{itemize}
+
+\end{document}
