@@ -1,0 +1,17 @@
+Publication #173
+============================================================
+
+Title: Hybrid solar energy device for simultaneous electric power generation and molecular solar thermal energy storage
+
+Authors: Zhihang Wang, Helen Hölzel, Lorette Fernandez, Adil S. Aslam, Paulius Baronas
+
+Published: [2024, 9]
+
+Journal/Conference: Joule
+
+Type: journal-article
+
+DOI: 10.1016/j.joule.2024.06.012
+
+URL: https://doi.org/10.1016/j.joule.2024.06.012
+

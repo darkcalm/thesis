@@ -1,0 +1,17 @@
+Publication #139
+============================================================
+
+Title: Synthesis, characterization and computational evaluation of bicyclooctadienes towards molecular solar thermal energy storage
+
+Authors: Maria Quant, Andreas Erbs Hillers-Bendtsen, Shima Ghasemi, Mate Erdelyi, Zhihang Wang
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d1sc05791j
+
+URL: https://doi.org/10.1039/d1sc05791j
+
+Abstract:
+<jats:p>Molecular solar-thermal energy storage (MOST) systems are based on photoswitches that reversibly convert solar energy into chemical energy.</jats:p>

@@ -1,0 +1,19 @@
+Publication #125
+============================================================
+
+Title: Covalent incorporation of diphenylanthracene in oxotriphenylhexanoate organogels as a quasi-solid photon upconversion matrix
+
+Authors: Deise F. Barbosa de Mattos, Ambra Dreos, Mark D. Johnstone, August Runemark, Claire Sauvée
+
+Published: [2020, 12, 7]
+
+Journal/Conference: The Journal of Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1063/5.0029307
+
+URL: https://doi.org/10.1063/5.0029307
+
+Abstract:
+<jats:p>Triplet–triplet annihilation photon upconversion (TTA-UC) in solid state assemblies are desirable since they can be easily incorporated into devices such as solar cells, thus utilizing more of the solar spectrum. Realizing this is, however, a significant challenge that must circumvent the need for molecular diffusion, poor exciton migration, and detrimental back energy transfer among other hurdles. Here, we show that the above-mentioned issues can be overcome using the versatile and easily synthesized oxotriphenylhexanoate (OTHO) gelator that allows covalent incorporation of chromophores (or other functional units) at well-defined positions. To study the self-assembly properties as well as its use as a TTA-UC platform, we combine the benchmark couple platinum octaethylporphyrin as a sensitizer and 9,10-diphenylanthracene (DPA) as an annihilator, where DPA is covalently linked to the OTHO gelator at different positions. We show that TTA-UC can be achieved in the chromophore-decorated gels and that the position of attachment affects the photophysical properties as well as triplet energy transfer and triplet–triplet annihilation. This study not only provides proof-of-principle for the covalent approach but also highlights the need for a detailed mechanistic insight into the photophysical processes underpinning solid state TTA-UC.</jats:p>

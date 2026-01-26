@@ -1,0 +1,17 @@
+Publication #137
+============================================================
+
+Title: Storing energy with molecular photoisomers
+
+Authors: Zhihang Wang, Paul Erhart, Tao Li, Zhao-Yang Zhang, Diego Sampedro
+
+Published: [2021, 12]
+
+Journal/Conference: Joule
+
+Type: journal-article
+
+DOI: 10.1016/j.joule.2021.11.001
+
+URL: https://doi.org/10.1016/j.joule.2021.11.001
+

@@ -1,0 +1,17 @@
+Publication #155
+============================================================
+
+Title: Efficient degassing and ppm-level oxygen monitoring flow chemistry system
+
+Authors: Paulius Baronas, Jacob Lynge Elholm, Kasper Moth-Poulsen
+
+Journal/Conference: Reaction Chemistry &amp; Engineering
+
+Type: journal-article
+
+DOI: 10.1039/d3re00109a
+
+URL: https://doi.org/10.1039/d3re00109a
+
+Abstract:
+<jats:p>A method for in-line continuous flow degassing to remove up to 99.9% of oxygen from solvents is presented.</jats:p>

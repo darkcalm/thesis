@@ -1,0 +1,19 @@
+Publication #158
+============================================================
+
+Title: Searching the Chemical Space of Bicyclic Dienes for Molecular Solar Thermal Energy Storage Candidates
+
+Authors: Andreas Erbs Hillers‐Bendtsen, Jacob Lynge Elholm, Oscar Berlin Obel, Helen Hölzel, Kasper Moth‐Poulsen
+
+Published: [2023, 10, 2]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202309543
+
+URL: https://doi.org/10.1002/ange.202309543
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Photoswitches are molecular systems that are chemically transformed subsequent to interaction with light and they find potential application in many new technologies. The design and discovery of photoswitch candidates require intricate molecular engineering of a range of properties to optimize a candidate to a specific applications, a task which can be tackled efficiently using quantum chemical screening procedures. In this paper, we perform a large scale screening of approximately half a million bicyclic diene photoswitches in the context of molecular solar thermal energy storage using ab initio quantum chemical methods. We further device an efficient strategy for scoring the systems based on their predicted solar energy conversion efficiency and elucidate potential pitfalls of this approach. Our search through the chemical space of bicyclic dienes reveals systems with unprecedented solar energy conversion efficiencies and storage densities that show promising design guidelines for next generation molecular solar thermal energy storage systems.</jats:p>

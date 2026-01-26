@@ -1,0 +1,17 @@
+Publication #109
+============================================================
+
+Title: Donor-Acceptor Substituted Benzo-, Naphtho- and Phenanthro-Fused Norbornadienes
+
+Authors: Mads Mansø, Lorette Fernandez, Zhihang Wang, Kasper Moth-Poulsen, Mogens Brøndsted Nielsen
+
+Journal/Conference: Molecules
+
+Type: journal-article
+
+DOI: 10.3390/molecules25020322
+
+URL: https://doi.org/10.3390/molecules25020322
+
+Abstract:
+<jats:p>The photochromic norbornadiene/quadricyclane (NBD/QC) couple has found interest as a molecular solar thermal energy (MOST) system for storage of solar energy. To increase the energy difference between the two isomers, we present here the synthesis of a selection of benzo-fused NBD derivatives that contain an aromatic unit, benzene, naphthalene or phenanthrene, fused to one of the NBD double bonds, while the carbon atoms of the other double bond are functionalized with donor and acceptor groups. The synthesis protocols involve functionalization of benzo-fused NBDs with bromo/chloro substituents followed by a subjection of these intermediates to a cyanation reaction (introducing a cyano acceptor group) followed by a Sonogashira coupling (introducing an arylethynyl donor group, -C≡CC6H4NMe2 or -C≡CC6H4OMe). While the derivatives have good absorption properties in the visible region (redshifted relative to parent system) in the context of MOST applications, they lack the ability to undergo NBD-to-QC photoisomerization, even in the presence of a photosensitizer. It seems that loss of aromaticity of the fused aromatics is too significant to allow photoisomerization to occur. The concept of destroying aromaticity of a neighboring moiety as a way to enhance the energy density of the NBD/QC couple thus needs further structural modifications, in the quest for optimum MOST systems.</jats:p>

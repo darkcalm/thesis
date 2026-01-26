@@ -1,0 +1,17 @@
+Publication #175
+============================================================
+
+Title: Exploring <i>ortho</i>-dianthrylbenzenes for molecular solar thermal energy storage
+
+Authors: Nicolò Baggi, Lidiya M. Muhammad, Zacharias Liasi, Jacob Lynge Elholm, Paulius Baronas
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d4ta03879g
+
+URL: https://doi.org/10.1039/d4ta03879g
+
+Abstract:
+<jats:p>Aiming to explore anthracene-based systems for molecular solar thermal energy storage, five ortho-dianthrylbenzenes were designed, demonstrating promising properties for future development of anthracene-based photoswitches for such applications.</jats:p>

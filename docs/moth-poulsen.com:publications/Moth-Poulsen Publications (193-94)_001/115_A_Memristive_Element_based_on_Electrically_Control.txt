@@ -1,0 +1,19 @@
+Publication #115
+============================================================
+
+Title: A Memristive Element Based on an Electrically Controlled Single‐Molecule Reaction
+
+Authors: Haipeng B. Li, Behabitu E. Tebikachew, Cedrik Wiberg, Kasper Moth‐Poulsen, Joshua Hihath
+
+Published: [2020, 7, 6]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202002300
+
+URL: https://doi.org/10.1002/ange.202002300
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The exponential proliferation of data during the information age has required the continuous exploration of novel storage paradigms, materials, and devices with increasing data density. As a step toward the ultimate limits in data density, the development of an electrically controllable single‐molecule memristive element is reported. In this device, digital information is encoded through switching between two isomer states by applying a voltage signal to the molecular junction, and the information is read out by monitoring the electrical conductance of each isomer. The two states are cycled using an electrically controllable local‐heating mechanism for the forward reaction and catalyzed by a single charge‐transfer process for the reverse switching. This single‐molecule device can be modulated in situ, is fully reversible, and does not display stochastic switching. The <jats:italic>I</jats:italic>–<jats:italic>V</jats:italic> curves of this single‐molecule system also exhibit memristive character. These features suggest a new approach for the development of molecular switching systems and storage‐class memories.</jats:p>

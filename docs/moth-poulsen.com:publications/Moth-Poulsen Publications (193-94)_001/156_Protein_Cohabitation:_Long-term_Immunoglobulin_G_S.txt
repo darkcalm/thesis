@@ -1,0 +1,17 @@
+Publication #156
+============================================================
+
+Title: Protein cohabitation: long-term immunoglobulin G storage at room temperature
+
+Authors: Pankaj Bharmoria, Saik Ann Ooi, Andrea Cellini, Daniel Tietze, Michal Maj
+
+Journal/Conference: Journal of Materials Chemistry B
+
+Type: journal-article
+
+DOI: 10.1039/d3tb00161j
+
+URL: https://doi.org/10.1039/d3tb00161j
+
+Abstract:
+<jats:p>We report a simple bioinspired strategy of protein cohabitation for long-term functional storage of therapeutic proteins at room temperature.</jats:p>

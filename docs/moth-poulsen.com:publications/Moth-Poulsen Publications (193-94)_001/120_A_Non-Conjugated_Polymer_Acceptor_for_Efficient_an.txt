@@ -1,0 +1,19 @@
+Publication #120
+============================================================
+
+Title: A Non‐Conjugated Polymer Acceptor for Efficient and Thermally Stable All‐Polymer Solar Cells
+
+Authors: Qunping Fan, Wenyan Su, Shanshan Chen, Tao Liu, Wenliu Zhuang
+
+Published: [2020, 11, 2]
+
+Journal/Conference: Angewandte Chemie International Edition
+
+Type: journal-article
+
+DOI: 10.1002/anie.202005662
+
+URL: https://doi.org/10.1002/anie.202005662
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>A non‐conjugated polymer acceptor PF1‐TS4 was firstly synthesized by embedding a thioalkyl segment in the mainchain, which shows excellent photophysical properties on par with a fully conjugated polymer, with a low optical band gap of 1.58 eV and a high absorption coefficient &gt;10<jats:sup>5</jats:sup> cm<jats:sup>−1</jats:sup>, a high LUMO level of −3.89 eV, and suitable crystallinity. Matched with the polymer donor PM6, the PF1‐TS4‐based all‐PSC achieved a power conversion efficiency (PCE) of 8.63 %, which is ≈45 % higher than that of a device based on the small molecule acceptor counterpart IDIC16. Moreover, the PF1‐TS4‐based all‐PSC has good thermal stability with ≈70 % of its initial PCE retained after being stored at 85 °C for 180 h, while the IDIC16‐based device only retained ≈50 % of its initial PCE when stored at 85 °C for only 18 h. Our work provides a new strategy to develop efficient polymer acceptor materials by linkage of conjugated units with non‐conjugated thioalkyl segments.</jats:p>

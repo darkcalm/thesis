@@ -1,0 +1,17 @@
+Publication #127
+============================================================
+
+Title: Photon upconverting bioplastics with high efficiency and in-air durability
+
+Authors: Pankaj Bharmoria, Shota Hisamitsu, Yoichi Sasaki, Tejwant Singh Kang, Masa-aki Morikawa
+
+Journal/Conference: Journal of Materials Chemistry C
+
+Type: journal-article
+
+DOI: 10.1039/d1tc00287b
+
+URL: https://doi.org/10.1039/d1tc00287b
+
+Abstract:
+<jats:p>The accommodation of chromophore-dissolved microdroplets in semicrystalline protein matrices succeeds in achieving upconverting bioplastics with high efficiency, air-stability, and long-term durability for the first time.</jats:p>

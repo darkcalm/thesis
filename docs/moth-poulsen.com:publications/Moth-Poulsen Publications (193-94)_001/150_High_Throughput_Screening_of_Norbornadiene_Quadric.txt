@@ -1,0 +1,17 @@
+Publication #150
+============================================================
+
+Title: High throughput screening of norbornadiene/quadricyclane derivates for molecular solar thermal energy storage
+
+Authors: Jacob Lynge Elholm, Andreas Erbs Hillers-Bendtsen, Helen Hölzel, Kasper Moth-Poulsen, Kurt V. Mikkelsen
+
+Journal/Conference: Physical Chemistry Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1039/d2cp03032b
+
+URL: https://doi.org/10.1039/d2cp03032b
+
+Abstract:
+<jats:p>We present a procedure for performing high throughput screening of molecular compounds for molecular solar thermal energy storage devices using extended tight binding (xTB) methods.</jats:p>

@@ -1,0 +1,19 @@
+Publication #189
+============================================================
+
+Title: Enhancing the statistical probability factor in triplet–triplet annihilation photon upconversion
+                    <i>via</i>
+                    TIPS functionalization
+
+Authors: Lukas Naimovičius, Manvydas Dapkevičius, Edvinas Radiunas, Mila Miroshnichenko, Gediminas Kreiza
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d5sc05248c
+
+URL: https://doi.org/10.1039/d5sc05248c
+
+Abstract:
+<jats:p>A new green-emitting annihilator, TIPS-PY is synthesized, which exhibits the high TTA-UC quantum yield of 13.7% for red-to-green upconversion due to the enhancement of spin statistical probability factor by TIPS functionalization of perylene.</jats:p>

@@ -1,0 +1,17 @@
+Publication #112
+============================================================
+
+Title: Establishing linear-free-energy relationships for the quadricyclane-to-norbornadiene reaction
+
+Authors: Mads Mansø, Anne Ugleholdt Petersen, Kasper Moth-Poulsen, Mogens Brøndsted Nielsen
+
+Journal/Conference: Organic &amp; Biomolecular Chemistry
+
+Type: journal-article
+
+DOI: 10.1039/d0ob00147c
+
+URL: https://doi.org/10.1039/d0ob00147c
+
+Abstract:
+<p>The kinetics of the thermal quadricyclane-to-norbornadiene (QC-to-NBD) isomerization follows a linear-free-energy relationship when using Creary radical <graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ugt1" xlink:href="http://pubs.rsc.org/OB/2020/d0ob00147c/d0ob00147c-t1..gif"/> values for a selection of aryl/cyano disubstituted derivatives.</p>

@@ -1,0 +1,19 @@
+Publication #108
+============================================================
+
+Title: Norbornadiene photoswitches anchored to well-defined oxide surfaces: From ultrahigh vacuum into the liquid and the electrochemical environment
+
+Authors: Manon Bertram, Fabian Waidhas, Martyn Jevric, Lukas Fromm, Christian Schuschke
+
+Published: [2020, 1, 31]
+
+Journal/Conference: The Journal of Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1063/1.5137897
+
+URL: https://doi.org/10.1063/1.5137897
+
+Abstract:
+<jats:p>Employing molecular photoswitches, we can combine solar energy conversion, storage, and release in an extremely simple single molecule system. In order to release the stored energy as electricity, the photoswitch has to interact with a semiconducting electrode surface. In this work, we explore a solar-energy-storing model system, consisting of a molecular photoswitch anchored to an atomically defined oxide surface in a liquid electrolyte and under potential control. Previously, this model system has been proven to be operational under ultrahigh vacuum (UHV) conditions. We used the tailor-made norbornadiene derivative 2-cyano-3-(4-carboxyphenyl)norbornadiene (CNBD) and characterized its photochemical and electrochemical properties in an organic electrolyte. Next, we assembled a monolayer of CNBD on a well-ordered Co3O4(111) surface by physical vapor deposition in UHV. This model interface was then transferred into the liquid electrolyte and investigated by photoelectrochemical infrared reflection absorption spectroscopy experiments. We demonstrate that the anchored monolayer of CNBD can be converted photochemically to its energy-rich counterpart 2-cyano-3-(4-carboxyphenyl)quadricyclane (CQC) under potential control. However, the reconversion potential of anchored CQC overlaps with the oxidation and decomposition potential of CNBD, which limits the electrochemically triggered reconversion.</jats:p>

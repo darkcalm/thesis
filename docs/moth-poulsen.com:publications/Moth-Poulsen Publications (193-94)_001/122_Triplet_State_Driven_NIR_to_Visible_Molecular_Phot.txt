@@ -1,0 +1,17 @@
+Publication #122
+============================================================
+
+Title: Triplet–triplet annihilation based near infrared to visible molecular photon upconversion
+
+Authors: Pankaj Bharmoria, Hakan Bildirir, Kasper Moth-Poulsen
+
+Journal/Conference: Chemical Society Reviews
+
+Type: journal-article
+
+DOI: 10.1039/d0cs00257g
+
+URL: https://doi.org/10.1039/d0cs00257g
+
+Abstract:
+<p>This review delineates the developments in triplet–triplet annihilation based NIR to Vis molecular photon upconversion including recent progress in conceptual design, applications, existing challenges, possible future directions and opportunities.</p>

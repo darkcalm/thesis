@@ -1,0 +1,17 @@
+Publication #182
+============================================================
+
+Title: Design, testing and characterization of noble-metal catalysts for the heat-release reaction of a molecular solar thermal energy storage isomer pair
+
+Authors: Benjamin Rollins, Alberto Gimenez-Gomez, Andrew M. Steele, Helen Hölzel, Rebecca J. Salthouse
+
+Journal/Conference: Catalysis Science &amp; Technology
+
+Type: journal-article
+
+DOI: 10.1039/d5cy00366k
+
+URL: https://doi.org/10.1039/d5cy00366k
+
+Abstract:
+<jats:p>A series of heterogeneous catalysts, based on Pt and Au, have been developed for MOlecular Solar Thermal (MOST) system energy release. Low oxidation states as well as a reduced support, such as carbon, are key to a rapid back-conversion reaction.</jats:p>

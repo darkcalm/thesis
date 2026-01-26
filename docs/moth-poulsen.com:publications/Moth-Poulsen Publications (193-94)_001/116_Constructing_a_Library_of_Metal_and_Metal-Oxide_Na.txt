@@ -1,0 +1,17 @@
+Publication #116
+============================================================
+
+Title: Constructing a library of metal and metal–oxide nanoparticle heterodimers through colloidal assembly
+
+Authors: Tina A. Gschneidtner, Sarah Lerch, Erik Olsén, Xin Wen, Amelia C. Y. Liu
+
+Journal/Conference: Nanoscale
+
+Type: journal-article
+
+DOI: 10.1039/d0nr02787a
+
+URL: https://doi.org/10.1039/d0nr02787a
+
+Abstract:
+<p>Nanoparticle dimers composed of different metals or metal oxides, as well as different shapes and sizes, are of wide interest for applications ranging from nanoplasmonic sensing to nanooptics to biomedical engineering.</p>

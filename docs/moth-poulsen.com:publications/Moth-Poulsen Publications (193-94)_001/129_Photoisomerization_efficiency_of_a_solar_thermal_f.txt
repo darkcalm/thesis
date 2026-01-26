@@ -1,0 +1,17 @@
+Publication #129
+============================================================
+
+Title: Photoisomerization efficiency of a solar thermal fuel in the strong coupling regime
+
+Authors: Jürgen Mony, Claudia Climent, Kasper Moth-Poulsen, Johannes Feist, Karl Börjesson
+
+Published: [2021, 8, 1]
+
+Journal/Conference: Physical Chemistry of Semiconductor Materials and Interfaces XX
+
+Type: proceedings-article
+
+DOI: 10.1117/12.2593888
+
+URL: https://doi.org/10.1117/12.2593888
+

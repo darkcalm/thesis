@@ -1,0 +1,19 @@
+Publication #180
+============================================================
+
+Title: A Practical Synthesis of Multi-Site Functionalized Norbornadiene for Molecular Solar Thermal Energy Storage
+
+Authors: Kasper Moth-Poulsen, Monika Shamsabadi, Joost Kimpel, Christian Müller
+
+Published: [2025, 7]
+
+Journal/Conference: Synlett
+
+Type: journal-article
+
+DOI: 10.1055/a-2560-0282
+
+URL: https://doi.org/10.1055/a-2560-0282
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Norbornadienes (NBDs) are promising candidates for molecular solar thermal energy storage (MOST) due to their reversible photoisomerization. A central aspect for future application is the scalable synthesis of NBD derivatives with high solubility. Herein, we report an efficient synthesis and purification of multi-substituted NBDs, achieving diverse substitution patterns and appreciable solubility. The streamlined process for synthesizing and purifying NBDs delivers high yields and purity, which addresses previously significant challenges in NBD-based energy systems. Our findings advance sustainable approaches for MOST through improved NBD stability and usability.</jats:p>

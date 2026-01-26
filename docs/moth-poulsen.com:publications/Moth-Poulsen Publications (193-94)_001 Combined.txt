@@ -1,0 +1,2107 @@
+MOTH-POULSEN PUBLICATIONS SUMMARIES
+======================================================================
+
+Publication #94
+============================================================
+
+Title: Solvent-free lithium and sodium containing electrolytes based on pseudo-delocalized anions
+
+Authors: Juan Forero-Saboya, Elham Hosseini-Bab-Anari, Muhammad E. Abdelhamid, Kasper Moth-Poulsen, Patrik Johansson
+
+Journal/Conference: Chemical Communications
+
+Type: journal-article
+
+DOI: 10.1039/c8cc07076h
+
+URL: https://doi.org/10.1039/c8cc07076h
+
+Abstract:
+<p>Synthesis and characterisation of super-cooled solvent-free liquid electrolytes for Li and Na batteries.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #95
+============================================================
+
+Title: Dithiafulvene derivatized donor–acceptor norbornadienes with redshifted absorption
+
+Authors: Mads Mansø, Martin Drøhse Kilde, Sandeep Kumar Singh, Paul Erhart, Kasper Moth-Poulsen
+
+Journal/Conference: Physical Chemistry Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1039/c8cp07744d
+
+URL: https://doi.org/10.1039/c8cp07744d
+
+Abstract:
+<p>Norbornadiene monomers and dimers incorporating an electron-donating dithiafulvene unit were prepared and studied for their absorption properties and photoswitching abilities.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #96
+============================================================
+
+Title: From Single Molecules to Thin Film Electronics, Nanofibers, e‐Textiles and Power Cables: Bridging Length Scales with Organic Semiconductors
+
+Authors: Christian Müller, Liangqi Ouyang, Anja Lund, Kasper Moth‐Poulsen, Mahiar M. Hamedi
+
+Published: [2019, 5]
+
+Journal/Conference: Advanced Materials
+
+Type: journal-article
+
+DOI: 10.1002/adma.201807286
+
+URL: https://doi.org/10.1002/adma.201807286
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Organic semiconductors are the centerpiece of several vibrant research fields from single‐molecule to organic electronics, and they are finding increasing use in bioelectronics and even classical polymer technology. The versatile chemistry and broad range of electronic functionalities of conjugated materials enable the bridging of length scales 15 orders of magnitude apart, ranging from a single nanometer (10<jats:sup>−9</jats:sup> m) to the size of continents (10<jats:sup>6</jats:sup> m). This work provides a taste of the diverse applications that can be realized with organic semiconductors. The reader will embark on a journey from single molecular junctions to thin film organic electronics, supramolecular assemblies, biomaterials such as amyloid fibrils and nanofibrillated cellulose, conducting fibers and yarns for e‐textiles, and finally to power cables that shuffle power across thousands of kilometers.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #97
+============================================================
+
+Title: Tuning Molecular Solar Thermal Properties by Modification of a Promising Norbornadiene Photoswitch
+
+Authors: Martyn Jevric, Zhihang Wang, Anne U. Petersen, Mads Mansø, Christopher J. Sumby
+
+Published: [2019, 4, 9]
+
+Journal/Conference: European Journal of Organic Chemistry
+
+Type: journal-article
+
+DOI: 10.1002/ejoc.201801781
+
+URL: https://doi.org/10.1002/ejoc.201801781
+
+Abstract:
+<jats:p>Carefully targeted modifications to the norbornadiene‐quadricyclane couple should give molecules with great potential for solar energy storage. Here we report the synthesis of derivatives of a well‐studied compound, 2‐cyano‐3‐anisyl norbornadiene (<jats:bold>NBD5</jats:bold>). The conjugation was extended by conversion of the nitrile into acrylonitrile and acrylate derivatives over two steps. Despite red‐shifting the absorbance properties, the metastable quadricyclanes exhibited extremely short lifetimes. Meanwhile, treatment of <jats:bold>NBD5</jats:bold> with acetyl halides in the presence of aluminum trihalides led to the formation of 7‐acetyl norbornenes through a Wagner–Meerwein rearrangement. Subsequent transformations made it possible to synthesise norbornadienes with varying degrees of steric bulk at the 7‐position of the molecular scaffold. It was found that the bulkier this group was, the more stable the quadricyclane form. This reaction sequence allows for the synthesis of norbornadiene derivatives which are more suited to molecular solar thermal applications in domestic heating despite providing a slightly lower energy density.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #98
+============================================================
+
+Title: Solvent Effects on the Absorption Profile, Kinetic Stability, and Photoisomerization Process of the Norbornadiene–Quadricyclanes System
+
+Authors: Maria Quant, Alice Hamrin, Anders Lennartson, Paul Erhart, Kasper Moth-Poulsen
+
+Published: [2019, 3, 28]
+
+Journal/Conference: The Journal of Physical Chemistry C
+
+Type: journal-article
+
+DOI: 10.1021/acs.jpcc.9b02111
+
+URL: https://doi.org/10.1021/acs.jpcc.9b02111
+
+
+
+----------------------------------------------------------------------
+
+Publication #99
+============================================================
+
+Title: Solar Energy Storage by Molecular Norbornadiene–Quadricyclane Photoswitches: Polymer Film Devices
+
+Authors: Anne Ugleholdt Petersen, Anna I. Hofmann, Méritxell Fillols, Mads Mansø, Martyn Jevric
+
+Published: [2019, 6]
+
+Journal/Conference: Advanced Science
+
+Type: journal-article
+
+DOI: 10.1002/advs.201900367
+
+URL: https://doi.org/10.1002/advs.201900367
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Devices that can capture and convert sunlight into stored chemical energy are attractive candidates for future energy technologies. A general challenge is to combine efficient solar energy capture with high energy densities and energy storage time into a processable composite for device application. Here, norbornadiene (NBD)–quadricyclane (QC) molecular photoswitches are embedded into polymer matrices, with possible applications in energy storing coatings. The NBD–QC photoswitches that are capable of absorbing sunlight with estimated solar energy storage efficiencies of up to 3.8% combined with attractive energy storage densities of up to 0.48 MJ kg<jats:sup>−1</jats:sup>. The combination of donor and acceptor units leads to an improved solar spectrum match with an onset of absorption of up to 529 nm and a lifetime (<jats:italic>t</jats:italic><jats:sub>1/2</jats:sub>) of up to 10 months. The NBD–QC systems with properties matched to a daily energy storage cycle are further investigated in the solid state by embedding the molecules into a series of polymer matrices revealing that polystyrene is the preferred choice of matrix. These polymer devices, which can absorb sunlight and over a daily cycle release the energy as heat, are investigated for their cyclability, showing multicycle reusability with limited degradation that might allow them to be applied as window laminates.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #100
+============================================================
+
+Title: Solar energy storage at an atomically defined organic-oxide hybrid interface
+
+Authors: Christian Schuschke, Chantal Hohner, Martyn Jevric, Anne Ugleholdt Petersen, Zhihang Wang
+
+Journal/Conference: Nature Communications
+
+Type: journal-article
+
+DOI: 10.1038/s41467-019-10263-4
+
+URL: https://doi.org/10.1038/s41467-019-10263-4
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Molecular photoswitches provide an extremely simple solution for solar energy conversion and storage. To convert stored energy to electricity, however, the photoswitch has to be coupled to a semiconducting electrode. In this work, we report on the assembly of an operational solar-energy-storing organic-oxide hybrid interface, which consists of a tailor-made molecular photoswitch and an atomically-defined semiconducting oxide film. The synthesized norbornadiene derivative 2-cyano-3-(4-carboxyphenyl)norbornadiene (CNBD) was anchored to a well-ordered Co<jats:sub>3</jats:sub>O<jats:sub>4</jats:sub>(111) surface by physical vapor deposition in ultrahigh vacuum. Using a photochemical infrared reflection absorption spectroscopy experiment, we demonstrate that the anchored CNBD monolayer remains operational, i.e., can be photo-converted to its energy-rich counterpart 2-cyano-3-(4-carboxyphenyl)quadricyclane (CQC). We show that the activation barrier for energy release remains unaffected by the anchoring reaction and the anchored photoswitch can be charged and discharged with high reversibility. Our atomically-defined solar-energy-storing model interface enables detailed studies of energy conversion processes at organic/oxide hybrid interfaces.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #101
+============================================================
+
+Title: Demonstration of an azobenzene derivative based solar thermal energy storage system
+
+Authors: Zhihang Wang, Raul Losantos, Diego Sampedro, Masa-aki Morikawa, Karl Börjesson
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/c9ta04905c
+
+URL: https://doi.org/10.1039/c9ta04905c
+
+Abstract:
+<p>Molecules capable of reversible storage of solar energy have recently attracted increasing interest. Here, a liquid azobenzene molecule has been studied for solar thermal energy storage applications and integrated into flow-chemistry devices.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #102
+============================================================
+
+Title: Electrochemically controlled energy storage in a norbornadiene-based solar fuel with 99% reversibility
+
+Authors: Fabian Waidhas, Martyn Jevric, Lukas Fromm, Manon Bertram, Andreas Görling
+
+Published: [2019, 9]
+
+Journal/Conference: Nano Energy
+
+Type: journal-article
+
+DOI: 10.1016/j.nanoen.2019.103872
+
+URL: https://doi.org/10.1016/j.nanoen.2019.103872
+
+
+
+----------------------------------------------------------------------
+
+Publication #103
+============================================================
+
+Title: Intermolecular London Dispersion Interactions of Azobenzene Switches for Tuning Molecular Solar Thermal Energy Storage Systems
+
+Authors: Anne Kunz, Andreas H. Heindl, Ambra Dreos, Zhihang Wang, Kasper Moth‐Poulsen
+
+Published: [2019, 8]
+
+Journal/Conference: ChemPlusChem
+
+Type: journal-article
+
+DOI: 10.1002/cplu.201900330
+
+URL: https://doi.org/10.1002/cplu.201900330
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The performance of molecular solar thermal energy storage systems (MOST) depends amongst others on the amount of energy stored. Azobenzenes have been investigated as high‐potential materials for MOST applications. In the present study it could be shown that intermolecular attractive London dispersion interactions stabilize the (<jats:italic>E</jats:italic>)‐isomer in bisazobenzene that is linked by different alkyl bridges. Differential scanning calorimetry (DSC) measurements revealed, that this interaction leads to an increased storage energy per azo‐unit of more than 3 kcal/mol compared to the parent azobenzene. The origin of this effect has been supported by computation as well as X‐ray analysis. In the solid state structure attractive London dispersion interactions between the C−H of the alkyl bridge and the π‐system of the azobenzene could be clearly assigned. This concept will be highly useful in designing more effective MOST systems in the future.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #104
+============================================================
+
+Title: Norbornadiene–dihydroazulene conjugates
+
+Authors: Martin Drøhse Kilde, Mads Mansø, Nicolai Ree, Anne Ugleholdt Petersen, Kasper Moth-Poulsen
+
+Journal/Conference: Organic &amp; Biomolecular Chemistry
+
+Type: journal-article
+
+DOI: 10.1039/c9ob01545k
+
+URL: https://doi.org/10.1039/c9ob01545k
+
+Abstract:
+<p>Conjugates of norbornadiene (NBD) and dihydroazulene (DHA) photoswitches were synthesised and subjected to isomerisation studies.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #105
+============================================================
+
+Title: Ionic liquid based battery electrolytes using lithium and sodium pseudo-delocalized pyridinium anion salts
+
+Authors: Elham Hosseini-Bab-Anari, Adriana M. Navarro-Suárez, Kasper Moth-Poulsen, Patrik Johansson
+
+Journal/Conference: Physical Chemistry Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1039/c9cp03445e
+
+URL: https://doi.org/10.1039/c9cp03445e
+
+Abstract:
+<p>Ionic liquid based electrolytes using a novel pseudo-delocalized anion – 1-methylpyridinum 2,6-dicarboxylate (MM26py) – are presented and tested for modern battery usage.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #106
+============================================================
+
+Title: Continuous Microfluidic Synthesis of Pd Nanocubes and PdPt CoreShell Nanoparticles and Their Catalysis of NO2 Reduction
+
+Type: component
+
+DOI: 10.1021/acsami.9b09701.s001
+
+URL: https://doi.org/10.1021/acsami.9b09701.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #107
+============================================================
+
+Title: Water-in-Bisalt Electrolyte with Record Salt Concentration and Widened Electrochemical Stability Window
+
+Type: component
+
+DOI: 10.1021/acs.jpclett.9b01467.s001
+
+URL: https://doi.org/10.1021/acs.jpclett.9b01467.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #108
+============================================================
+
+Title: Norbornadiene photoswitches anchored to well-defined oxide surfaces: From ultrahigh vacuum into the liquid and the electrochemical environment
+
+Authors: Manon Bertram, Fabian Waidhas, Martyn Jevric, Lukas Fromm, Christian Schuschke
+
+Published: [2020, 1, 31]
+
+Journal/Conference: The Journal of Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1063/1.5137897
+
+URL: https://doi.org/10.1063/1.5137897
+
+Abstract:
+<jats:p>Employing molecular photoswitches, we can combine solar energy conversion, storage, and release in an extremely simple single molecule system. In order to release the stored energy as electricity, the photoswitch has to interact with a semiconducting electrode surface. In this work, we explore a solar-energy-storing model system, consisting of a molecular photoswitch anchored to an atomically defined oxide surface in a liquid electrolyte and under potential control. Previously, this model system has been proven to be operational under ultrahigh vacuum (UHV) conditions. We used the tailor-made norbornadiene derivative 2-cyano-3-(4-carboxyphenyl)norbornadiene (CNBD) and characterized its photochemical and electrochemical properties in an organic electrolyte. Next, we assembled a monolayer of CNBD on a well-ordered Co3O4(111) surface by physical vapor deposition in UHV. This model interface was then transferred into the liquid electrolyte and investigated by photoelectrochemical infrared reflection absorption spectroscopy experiments. We demonstrate that the anchored monolayer of CNBD can be converted photochemically to its energy-rich counterpart 2-cyano-3-(4-carboxyphenyl)quadricyclane (CQC) under potential control. However, the reconversion potential of anchored CQC overlaps with the oxidation and decomposition potential of CNBD, which limits the electrochemically triggered reconversion.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #109
+============================================================
+
+Title: Donor-Acceptor Substituted Benzo-, Naphtho- and Phenanthro-Fused Norbornadienes
+
+Authors: Mads Mansø, Lorette Fernandez, Zhihang Wang, Kasper Moth-Poulsen, Mogens Brøndsted Nielsen
+
+Journal/Conference: Molecules
+
+Type: journal-article
+
+DOI: 10.3390/molecules25020322
+
+URL: https://doi.org/10.3390/molecules25020322
+
+Abstract:
+<jats:p>The photochromic norbornadiene/quadricyclane (NBD/QC) couple has found interest as a molecular solar thermal energy (MOST) system for storage of solar energy. To increase the energy difference between the two isomers, we present here the synthesis of a selection of benzo-fused NBD derivatives that contain an aromatic unit, benzene, naphthalene or phenanthrene, fused to one of the NBD double bonds, while the carbon atoms of the other double bond are functionalized with donor and acceptor groups. The synthesis protocols involve functionalization of benzo-fused NBDs with bromo/chloro substituents followed by a subjection of these intermediates to a cyanation reaction (introducing a cyano acceptor group) followed by a Sonogashira coupling (introducing an arylethynyl donor group, -C≡CC6H4NMe2 or -C≡CC6H4OMe). While the derivatives have good absorption properties in the visible region (redshifted relative to parent system) in the context of MOST applications, they lack the ability to undergo NBD-to-QC photoisomerization, even in the presence of a photosensitizer. It seems that loss of aromaticity of the fused aromatics is too significant to allow photoisomerization to occur. The concept of destroying aromaticity of a neighboring moiety as a way to enhance the energy density of the NBD/QC couple thus needs further structural modifications, in the quest for optimum MOST systems.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #110
+============================================================
+
+Title: Synthesis of Palladium Nanodendrites Using a Mixture of Cationic and Anionic Surfactants
+
+Type: component
+
+DOI: 10.1021/acs.langmuir.9b03804.s001
+
+URL: https://doi.org/10.1021/acs.langmuir.9b03804.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #111
+============================================================
+
+Title: Understanding Interactions Driving the Template-Directed Self-Assembly of Colloidal Nanoparticles at Surfaces
+
+Authors: Johnas Eklöf-Österberg, Joakim Löfgren, Paul Erhart, Kasper Moth-Poulsen
+
+Published: [2020, 2, 27]
+
+Journal/Conference: The Journal of Physical Chemistry C
+
+Type: journal-article
+
+DOI: 10.1021/acs.jpcc.0c00710
+
+URL: https://doi.org/10.1021/acs.jpcc.0c00710
+
+
+
+----------------------------------------------------------------------
+
+Publication #112
+============================================================
+
+Title: Establishing linear-free-energy relationships for the quadricyclane-to-norbornadiene reaction
+
+Authors: Mads Mansø, Anne Ugleholdt Petersen, Kasper Moth-Poulsen, Mogens Brøndsted Nielsen
+
+Journal/Conference: Organic &amp; Biomolecular Chemistry
+
+Type: journal-article
+
+DOI: 10.1039/d0ob00147c
+
+URL: https://doi.org/10.1039/d0ob00147c
+
+Abstract:
+<p>The kinetics of the thermal quadricyclane-to-norbornadiene (QC-to-NBD) isomerization follows a linear-free-energy relationship when using Creary radical <graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ugt1" xlink:href="http://pubs.rsc.org/OB/2020/d0ob00147c/d0ob00147c-t1..gif"/> values for a selection of aryl/cyano disubstituted derivatives.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #113
+============================================================
+
+Title: Electrochemically controlled energy release from a norbornadiene-based solar thermal fuel: increasing the reversibility to 99.8% using HOPG as the electrode material
+
+Authors: Fabian Waidhas, Martyn Jevric, Michael Bosch, Tian Yang, Evanie Franz
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d0ta00377h
+
+URL: https://doi.org/10.1039/d0ta00377h
+
+Abstract:
+<p>Solar energy conversion using molecular photoswitches holds great potential to store energy from sunlight in the form of chemical energy in a process that can be easily implemented in a direct solar energy storage device.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #114
+============================================================
+
+Title: Impact of Surfactants and Stabilizers on Palladium Nanoparticle–Hydrogen Interaction Kinetics: Implications for Hydrogen Sensors
+
+Authors: Alicja Stolaś, Iwan Darmadi, Ferry Anggoro Ardy Nugroho, Kasper Moth-Poulsen, Christoph Langhammer
+
+Published: [2020, 3, 27]
+
+Journal/Conference: ACS Applied Nano Materials
+
+Type: journal-article
+
+DOI: 10.1021/acsanm.0c00020
+
+URL: https://doi.org/10.1021/acsanm.0c00020
+
+
+
+----------------------------------------------------------------------
+
+Publication #115
+============================================================
+
+Title: A Memristive Element Based on an Electrically Controlled Single‐Molecule Reaction
+
+Authors: Haipeng B. Li, Behabitu E. Tebikachew, Cedrik Wiberg, Kasper Moth‐Poulsen, Joshua Hihath
+
+Published: [2020, 7, 6]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202002300
+
+URL: https://doi.org/10.1002/ange.202002300
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The exponential proliferation of data during the information age has required the continuous exploration of novel storage paradigms, materials, and devices with increasing data density. As a step toward the ultimate limits in data density, the development of an electrically controllable single‐molecule memristive element is reported. In this device, digital information is encoded through switching between two isomer states by applying a voltage signal to the molecular junction, and the information is read out by monitoring the electrical conductance of each isomer. The two states are cycled using an electrically controllable local‐heating mechanism for the forward reaction and catalyzed by a single charge‐transfer process for the reverse switching. This single‐molecule device can be modulated in situ, is fully reversible, and does not display stochastic switching. The <jats:italic>I</jats:italic>–<jats:italic>V</jats:italic> curves of this single‐molecule system also exhibit memristive character. These features suggest a new approach for the development of molecular switching systems and storage‐class memories.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #116
+============================================================
+
+Title: Constructing a library of metal and metal–oxide nanoparticle heterodimers through colloidal assembly
+
+Authors: Tina A. Gschneidtner, Sarah Lerch, Erik Olsén, Xin Wen, Amelia C. Y. Liu
+
+Journal/Conference: Nanoscale
+
+Type: journal-article
+
+DOI: 10.1039/d0nr02787a
+
+URL: https://doi.org/10.1039/d0nr02787a
+
+Abstract:
+<p>Nanoparticle dimers composed of different metals or metal oxides, as well as different shapes and sizes, are of wide interest for applications ranging from nanoplasmonic sensing to nanooptics to biomedical engineering.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #117
+============================================================
+
+Title: Photo- and Collision-Induced Isomerization of a Charge-Tagged Norbornadiene–Quadricyclane System
+
+Authors: Ugo Jacovella, Eduardo Carrascosa, Jack T. Buntine, Nicolai Ree, Kurt V. Mikkelsen
+
+Published: [2020, 8, 6]
+
+Journal/Conference: The Journal of Physical Chemistry Letters
+
+Type: journal-article
+
+DOI: 10.1021/acs.jpclett.0c01198
+
+URL: https://doi.org/10.1021/acs.jpclett.0c01198
+
+
+
+----------------------------------------------------------------------
+
+Publication #118
+============================================================
+
+Title: Photochemical Phase Transitions Enable Coharvesting of Photon Energy and Ambient Heat for Energetic Molecular Solar Thermal Batteries That Upgrade Thermal Energy
+
+Type: component
+
+DOI: 10.1021/jacs.0c03748.s002
+
+URL: https://doi.org/10.1021/jacs.0c03748.s002
+
+
+
+----------------------------------------------------------------------
+
+Publication #119
+============================================================
+
+Title: Engineering of Norbornadiene/Quadricyclane Photoswitches for Molecular Solar Thermal Energy Storage Applications
+
+Authors: Jessica Orrego-Hernández, Ambra Dreos, Kasper Moth-Poulsen
+
+Published: [2020, 8, 18]
+
+Journal/Conference: Accounts of Chemical Research
+
+Type: journal-article
+
+DOI: 10.1021/acs.accounts.0c00235
+
+URL: https://doi.org/10.1021/acs.accounts.0c00235
+
+
+
+----------------------------------------------------------------------
+
+Publication #120
+============================================================
+
+Title: A Non‐Conjugated Polymer Acceptor for Efficient and Thermally Stable All‐Polymer Solar Cells
+
+Authors: Qunping Fan, Wenyan Su, Shanshan Chen, Tao Liu, Wenliu Zhuang
+
+Published: [2020, 11, 2]
+
+Journal/Conference: Angewandte Chemie International Edition
+
+Type: journal-article
+
+DOI: 10.1002/anie.202005662
+
+URL: https://doi.org/10.1002/anie.202005662
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>A non‐conjugated polymer acceptor PF1‐TS4 was firstly synthesized by embedding a thioalkyl segment in the mainchain, which shows excellent photophysical properties on par with a fully conjugated polymer, with a low optical band gap of 1.58 eV and a high absorption coefficient &gt;10<jats:sup>5</jats:sup> cm<jats:sup>−1</jats:sup>, a high LUMO level of −3.89 eV, and suitable crystallinity. Matched with the polymer donor PM6, the PF1‐TS4‐based all‐PSC achieved a power conversion efficiency (PCE) of 8.63 %, which is ≈45 % higher than that of a device based on the small molecule acceptor counterpart IDIC16. Moreover, the PF1‐TS4‐based all‐PSC has good thermal stability with ≈70 % of its initial PCE retained after being stored at 85 °C for 180 h, while the IDIC16‐based device only retained ≈50 % of its initial PCE when stored at 85 °C for only 18 h. Our work provides a new strategy to develop efficient polymer acceptor materials by linkage of conjugated units with non‐conjugated thioalkyl segments.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #121
+============================================================
+
+Title: Bulk-Processed Pd Nanocube–Poly(methyl methacrylate) Nanocomposites as Plasmonic Plastics for Hydrogen Sensing
+
+Authors: Iwan Darmadi, Alicja Stolaś, Ida Östergren, Barbara Berke, Ferry Anggoro Ardy Nugroho
+
+Published: [2020, 8, 28]
+
+Journal/Conference: ACS Applied Nano Materials
+
+Type: journal-article
+
+DOI: 10.1021/acsanm.0c01907
+
+URL: https://doi.org/10.1021/acsanm.0c01907
+
+
+
+----------------------------------------------------------------------
+
+Publication #122
+============================================================
+
+Title: Triplet–triplet annihilation based near infrared to visible molecular photon upconversion
+
+Authors: Pankaj Bharmoria, Hakan Bildirir, Kasper Moth-Poulsen
+
+Journal/Conference: Chemical Society Reviews
+
+Type: journal-article
+
+DOI: 10.1039/d0cs00257g
+
+URL: https://doi.org/10.1039/d0cs00257g
+
+Abstract:
+<p>This review delineates the developments in triplet–triplet annihilation based NIR to Vis molecular photon upconversion including recent progress in conceptual design, applications, existing challenges, possible future directions and opportunities.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #123
+============================================================
+
+Title: Evolution from Tunneling to Hopping Mediated Triplet Energy Transfer from Quantum Dots to Molecules
+
+Type: component
+
+DOI: 10.1021/jacs.0c07727.s001
+
+URL: https://doi.org/10.1021/jacs.0c07727.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #124
+============================================================
+
+Title: Microwave‐heated γ‐Alumina Applied to the Reduction of Aldehydes to Alcohols
+
+Authors: Bhausaheb Dhokale, Arturo Susarrey‐Arce, Anna Pekkari, August Runemark, Kasper Moth‐Poulsen
+
+Published: [2020, 12, 16]
+
+Journal/Conference: ChemCatChem
+
+Type: journal-article
+
+DOI: 10.1002/cctc.202001284
+
+URL: https://doi.org/10.1002/cctc.202001284
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The development of cheap and robust heterogeneous catalysts for the Meerwein‐Ponndorf‐Verley (MPV) reduction is desirable due to the difficulties in product isolation and catalyst recovery associated with the traditional use of homogeneous catalysts for MPV. Herein, we show that microwave heated γ‐Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub> can be used for the reduction of aldehydes to alcohols. The reaction is efficient and has a broad substrates scope (19 entries). The products can be isolated by simple filtration, and the catalyst can be regenerated. With the use of microwave heating, we can direct the heating to the catalyst rather than to the whole reaction medium. Furthermore, DFT was used to study the reaction mechanism, and we can conclude that a dual‐site mechanism is operative where the aldehyde and 2‐propoxide are situated on two adjacent Al sites during the reduction. Additionally, volcano plots were used to rationalize the reactivity of Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub> in comparison to other metal oxides.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #125
+============================================================
+
+Title: Covalent incorporation of diphenylanthracene in oxotriphenylhexanoate organogels as a quasi-solid photon upconversion matrix
+
+Authors: Deise F. Barbosa de Mattos, Ambra Dreos, Mark D. Johnstone, August Runemark, Claire Sauvée
+
+Published: [2020, 12, 7]
+
+Journal/Conference: The Journal of Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1063/5.0029307
+
+URL: https://doi.org/10.1063/5.0029307
+
+Abstract:
+<jats:p>Triplet–triplet annihilation photon upconversion (TTA-UC) in solid state assemblies are desirable since they can be easily incorporated into devices such as solar cells, thus utilizing more of the solar spectrum. Realizing this is, however, a significant challenge that must circumvent the need for molecular diffusion, poor exciton migration, and detrimental back energy transfer among other hurdles. Here, we show that the above-mentioned issues can be overcome using the versatile and easily synthesized oxotriphenylhexanoate (OTHO) gelator that allows covalent incorporation of chromophores (or other functional units) at well-defined positions. To study the self-assembly properties as well as its use as a TTA-UC platform, we combine the benchmark couple platinum octaethylporphyrin as a sensitizer and 9,10-diphenylanthracene (DPA) as an annihilator, where DPA is covalently linked to the OTHO gelator at different positions. We show that TTA-UC can be achieved in the chromophore-decorated gels and that the position of attachment affects the photophysical properties as well as triplet energy transfer and triplet–triplet annihilation. This study not only provides proof-of-principle for the covalent approach but also highlights the need for a detailed mechanistic insight into the photophysical processes underpinning solid state TTA-UC.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #126
+============================================================
+
+Title: Single molecule electronic devices with carbon-based materials: status and opportunity
+
+Authors: Shima Ghasemi, Kasper Moth-Poulsen
+
+Journal/Conference: Nanoscale
+
+Type: journal-article
+
+DOI: 10.1039/d0nr07844a
+
+URL: https://doi.org/10.1039/d0nr07844a
+
+Abstract:
+<p>The field of single molecule electronics has progressed remarkably in the past decades by allowing for more versatile molecular functions and improving device fabrication techniques.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #127
+============================================================
+
+Title: Photon upconverting bioplastics with high efficiency and in-air durability
+
+Authors: Pankaj Bharmoria, Shota Hisamitsu, Yoichi Sasaki, Tejwant Singh Kang, Masa-aki Morikawa
+
+Journal/Conference: Journal of Materials Chemistry C
+
+Type: journal-article
+
+DOI: 10.1039/d1tc00287b
+
+URL: https://doi.org/10.1039/d1tc00287b
+
+Abstract:
+<jats:p>The accommodation of chromophore-dissolved microdroplets in semicrystalline protein matrices succeeds in achieving upconverting bioplastics with high efficiency, air-stability, and long-term durability for the first time.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #128
+============================================================
+
+Title: Synthesis of highly monodisperse Pd nanoparticles using a binary surfactant combination and sodium oleate as a reductant
+
+Authors: Anna Pekkari, Xin Wen, Jessica Orrego-Hernández, Robson Rosa da Silva, Shun Kondo
+
+Journal/Conference: Nanoscale Advances
+
+Type: journal-article
+
+DOI: 10.1039/d1na00052g
+
+URL: https://doi.org/10.1039/d1na00052g
+
+Abstract:
+<p>This study presents the synthesis of monodisperse Pd nanoparticles (NPs) stabilized by sodium oleate (NaOL) and hexadecyltrimethylammonium chloride (CTAC).</p>
+
+
+----------------------------------------------------------------------
+
+Publication #129
+============================================================
+
+Title: Photoisomerization efficiency of a solar thermal fuel in the strong coupling regime
+
+Authors: Jürgen Mony, Claudia Climent, Kasper Moth-Poulsen, Johannes Feist, Karl Börjesson
+
+Published: [2021, 8, 1]
+
+Journal/Conference: Physical Chemistry of Semiconductor Materials and Interfaces XX
+
+Type: proceedings-article
+
+DOI: 10.1117/12.2593888
+
+URL: https://doi.org/10.1117/12.2593888
+
+
+
+----------------------------------------------------------------------
+
+Publication #130
+============================================================
+
+Title: Catalytically active and thermally stable core–shell gold–silica nanorods for CO oxidation
+
+Authors: Yidong Chen, Sarah Lerch, Zafer Say, Christopher Tiburski, Christoph Langhammer
+
+Journal/Conference: RSC Advances
+
+Type: journal-article
+
+DOI: 10.1039/d1ra01577j
+
+URL: https://doi.org/10.1039/d1ra01577j
+
+Abstract:
+<p>Gold nanorods stabilized with mesoporous silica shells are characterized and used as the catalyst for a model CO oxidation reaction to counter the costly sintering phenomena found in many industrial nanoparticle catalysts.</p>
+
+
+----------------------------------------------------------------------
+
+Publication #131
+============================================================
+
+Title: Highly Permeable Fluorinated Polymer Nanocomposites for Plasmonic Hydrogen Sensing
+
+Authors: Ida Östergren, Amir Masoud Pourrahimi, Iwan Darmadi, Robson da Silva, Alicja Stolaś
+
+Published: [2021, 5, 12]
+
+Journal/Conference: ACS Applied Materials &amp; Interfaces
+
+Type: journal-article
+
+DOI: 10.1021/acsami.1c01968
+
+URL: https://doi.org/10.1021/acsami.1c01968
+
+
+
+----------------------------------------------------------------------
+
+Publication #132
+============================================================
+
+Title: Intramolecular Triplet–Triplet Annihilation Photon Upconversion in Diffusionally Restricted Anthracene Polymer
+
+Authors: Fredrik Edhborg, Hakan Bildirir, Pankaj Bharmoria, Kasper Moth-Poulsen, Bo Albinsson
+
+Published: [2021, 6, 17]
+
+Journal/Conference: The Journal of Physical Chemistry B
+
+Type: journal-article
+
+DOI: 10.1021/acs.jpcb.1c02856
+
+URL: https://doi.org/10.1021/acs.jpcb.1c02856
+
+
+
+----------------------------------------------------------------------
+
+Publication #133
+============================================================
+
+Title: Tuning Electrostatic Gating of Semiconducting Carbon Nanotubes by Controlling Protein Orientation in Biosensing Devices
+
+Authors: Xinzhao Xu, Benjamin J. Bowen, Rebecca E. A. Gwyther, Mark Freeley, Bella Grigorenko
+
+Published: [2021, 9, 6]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202104044
+
+URL: https://doi.org/10.1002/ange.202104044
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The ability to detect proteins through gating conductance by their unique surface electrostatic signature holds great potential for improving biosensing sensitivity and precision. Two challenges are: (1) defining the electrostatic surface of the incoming ligand protein presented to the conductive surface; (2) bridging the Debye gap to generate a measurable response. Herein, we report the construction of nanoscale protein‐based sensing devices designed to present proteins in defined orientations; this allowed us to control the local electrostatic surface presented within the Debye length, and thus modulate the conductance gating effect upon binding incoming protein targets. Using a β‐lactamase binding protein (BLIP2) as the capture protein attached to carbon nanotube field effect transistors in different defined orientations. Device conductance had influence on binding TEM‐1, an important β‐lactamase involved in antimicrobial resistance (AMR). Conductance increased or decreased depending on TEM‐1 presenting either negative or positive local charge patches, demonstrating that local electrostatic properties, as opposed to protein net charge, act as the key driving force for electrostatic gating. This, in turn can, improve our ability to tune the gating of electrical biosensors toward optimized detection, including for AMR as outlined herein.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #134
+============================================================
+
+Title: Scalable Synthesis of Norbornadienes via <i>in situ</i> Cracking of Dicyclopentadiene Using Continuous Flow Chemistry
+
+Authors: Jessica Orrego‐Hernández, Helen Hölzel, Maria Quant, Zhihang Wang, Kasper Moth‐Poulsen
+
+Published: [2021, 10, 14]
+
+Journal/Conference: European Journal of Organic Chemistry
+
+Type: journal-article
+
+DOI: 10.1002/ejoc.202100795
+
+URL: https://doi.org/10.1002/ejoc.202100795
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The norbornadiene (NBD)‐quadricyclane (QC) photoswitch has recently attracted attention due to its use in molecular solar thermal energy systems (MOST). Normally for device testing, several grams are needed. One way of synthesizing NBDs efficiently is through the Diels‐Alder reaction between alkynes and cyclopentadiene. However, scaling up the reaction can be troublesome in a research lab environment. Also, dicyclopentadiene needs cracking before utilization which is a time‐consuming step. Here, we developed a method where we both scale up the synthesis in a single reaction step that involves both <jats:italic>in situ</jats:italic> cracking of dicyclopentadiene and the direct reaction of cyclopentadiene with acetylene derivatives using a tubular coiled stainless steel flow reactor. As a proof‐of‐concept, we synthesized six different NBD compounds and scaled the synthesis to produce 87 g of a novel NBD in 9 h. The NBD is further characterized, showing promising properties for MOST applications. Our new method shows that flow chemistry is an attractive technique for the fast and efficient synthesis of large quantities of NBDs, needed to develop future real‐life devices and applications.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #135
+============================================================
+
+Title: Robust Colloidal Synthesis of Palladium–Gold Alloy Nanoparticles for Hydrogen Sensing
+
+Authors: Sarah Lerch, Alicja Stolaś, Iwan Darmadi, Xin Wen, Michał Strach
+
+Published: [2021, 9, 29]
+
+Journal/Conference: ACS Applied Materials &amp; Interfaces
+
+Type: journal-article
+
+DOI: 10.1021/acsami.1c15315
+
+URL: https://doi.org/10.1021/acsami.1c15315
+
+
+
+----------------------------------------------------------------------
+
+Publication #136
+============================================================
+
+Title: Liquid‐Based Multijunction Molecular Solar Thermal Energy Collection Device
+
+Authors: Zhihang Wang, Henry Moïse, Martina Cacciarini, Mogens Brøndsted Nielsen, Masa‐aki Morikawa
+
+Published: [2021, 11]
+
+Journal/Conference: Advanced Science
+
+Type: journal-article
+
+DOI: 10.1002/advs.202103060
+
+URL: https://doi.org/10.1002/advs.202103060
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Photoswitchable molecules‐based solar thermal energy storage system (<jats:bold>MOST</jats:bold>) can potentially be a route to store solar energy for future use. Herein, the use of a multijunction <jats:bold>MOST</jats:bold> device that combines various photoswitches with different onsets of absorption to push the efficiency limit on solar energy collection and storage is explored. With a parametric model calculation, it is shown that the efficiency limit of <jats:bold>MOST</jats:bold> concept can be improved from 13.0% to 18.2% with a double‐junction system and to 20.5% with a triple‐junction system containing ideal, red‐shifted <jats:bold>MOST</jats:bold> candidates. As a proof‐of‐concept, the use of a three‐layered <jats:bold>MOST</jats:bold> device is experimentally demonstrated. The device uses different photoswitches including a norbornadiene derivative, a dihydroazulene derivative, and an azobenzene derivative in liquid state with different <jats:bold>MOST</jats:bold>properties, to increase the energy capture and storage behavior. This conceptional device introduces a new way of thinking and designing optimal molecular candidates for <jats:bold>MOST</jats:bold>, as much improvement can be made by tailoring molecules to efficiently store solar energy at specific wavelengths.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #137
+============================================================
+
+Title: Storing energy with molecular photoisomers
+
+Authors: Zhihang Wang, Paul Erhart, Tao Li, Zhao-Yang Zhang, Diego Sampedro
+
+Published: [2021, 12]
+
+Journal/Conference: Joule
+
+Type: journal-article
+
+DOI: 10.1016/j.joule.2021.11.001
+
+URL: https://doi.org/10.1016/j.joule.2021.11.001
+
+
+
+----------------------------------------------------------------------
+
+Publication #138
+============================================================
+
+Title: Investigation of the Structural and Thermochemical Properties of [2.2.2]-Bicyclooctadiene Photoswitches
+
+Authors: Andreas Erbs Hillers-Bendtsen, Maria Quant, Kasper Moth-Poulsen, Kurt V. Mikkelsen
+
+Published: [2021, 12, 9]
+
+Journal/Conference: The Journal of Physical Chemistry A
+
+Type: journal-article
+
+DOI: 10.1021/acs.jpca.1c07737
+
+URL: https://doi.org/10.1021/acs.jpca.1c07737
+
+
+
+----------------------------------------------------------------------
+
+Publication #139
+============================================================
+
+Title: Synthesis, characterization and computational evaluation of bicyclooctadienes towards molecular solar thermal energy storage
+
+Authors: Maria Quant, Andreas Erbs Hillers-Bendtsen, Shima Ghasemi, Mate Erdelyi, Zhihang Wang
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d1sc05791j
+
+URL: https://doi.org/10.1039/d1sc05791j
+
+Abstract:
+<jats:p>Molecular solar-thermal energy storage (MOST) systems are based on photoswitches that reversibly convert solar energy into chemical energy.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #140
+============================================================
+
+Title: Thermo-optical performance of molecular solar thermal energy storage films
+
+Authors: Zakariaa Refaa, Anna Hofmann, Marcial Fernandez Castro, Jessica O. Hernandez, Zhihang Wang
+
+Published: [2022, 3]
+
+Journal/Conference: Applied Energy
+
+Type: journal-article
+
+DOI: 10.1016/j.apenergy.2022.118541
+
+URL: https://doi.org/10.1016/j.apenergy.2022.118541
+
+
+
+----------------------------------------------------------------------
+
+Publication #141
+============================================================
+
+Title: Chip-scale solar thermal electrical power generation
+
+Authors: Zhihang Wang, Zhenhua Wu, Zhiyu Hu, Jessica Orrego-Hernández, Erzhen Mu
+
+Published: [2022, 3]
+
+Journal/Conference: Cell Reports Physical Science
+
+Type: journal-article
+
+DOI: 10.1016/j.xcrp.2022.100789
+
+URL: https://doi.org/10.1016/j.xcrp.2022.100789
+
+
+
+----------------------------------------------------------------------
+
+Publication #142
+============================================================
+
+Title: Approaching the Spin-Statistical Limit in Visible-to-Ultraviolet Photon Upconversion
+
+Authors: Axel Olesund, Jessica Johnsson, Fredrik Edhborg, Shima Ghasemi, Kasper Moth-Poulsen
+
+Published: [2022, 3, 2]
+
+Journal/Conference: Journal of the American Chemical Society
+
+Type: journal-article
+
+DOI: 10.1021/jacs.1c13222
+
+URL: https://doi.org/10.1021/jacs.1c13222
+
+
+
+----------------------------------------------------------------------
+
+Publication #143
+============================================================
+
+Title: A rechargeable molecular solar thermal system below 0 °C
+
+Authors: Zhichun Shangguan, Wenjin Sun, Zhao-Yang Zhang, Dong Fang, Zhihang Wang
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d2sc01873j
+
+URL: https://doi.org/10.1039/d2sc01873j
+
+Abstract:
+<jats:p>We demonstrate rationally designed arylazopyrazoles as MOST-PCM that can be circularly charged and discharged below 0 °C with visible light.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #144
+============================================================
+
+Title: Status and challenges for molecular solar thermal energy storage system based devices
+
+Authors: Zhihang Wang, Helen Hölzel, Kasper Moth-Poulsen
+
+Journal/Conference: Chemical Society Reviews
+
+Type: journal-article
+
+DOI: 10.1039/d1cs00890k
+
+URL: https://doi.org/10.1039/d1cs00890k
+
+Abstract:
+<jats:p>Molecular solar thermal energy storage systems (MOST) can store solar power <jats:italic>via</jats:italic> valence photoisomerization in molecular photoswitches. MOST concept based devices offer emission-free solar energy storage and release on-demand.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #145
+============================================================
+
+Title: Recyclable optical bioplastics platform for solid state red light harvesting<i>via</i>triplet–triplet annihilation photon upconversion
+
+Authors: Pankaj Bharmoria, Fredrik Edhborg, Hakan Bildirir, Yoichi Sasaki, Shima Ghasemi
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d2ta04810h
+
+URL: https://doi.org/10.1039/d2ta04810h
+
+Abstract:
+<jats:p>Sustainable red light harvesting has been achieved in recyclable protein–surfactant–chromophores co-assembled bioplastics with high efficiency due to the efficient diffusion of triplet excited chromophores, and oxygen blockage by protein fibers.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #146
+============================================================
+
+Title: Far-red triplet sensitized<i>Z</i>-to-<i>E</i>photoswitching of azobenzene in bioplastics
+
+Authors: Pankaj Bharmoria, Shima Ghasemi, Fredrik Edhborg, Raúl Losantos, Zhihang Wang
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d2sc04230d
+
+URL: https://doi.org/10.1039/d2sc04230d
+
+Abstract:
+<jats:p>We report the first example of direct far-red endothermic triplet sensitized<jats:italic>Z</jats:italic>-to-<jats:italic>E</jats:italic>photoswitching of azobenzene derivative (Azo1) in a condensed phase of a liquid Azo1 co-assembled within a liquid surfactant-protein bioplastic film in air.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #147
+============================================================
+
+Title: Nanofluidic Trapping of Faceted Colloidal Nanocrystals for Parallel Single-Particle Catalysis
+
+Authors: Sune Levin, Sarah Lerch, Astrid Boje, Joachim Fritzsche, Sriram KK
+
+Published: [2022, 9, 27]
+
+Journal/Conference: ACS Nano
+
+Type: journal-article
+
+DOI: 10.1021/acsnano.2c06505
+
+URL: https://doi.org/10.1021/acsnano.2c06505
+
+
+
+----------------------------------------------------------------------
+
+Publication #148
+============================================================
+
+Title: Optically Controlled Thermochromic Switching for Multi‐Input Molecular Logic
+
+Authors: Liang Fei, Weidong Yu, Zonghuai Wu, Yunjie Yin, Kasper Moth‐Poulsen
+
+Published: [2022, 11, 2]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202212483
+
+URL: https://doi.org/10.1002/ange.202212483
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Leuco dye‐based thermochromic materials offer enormous potential for visible molecular logic due to the appealing reversible color‐changing effect. The stable color state is uncontrollable as it depends only on the spontaneous protonation of the leuco dye and color developer. There is still a challenge to propose an effective approach to control bistable color function at required temperature. A family of azobenzenes with various alkyl chains (AZO(n)) is designed for protonation competition with leuco dye. The hydrogen bond and Van der Waals forces are formed between color developer and AZO(n). The color developer can be locked to provide the proton for the leuco dye by <jats:italic>Z</jats:italic>‐AZO(n), while it can be released upon <jats:italic>Z</jats:italic>‐to‐<jats:italic>E</jats:italic> photoisomerization. The locked state can be lasted for more than 16 hours. This optically controlled leuco dye‐based system demonstrates a visible sequential logic operation with four‐input signals, and provides a new type of protonation‐based optical control.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #149
+============================================================
+
+Title: Photolytic Studies of Norbornadiene Derivatives under High-Intensity Light Conditions
+
+Authors: Alexander Kjaersgaard, Helen Hölzel, Kasper Moth-Poulsen, Mogens Brøndsted Nielsen
+
+Published: [2022, 10, 6]
+
+Journal/Conference: The Journal of Physical Chemistry A
+
+Type: journal-article
+
+DOI: 10.1021/acs.jpca.2c03583
+
+URL: https://doi.org/10.1021/acs.jpca.2c03583
+
+
+
+----------------------------------------------------------------------
+
+Publication #150
+============================================================
+
+Title: High throughput screening of norbornadiene/quadricyclane derivates for molecular solar thermal energy storage
+
+Authors: Jacob Lynge Elholm, Andreas Erbs Hillers-Bendtsen, Helen Hölzel, Kasper Moth-Poulsen, Kurt V. Mikkelsen
+
+Journal/Conference: Physical Chemistry Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1039/d2cp03032b
+
+URL: https://doi.org/10.1039/d2cp03032b
+
+Abstract:
+<jats:p>We present a procedure for performing high throughput screening of molecular compounds for molecular solar thermal energy storage devices using extended tight binding (xTB) methods.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #151
+============================================================
+
+Title: Tunable Energy Release in a Reversible Molecular Solar Thermal System
+
+Authors: Evanie Franz, Corinna Stumm, Fabian Waidhas, Manon Bertram, Martyn Jevric
+
+Published: [2022, 11, 4]
+
+Journal/Conference: ACS Catalysis
+
+Type: journal-article
+
+DOI: 10.1021/acscatal.2c03043
+
+URL: https://doi.org/10.1021/acscatal.2c03043
+
+
+
+----------------------------------------------------------------------
+
+Publication #152
+============================================================
+
+Title: Searches for bridged bicyclic molecules in space—norbornadiene and its cyano derivatives
+
+Authors: Marie-Aline Martin-Drumel, Jean-Thibaut Spaniol, Helen Hölzel, Marcelino Agúndez, Jose Cernicharo
+
+Journal/Conference: Faraday Discussions
+
+Type: journal-article
+
+DOI: 10.1039/d3fd00016h
+
+URL: https://doi.org/10.1039/d3fd00016h
+
+Abstract:
+<jats:p>Laboratory rotational spectra of norbornadiene and its cyano derivatives were recorded using chirped-pulse millimetre-wave spectroscopy. These molecules were then searched for in the starless core TMC-1 using the QUIJOTE line survey.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #153
+============================================================
+
+Title: Triplet–triplet annihilation mediated photon upconversion solar energy systems
+
+Authors: Lukas Naimovičius, Pankaj Bharmoria, Kasper Moth-Poulsen
+
+Journal/Conference: Materials Chemistry Frontiers
+
+Type: journal-article
+
+DOI: 10.1039/d3qm00069a
+
+URL: https://doi.org/10.1039/d3qm00069a
+
+Abstract:
+<jats:p>Triplet–triplet annihilation mediated solar energy harvesting systems for a global transition toward carbon-neutral energy technologies.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #154
+============================================================
+
+Title: Investigating New Applications of a Photoswitchable Fluorescent Norbornadiene as a Multifunctional Probe for Delineation of Amyloid Plaque Polymorphism
+
+Type: component
+
+DOI: 10.1021/acssensors.2c02496.s001
+
+URL: https://doi.org/10.1021/acssensors.2c02496.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #155
+============================================================
+
+Title: Efficient degassing and ppm-level oxygen monitoring flow chemistry system
+
+Authors: Paulius Baronas, Jacob Lynge Elholm, Kasper Moth-Poulsen
+
+Journal/Conference: Reaction Chemistry &amp; Engineering
+
+Type: journal-article
+
+DOI: 10.1039/d3re00109a
+
+URL: https://doi.org/10.1039/d3re00109a
+
+Abstract:
+<jats:p>A method for in-line continuous flow degassing to remove up to 99.9% of oxygen from solvents is presented.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #156
+============================================================
+
+Title: Protein cohabitation: long-term immunoglobulin G storage at room temperature
+
+Authors: Pankaj Bharmoria, Saik Ann Ooi, Andrea Cellini, Daniel Tietze, Michal Maj
+
+Journal/Conference: Journal of Materials Chemistry B
+
+Type: journal-article
+
+DOI: 10.1039/d3tb00161j
+
+URL: https://doi.org/10.1039/d3tb00161j
+
+Abstract:
+<jats:p>We report a simple bioinspired strategy of protein cohabitation for long-term functional storage of therapeutic proteins at room temperature.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #157
+============================================================
+
+Title: Bulk-Processed Plasmonic Plastic Nanocomposite Materials for Optical Hydrogen Detection
+
+Type: component
+
+DOI: 10.1021/acs.accounts.3c00182.s001
+
+URL: https://doi.org/10.1021/acs.accounts.3c00182.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #158
+============================================================
+
+Title: Searching the Chemical Space of Bicyclic Dienes for Molecular Solar Thermal Energy Storage Candidates
+
+Authors: Andreas Erbs Hillers‐Bendtsen, Jacob Lynge Elholm, Oscar Berlin Obel, Helen Hölzel, Kasper Moth‐Poulsen
+
+Published: [2023, 10, 2]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202309543
+
+URL: https://doi.org/10.1002/ange.202309543
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Photoswitches are molecular systems that are chemically transformed subsequent to interaction with light and they find potential application in many new technologies. The design and discovery of photoswitch candidates require intricate molecular engineering of a range of properties to optimize a candidate to a specific applications, a task which can be tackled efficiently using quantum chemical screening procedures. In this paper, we perform a large scale screening of approximately half a million bicyclic diene photoswitches in the context of molecular solar thermal energy storage using ab initio quantum chemical methods. We further device an efficient strategy for scoring the systems based on their predicted solar energy conversion efficiency and elucidate potential pitfalls of this approach. Our search through the chemical space of bicyclic dienes reveals systems with unprecedented solar energy conversion efficiencies and storage densities that show promising design guidelines for next generation molecular solar thermal energy storage systems.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #159
+============================================================
+
+Title: The Effect of the Pd Precursors on the Shape of Hollow Ag–Pd Alloy Nanoparticles Using Ag Nanocubes as Seeds
+
+Authors: Xin Wen, Seyed Amirabbas Nazemi, Robson Rosa da Silva, Kasper Moth-Poulsen
+
+Published: [2023, 8, 15]
+
+Journal/Conference: Langmuir
+
+Type: journal-article
+
+DOI: 10.1021/acs.langmuir.3c00799
+
+URL: https://doi.org/10.1021/acs.langmuir.3c00799
+
+
+
+----------------------------------------------------------------------
+
+Publication #160
+============================================================
+
+Title: Bulky Substituents Promote Triplet–Triplet Annihilation Over Triplet Excimer Formation in Naphthalene Derivatives
+
+Authors: Axel Olesund, Shima Ghasemi, Kasper Moth-Poulsen, Bo Albinsson
+
+Published: [2023, 10, 11]
+
+Journal/Conference: Journal of the American Chemical Society
+
+Type: journal-article
+
+DOI: 10.1021/jacs.3c08115
+
+URL: https://doi.org/10.1021/jacs.3c08115
+
+
+
+----------------------------------------------------------------------
+
+Publication #161
+============================================================
+
+Title: Chasing the rainbow: Exploiting photosensitizers to drive photoisomerization reactions
+
+Authors: Zhihang Wang, Lorette Fernandez, Adil S. Aslam, Monika Shamsabadi, Lidiya M. Muhammad
+
+Published: [2023, 11]
+
+Journal/Conference: Responsive Materials
+
+Type: journal-article
+
+DOI: 10.1002/rpm.20230012
+
+URL: https://doi.org/10.1002/rpm.20230012
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Photoswitchable molecules have garnered considerable attention for their versatility and diverse applications, spanning from solar energy harvesting and storage to drug delivery and molecular motors. The chemical conversions that make photoswitches a desirable system are driven by specific wavelengths of light, which often demand intricate molecular modifications. An alternative approach to achieve the photoisomerization reaction is through energy transfer with photosensitizers. Photosensitizers play a pivotal role in various light‐induced processes and have demonstrated successful applications in photodynamic therapy, dye‐sensitized solar cells, and activating photochemical reactions. Therefore, combining photoswitching systems with sensitizers presents an attractive alternative for advancing light‐responsive material design and enabling innovative light‐controlled technologies. This review summarizes the energy transfer mechanisms and strategies involved in sensitized molecular photoswitchable systems, emphasizing the performance of various combined systems, and potential applications. Furthermore, recent advances and emerging trends in this field are also discussed, offering insights into prospective future directions for the development of light‐responsive materials.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #162
+============================================================
+
+Title: Flow‐Integrated Preparation of Norbornadiene Precursors for Solar Thermal Energy Storage
+
+Authors: Nicolò Baggi, Helen Hölzel, Hannes Schomaker, Kevin Moreno, Kasper Moth‐Poulsen
+
+Published: [2024, 1, 22]
+
+Journal/Conference: ChemSusChem
+
+Type: journal-article
+
+DOI: 10.1002/cssc.202301184
+
+URL: https://doi.org/10.1002/cssc.202301184
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Molecular solar thermal (MOST) energy storage systems are getting increased attention related to renewable energy storage applications. Particularly, 2,3‐difunctionalized norbornadiene‐quadricyclane (NBD‐QC) switches bearing a nitrile (CN) group as one of the two substituents are investigated as promising MOST candidates thanks to their high energy storage densities and their red‐shifted absorbance. Moreover, such NBD systems can be prepared in large quantities (a requirement for MOST‐device applications) in flow through Diels‐Alder reaction between cyclopentadiene and appropriately functionalized propynenitriles. However, these acetylene precursors are traditionally prepared in batch from their corresponding acetophenones using reactive chemicals potentially leading to health and physical hazards, especially when working on a several‐grams scale. Here, we develop a multistep flow‐chemistry route to enhance the production of these crucial precursors. Furthermore, we assess the atom economy (AE) and the E‐factor showing improved green metrics compared to classical batch methods. Our results pave the way for a complete flow synthesis of NBDs with a positive impact on green chemistry aspects.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #163
+============================================================
+
+Title: The statistical probability factor in triplet mediated photon upconversion: a case study with perylene
+
+Authors: Lukas Naimovičius, Edvinas Radiunas, Manvydas Dapkevičius, Pankaj Bharmoria, Kasper Moth-Poulsen
+
+Journal/Conference: Journal of Materials Chemistry C
+
+Type: journal-article
+
+DOI: 10.1039/d3tc03158f
+
+URL: https://doi.org/10.1039/d3tc03158f
+
+Abstract:
+<jats:p>Experimentally determined statistical probability factor in TTA-mediated photon upconversion for perylene is ∼18%, predominantly dictated by the energy-gap law. This limits the maximum TTA-UC quantum yield to 9.0 % (out of 50%) for this annihilator.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #164
+============================================================
+
+Title: Site Selectivity of Peptoids as Azobenzene Scaffold for Molecular Solar Thermal Energy Storage
+
+Authors: Benjamin Tassignon, Zhihang Wang, Agostino Galanti, Julien De Winter, Paolo Samorì
+
+Published: [2023, 12, 14]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202303168
+
+URL: https://doi.org/10.1002/chem.202303168
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Storing solar energy is a key challenge in modern science. MOlecular Solar Thermal (MOST) systems, in particular those based on azobenzene switches, have received great interest in the last decades. The energy storage properties of azobenzene (<jats:italic>t</jats:italic><jats:sub><jats:italic>1/2</jats:italic></jats:sub>&lt;4 days; ΔH~270 kJ/kg) must be improved for future applications. Herein, we introduce peptoids as programmable supramolecular scaffolds to improve the energy storage properties of azobenzene‐based MOST systems. We demonstrate with 3‐unit peptoids bearing a single azobenzene chromophore that dynamics of the MOST systems can be tuned depending on the anchoring position of the photochromic unit on the macromolecular backbone. We measured a remarkable increase of the half‐life of the metastable form up to 14 days at 20 °C for a specific anchoring site, significantly higher than the isolated azobenzene moiety, thus opening new perspectives for MOST development. We also highlight that liquid chromatography coupled to mass spectrometry does not only enable to monitor the different stereoisomers during the photoisomerization process as traditionally done, but also allows to determine the thermal back‐isomerization kinetics.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #165
+============================================================
+
+Title: Exploring the impact of select anchor groups for norbornadiene/quadricyclane single-molecule switches
+
+Authors: Shima Ghasemi, Luca Ornago, Zacharias Liasi, Magnus Bukhave Johansen, Theo Juncker von Buchwald
+
+Journal/Conference: Journal of Materials Chemistry C
+
+Type: journal-article
+
+DOI: 10.1039/d3tc02652c
+
+URL: https://doi.org/10.1039/d3tc02652c
+
+Abstract:
+<jats:p>To achieve the ultimate limit of device miniaturization, it is necessary to have a comprehensive understanding of the structure–property relationship in functional molecular systems used in single-molecule electronics.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #166
+============================================================
+
+Title: Multichromophoric photoswitches for solar energy storage: from azobenzene to norbornadiene, and MOST things in between
+
+Authors: Rebecca J. Salthouse, Kasper Moth-Poulsen
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d3ta05972c
+
+URL: https://doi.org/10.1039/d3ta05972c
+
+Abstract:
+<jats:p>In the context of energy storage, multichromophoric systems may offer additional functionality over monosubstituted analogues due to their potential to access multiple states as well as having more attractive physical properties.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #167
+============================================================
+
+Title: Unveiling the Potential of Heterogeneous Catalysts for Molecular Solar Thermal Systems
+
+Authors: Alberto Gimenez‐Gomez, Benjamin Rollins, Andrew Steele, Helen Hölzel, Nicolò Baggi
+
+Published: [2024, 1, 2]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202303230
+
+URL: https://doi.org/10.1002/chem.202303230
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Solar energy utilization has gained considerable attention due to its abundance and renewability. However, its intermittent nature presents a challenge in harnessing its full potential. The development of energy storing compounds capable of capturing and releasing solar energy on demand has emerged as a potential solution. These compounds undergo a photochemical transformation that results in a high‐energy metastable photoisomer, which stores solar energy in the form of chemical bonds and can release it as heat when required. Such systems are referred to as <jats:styled-content>MO</jats:styled-content>lecular <jats:styled-content>S</jats:styled-content>olar <jats:styled-content>T</jats:styled-content>hermal (MOST)‐systems. Although the photoisomerization of MOST systems has been vastly studied, its back‐conversion, particularly using heterogeneous catalysts, is still underexplored and the development of effective catalysts for releasing stored energy is crucial. Herein we compare the performance of 27 heterogeneous catalysts releasing the stored energy in an efficient Norbornadiene/Quadricyclane (NBD/QC) MOST system. We report the first benchmarking of heterogeneous catalysts for a MOST system using a robust comparison method of the catalysts’ activity and monitoring the conversion using UV‐Visible (UV‐Vis) spectroscopy. Our findings provide insights into the development of effective catalysts for MOST systems. We anticipate that our assay will reveal the necessity of further investigation on heterogeneous catalysis.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #168
+============================================================
+
+Title: Synthesis and Characterization of Carbon-Based Heterogeneous Catalysts for Energy Release of Molecular Solar Thermal Energy Storage Materials
+
+Type: component
+
+DOI: 10.1021/acsami.3c16855.s001
+
+URL: https://doi.org/10.1021/acsami.3c16855.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #169
+============================================================
+
+Title: Ultralow 1/f noise in epigraphene devices
+
+Authors: N. Shetty, F. Chianese, H. He, J. Huhtasaari, S. Ghasemi
+
+Published: [2024, 2, 26]
+
+Journal/Conference: Applied Physics Letters
+
+Type: journal-article
+
+DOI: 10.1063/5.0185890
+
+URL: https://doi.org/10.1063/5.0185890
+
+Abstract:
+<jats:p>We report the lowest recorded levels of 1/f noise for graphene-based devices, at the level of SV/V2=SI/I2=4.4×10−16 (1/Hz), measured at f = 10 Hz (SV/V2=SI/I2 &amp;lt; 10−16 1/Hz for f &amp;gt; 100 Hz) in large-area epitaxial graphene on silicon carbide (epigraphene) Hall sensors. This performance is made possible through the combination of high material quality, low contact resistance achieved by edge contact fabrication process, homogeneous doping, and stable passivation of the graphene layer. Our study explores the nature of 1/f noise as a function of carrier density and device geometry and includes data from Hall sensors with device area range spanning over six orders of magnitude, with characteristic device length ranging from L = 1 μm to 1 mm. In optimized graphene Hall sensors, we demonstrate arrays to be a viable route to improve further the magnetic field detection: a simple parallel connection of two devices displays record-high magnetic field sensitivity at room temperature, with minimum detectable magnetic field levels down to Bmin = 9.5 nT/√Hz. The remarkable low levels of 1/f noise observed in epigraphene devices hold immense capacity for the design and fabrication of scalable epigraphene-based sensors with exceptional performance.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #170
+============================================================
+
+Title: Pyrene Functionalized Norbornadiene‐Quadricyclane Fluorescent Photoswitches: Characterization of their Spectral Properties and Application in Imaging of Amyloid Beta Plaques
+
+Authors: Shima Ghasemi, Monika Shamsabadi, Axel Olesund, Francisco Najera, Andreas Erbs Hillers‐Bendtsen
+
+Published: [2024, 6, 17]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202400322
+
+URL: https://doi.org/10.1002/chem.202400322
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>This study presents the synthesis and characterization of two fluorescent norbornadiene (NBD) photoswitches, each incorporating two conjugated pyrene units. Expanding on the limited repertoire of reported photoswitchable fluorescent NBDs, we explore their properties with a focus on applications in bioimaging of amyloid beta (Aβ) plaques. While the fluorescence emission of the NBD decreases upon photoisomerization, aligning with what has been previously reported, for the first time we observed luminescence after irradiation of the quadricyclane (QC) isomer. We deduce how the observed emission is induced by photoisomerization to the excited state of the parent isomer (NBD) which is then the emitting species. Thorough characterizations including NMR, UV‐Vis, fluorescence, X‐ray structural analysis and density functional theory (DFT) calculations provide a comprehensive understanding of these systems. Notably, one NBD‐QC system exhibits exceptional durability. Additionally, these molecules serve as effective fluorescent stains targeting Aβ plaques in situ, with observed NBD/QC switching within the plaques. Molecular docking simulations explore NBD interactions with amyloid, unveiling novel binding modes. These insights mark a crucial advancement in the comprehension and design of future photochromic NBDs for bioimaging applications and beyond, emphasizing their potential in studying and addressing protein aggregates.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #171
+============================================================
+
+Title: Norbornadiene‐Quadricyclane Photoswitches with Enhanced Solar Spectrum Match
+
+Authors: Adil S. Aslam, Lidiya M. Muhammad, Andreas Erbs Hillers‐Bendtsen, Kurt V. Mikkelsen, Kasper Moth‐Poulsen
+
+Published: [2024, 8, 19]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202401430
+
+URL: https://doi.org/10.1002/chem.202401430
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Herein, we report monomeric and dimeric norbornadiene‐quadricyclane molecular photoswitch systems intended for molecular solar thermal applications. A series of six new norbornadiene derivatives conjugated with benzothiadiazole as the acceptor unit and dithiafulvene as the donor unit were synthesized and fully characterized. The photoswitches were evaluated by experimentally and theoretically measuring optical absorption profiles and thermal conversion of quadricyclane to norbornadiene. Computational insight by density functional theory calculations at the M06‐2X/def2‐SVPD level of theory provided geometries, storage energies, UV‐vis absorption spectra, and HOMO‐LUMO levels that are used to describe the function of the molecular systems. The studied molecules exhibit absorption onset ranging from 416 nm to 595 nm due to a systemic change in their donor‐acceptor character. This approach was advantageous due to the introduction of benzothiadiazole and the dimeric nature of molecular structures. The best‐performing system has a half‐life of 3 days with quantum yields over 50 %.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #172
+============================================================
+
+Title: A surface passivated fluorinated polymer nanocomposite for carbon monoxide resistant plasmonic hydrogen sensing
+
+Authors: I. Östergren, I. Darmadi, S. Lerch, R. R. da Silva, M. Craighero
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d4ta00055b
+
+URL: https://doi.org/10.1039/d4ta00055b
+
+Abstract:
+<jats:p>Core:shell architecture of Teflon AF:Pd coated with PMMA, which generates a protective barrier against carbon monoxide, simultaneously allowing fast and selective hydrogen sensing.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #173
+============================================================
+
+Title: Hybrid solar energy device for simultaneous electric power generation and molecular solar thermal energy storage
+
+Authors: Zhihang Wang, Helen Hölzel, Lorette Fernandez, Adil S. Aslam, Paulius Baronas
+
+Published: [2024, 9]
+
+Journal/Conference: Joule
+
+Type: journal-article
+
+DOI: 10.1016/j.joule.2024.06.012
+
+URL: https://doi.org/10.1016/j.joule.2024.06.012
+
+
+
+----------------------------------------------------------------------
+
+Publication #174
+============================================================
+
+Title: Machine Learning-Based Interpretation of Optical Properties of Colloidal Gold with Convolutional Neural Networks
+
+Type: component
+
+DOI: 10.1021/acs.jpcc.4c02971.s001
+
+URL: https://doi.org/10.1021/acs.jpcc.4c02971.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #175
+============================================================
+
+Title: Exploring <i>ortho</i>-dianthrylbenzenes for molecular solar thermal energy storage
+
+Authors: Nicolò Baggi, Lidiya M. Muhammad, Zacharias Liasi, Jacob Lynge Elholm, Paulius Baronas
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d4ta03879g
+
+URL: https://doi.org/10.1039/d4ta03879g
+
+Abstract:
+<jats:p>Aiming to explore anthracene-based systems for molecular solar thermal energy storage, five ortho-dianthrylbenzenes were designed, demonstrating promising properties for future development of anthracene-based photoswitches for such applications.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #176
+============================================================
+
+Title: Two-way photoswitching norbornadiene derivatives for solar energy storage
+
+Authors: Liang Fei, Helen Hölzel, Zhihang Wang, Andreas Erbs Hillers-Bendtsen, Adil S. Aslam
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d4sc04247f
+
+URL: https://doi.org/10.1039/d4sc04247f
+
+Abstract:
+<jats:p>A series of two-way photoswitching norbornadiene derivatives is designed for efficient and robust energy conversion. A flow MOST device and MOST films demonstrate optically controlled energy release in solution and solid state, respectively.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #177
+============================================================
+
+Title: Sustainable Heat Generation in Flow from a Molecular Solar Thermal Energy Storage System
+
+Authors: Lucien Magson, Dario Maggiolo, Angela Sasic Kalagasidis, Stefan Henninger, Gunther Munz
+
+Published: [2025, 1]
+
+Journal/Conference: Advanced Energy and Sustainability Research
+
+Type: journal-article
+
+DOI: 10.1002/aesr.202400230
+
+URL: https://doi.org/10.1002/aesr.202400230
+
+Abstract:
+<jats:p>As the global deployment of renewable technologies accelerate, finding efficient ways to store energy will aid in responding to shifting energy demands. A prospective option not only in harvesting solar energy but also in emission‐free heating is MOlecular Solar Thermal (MOST) energy storage. A central part of MOST applications is to develop methods to release the stored energy. Herein, the Quadricyclane (QC)‐to‐Norbornadiene catalyzed back reaction is explored in a specially designed packed‐bed reactor. Four distinctly sized and purposely synthesized platinum on activated carbon catalysts are studied to trigger the heat release from the energy‐dense QC isomer. The catalysts are fully characterized using a variety of structural, surface, and spectroscopic techniques. Parameters to optimize catalytic conversion and heat release in flow conditions are explored including particle size and packing behavior, flow rates, and molecular residence times. Moreover, using CO pulse chemisorption technique, site time yield values and a turnover number are reported. Complementary to the flow reactions, computational fluid dynamic simulations applying lattice Boltzmann methods to two catalytic packed beds of different size ranges are done to evaluate fluid‐dynamic behavior within the reactor bed to ascertain the ideal particle size and packing density for catalysis in MOST applications.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #178
+============================================================
+
+Title: Photon upconversion crystals doped bacterial cellulose composite films as recyclable photonic bioplastics
+
+Authors: Pankaj Bharmoria, Lukas Naimovičius, Deyaa Abol-Fotouh, Mila Miroshnichenko, Justas Lekavičius
+
+Journal/Conference: Communications Materials
+
+Type: journal-article
+
+DOI: 10.1038/s43246-024-00638-6
+
+URL: https://doi.org/10.1038/s43246-024-00638-6
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Biopolymers currently utilized as substitutes for synthetic polymers in photonics applications are predominantly confined to linear optical color responses. Herein we expand their applications in non-linear optics by integrating with triplet-triplet annihilation photon upconversion crystals. A photon upconverting biomaterial is prepared by cultivating Pd(II) meso-tetraphenyl tetrabenzoporphine: 9,10-diphenyl anthracene (sensitizer: annihilator) crystals on bacterial cellulose hydrogel that serves both as host and template for the crystallization of photon upconversion chromophores. Coating with gelatin improves the material’s optical transparency by adjusting the refractive indices. The prepared material shows an upconversion of 633 nm red light to 443 nm blue light, indicated by quadratic to linear dependence on excitation power density (non-linearly). Notably, components of this material are physically dis-assembled to retrieve 66 ± 1% of annihilator, at the end of life. Whereas, the residual clean biomass is subjected to biodegradation, showcasing the sustainability of the developed photonics material.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #179
+============================================================
+
+Title: Automated Research Platform for Development of Triplet–Triplet Annihilation Photon Upconversion Systems
+
+Authors: Paulius Baronas, Justas Lekavičius, Maciej Majdecki, Jacob Lynge Elholm, Karolis Kazlauskas
+
+Published: [2025, 3, 26]
+
+Journal/Conference: ACS Central Science
+
+Type: journal-article
+
+DOI: 10.1021/acscentsci.4c02059
+
+URL: https://doi.org/10.1021/acscentsci.4c02059
+
+
+
+----------------------------------------------------------------------
+
+Publication #180
+============================================================
+
+Title: A Practical Synthesis of Multi-Site Functionalized Norbornadiene for Molecular Solar Thermal Energy Storage
+
+Authors: Kasper Moth-Poulsen, Monika Shamsabadi, Joost Kimpel, Christian Müller
+
+Published: [2025, 7]
+
+Journal/Conference: Synlett
+
+Type: journal-article
+
+DOI: 10.1055/a-2560-0282
+
+URL: https://doi.org/10.1055/a-2560-0282
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Norbornadienes (NBDs) are promising candidates for molecular solar thermal energy storage (MOST) due to their reversible photoisomerization. A central aspect for future application is the scalable synthesis of NBD derivatives with high solubility. Herein, we report an efficient synthesis and purification of multi-substituted NBDs, achieving diverse substitution patterns and appreciable solubility. The streamlined process for synthesizing and purifying NBDs delivers high yields and purity, which addresses previously significant challenges in NBD-based energy systems. Our findings advance sustainable approaches for MOST through improved NBD stability and usability.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #181
+============================================================
+
+Title: Review for "Structure-Property Relationship of p-Alkoxyazobenzenes as Molecular Solar Thermal Phase Change Material Energy Storage Systems (MOST-PCM)"
+
+Published: [2025, 5, 15]
+
+Type: peer-review
+
+DOI: 10.1039/d5tc01024a/v2/review1
+
+URL: https://doi.org/10.1039/d5tc01024a/v2/review1
+
+
+
+----------------------------------------------------------------------
+
+Publication #182
+============================================================
+
+Title: Design, testing and characterization of noble-metal catalysts for the heat-release reaction of a molecular solar thermal energy storage isomer pair
+
+Authors: Benjamin Rollins, Alberto Gimenez-Gomez, Andrew M. Steele, Helen Hölzel, Rebecca J. Salthouse
+
+Journal/Conference: Catalysis Science &amp; Technology
+
+Type: journal-article
+
+DOI: 10.1039/d5cy00366k
+
+URL: https://doi.org/10.1039/d5cy00366k
+
+Abstract:
+<jats:p>A series of heterogeneous catalysts, based on Pt and Au, have been developed for MOlecular Solar Thermal (MOST) system energy release. Low oxidation states as well as a reduced support, such as carbon, are key to a rapid back-conversion reaction.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #183
+============================================================
+
+Title: Adsorption and self-assembling of a norbornadiene derivative on Au(1 1 1)
+
+Authors: Suchetana Sarkar, Natasha Khera, Pedro Ferreira, Kwan Ho Au-Yeung, Pranjit Das
+
+Published: [2025, 11]
+
+Journal/Conference: Applied Surface Science
+
+Type: journal-article
+
+DOI: 10.1016/j.apsusc.2025.163744
+
+URL: https://doi.org/10.1016/j.apsusc.2025.163744
+
+
+
+----------------------------------------------------------------------
+
+Publication #184
+============================================================
+
+Title: An automated photo-isomerisation and kinetics characterisation system for molecular photoswitches
+
+Authors: Jacob Lynge Elholm, Paulius Baronas, Paul A. Gueben, Victoria Gneiting, Helen Hölzel
+
+Journal/Conference: Digital Discovery
+
+Type: journal-article
+
+DOI: 10.1039/d5dd00031a
+
+URL: https://doi.org/10.1039/d5dd00031a
+
+Abstract:
+<jats:p>Physical chemistry parameters such as absorbance, photoconversion quantum yield, and thermal half-lives are crucial for the characterisation of new molecular photoswitch systems.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #185
+============================================================
+
+Title: Tuning Electrocatalytic Energy Release in Norbornadiene Based Molecular Solar Thermal Systems Through Substituent Effects
+
+Authors: Evanie Franz, Nils Oberhof, Daniel Krappmann, Nicolò Baggi, Zarah Hussain
+
+Published: [2025, 9]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202502294
+
+URL: https://doi.org/10.1002/chem.202502294
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Molecular solar thermal (MOST) systems, such as the norbornadiene/quadricyclane (NBD/QC) pair, combine solar energy conversion, storage, and release in a simple one‐molecule process. The energy‐releasing reaction QC to NBD can be controlled electrochemically. In this study, we used in‐situ photoelectrochemical infrared spectroscopy (PEC‐IRRAS) together with density functional theory (DFT) calculations to investigate how electron donating (EDG) and electron withdrawing (EWG) groups in the push‐pull system of the MOST pair affect the electrocatalytic properties of the electrochemically triggered back‐conversion. Specifically, we investigated cyano, tosyl, and methyl ester groups as EWGs, and methoxy, dimethylamine, thioether, and diphenylamine groups located in the <jats:italic>para</jats:italic>‐position of a phenyl group as EDGs. We characterized the onset potential, electrochemical stability window, and selectivity. We found that these properties strongly depend on the strength of electron donation of the EDG, as it exclusively locates the highest occupied molecular orbital (HOMO) and raises its energy level. We obtained the highest selectivity for compounds with <jats:italic>p</jats:italic>‐methoxyphenyl functionality.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #186
+============================================================
+
+Title: Phase Behavior of Light-Responsive Lyotropic Liquid Crystals for Molecular Solar Thermal Energy Storage
+
+Type: component
+
+DOI: 10.1021/jacs.5c09267.s001
+
+URL: https://doi.org/10.1021/jacs.5c09267.s001
+
+
+
+----------------------------------------------------------------------
+
+Publication #187
+============================================================
+
+Title: Norbornadiene Quadricyclane as Multimode Photoswitches: Synergistic Light and Protonation‐Controlled Heat Release
+
+Authors: Adil S. Aslam, Monika Shamsabadi, Rebecca J. Salthouse, Joakim Andréasson, Kasper Moth‐Poulsen
+
+Published: [2025, 10]
+
+Journal/Conference: ChemSusChem
+
+Type: journal-article
+
+DOI: 10.1002/cssc.202501005
+
+URL: https://doi.org/10.1002/cssc.202501005
+
+Abstract:
+<jats:p>Two low molecular weight acceptor–acceptor norbornadiene (NBD) photoswitches functionalized with <jats:italic>meta</jats:italic>‐ and <jats:italic>ortho</jats:italic>‐substituted pyridine and cyano groups are presented. These molecular systems can be converted between four states in response to light, acid, base, and heat. Quantitative conversion to higher energy metastable quadricyclane (QC) photoisomers is achieved upon UV irradiation, with photoisomerization quantum yields of 37% and 24% for <jats:bold>NBD 1</jats:bold> and <jats:bold>2</jats:bold>. The thermal half‐lives, <jats:italic>t</jats:italic><jats:sub>1/2</jats:sub>, of 70 and 205 days greatly surpass those of previously reported pyridine‐functionalized norbornadiene switches, as well as other acceptor–acceptor systems. In particular, the <jats:italic>ortho</jats:italic>‐positioning of the pyridine has a profound effect on the half‐life; <jats:bold>QC 2</jats:bold> in its unprotonated form has the longest <jats:italic>t</jats:italic><jats:sub>1/2</jats:sub> of 205 days, while protonation to <jats:bold>QCH</jats:bold><jats:sup><jats:bold>+</jats:bold></jats:sup> <jats:bold>2</jats:bold> completely hinders the thermal back conversion, allowing energy to be stored in this state indefinitely. The stored energy can then be released as required upon the addition of a base, followed by thermal reversion to <jats:bold>NBD 2</jats:bold>. The energy storage densities are 162 and 393 kJ kg<jats:sup>−1</jats:sup> for <jats:bold>NBD 1</jats:bold> and <jats:bold>NBD 2</jats:bold>, respectively. This approach of multimodal photoswitches can be applied to molecular solar thermal energy storage devices to enable long‐term energy storage and on‐demand controlled release.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #188
+============================================================
+
+Title: Recent advances in the recycling of precious metals using sustainable chemistry
+
+Authors: Abhijit Nag, Ahsanulhaq Qurashi, Carole A. Morrison, Kasper Moth-Poulsen, Thalappil Pradeep
+
+Published: [2026, 2]
+
+Journal/Conference: Coordination Chemistry Reviews
+
+Type: journal-article
+
+DOI: 10.1016/j.ccr.2025.217186
+
+URL: https://doi.org/10.1016/j.ccr.2025.217186
+
+
+
+----------------------------------------------------------------------
+
+Publication #189
+============================================================
+
+Title: Enhancing the statistical probability factor in triplet–triplet annihilation photon upconversion
+                    <i>via</i>
+                    TIPS functionalization
+
+Authors: Lukas Naimovičius, Manvydas Dapkevičius, Edvinas Radiunas, Mila Miroshnichenko, Gediminas Kreiza
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d5sc05248c
+
+URL: https://doi.org/10.1039/d5sc05248c
+
+Abstract:
+<jats:p>A new green-emitting annihilator, TIPS-PY is synthesized, which exhibits the high TTA-UC quantum yield of 13.7% for red-to-green upconversion due to the enhancement of spin statistical probability factor by TIPS functionalization of perylene.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #190
+============================================================
+
+Title: Surfactant-enabled strategy for molecular solar thermal energy storage systems in water
+
+Authors: Lorette Fernandez, Helen Hölzel, Pedro Ferreira, Nicolò Baggi, Kévin Moreno
+
+Journal/Conference: Green Chemistry
+
+Type: journal-article
+
+DOI: 10.1039/d5gc04357c
+
+URL: https://doi.org/10.1039/d5gc04357c
+
+Abstract:
+<jats:p>A surfactant-water-based approach is applied as a safer and more environmentally friendly alternative to toluene for molecular solar thermal energy storage using norbornadiene-quadricyclane derivatives.</jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #191
+============================================================
+
+Title: Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
+
+Authors: Rebecca J. Salthouse, Jacob L. Elholm, Irene Cortellazzi, Helen Hölzel, Pedro Ferreira
+
+Published: [2026, 1, 2]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202516629
+
+URL: https://doi.org/10.1002/ange.202516629
+
+Abstract:
+<jats:title>Abstract</jats:title>
+                  <jats:p>
+                    The norbornadiene/quadricyclane (NBD/QC) photoswitch pair is a promising system for molecular solar thermal (MOST) energy storage. Multichromophoric systems with two or more photoswitches can offer red‐shifted absorption, higher energy densities, and additional functionality. Here, a series of
+                    <jats:italic>ortho</jats:italic>
+                    ‐ and
+                    <jats:italic>para</jats:italic>
+                    ‐substituted NBD dimers bearing methoxy, hexoxy (for solubility), and cyano groups were synthesised and evaluated for their MOST properties. Compared to monomers, the dimers display red‐shifted absorption and improved solar spectrum match, with onsets between 448–488 nm, owing to their donor–acceptor design and extended conjugation. A key finding is the tunable relationship between molecular structure, photoluminescence and photoisomerisation:
+                    <jats:italic>para</jats:italic>
+                    ‐dimers exhibit efficient fluorescence, whilst
+                    <jats:italic>ortho</jats:italic>
+                    ‐dimers are superior photoswitches with quantum yields of isomerisation, Φ
+                    <jats:sub>i</jats:sub>
+                    , up to 63%. Solvent choice further modulates behaviour; Φ
+                    <jats:sub>i</jats:sub>
+                    is higher in acetonitrile, whereas fluorescence is more efficient in toluene. This interplay allows tailoring for specific functions. The best‐performing photoswitches were studied in a liquid‐chip device, achieving a record solar conversion efficiency of 2.9%. Catalytic back‐conversion using cobalt phthalocyanine on carbon and macroscopic heat release experiments at 0.1 M yielded a 5.78 °C temperature increase. This first experimental macroscopic heat release of a dimeric system provides important insights into design challenges and opportunities for advancing multichromophoric systems towards MOST applications.
+                  </jats:p>
+
+
+----------------------------------------------------------------------
+
+Publication #192
+============================================================
+
+Title: Noninvasive cardiac modulation via triplet-sensitized photoswitching in the phototherapeutic window
+
+Authors: Lukas Naimovičius, Mila Miroshnichenko, Ekin Opar, Helen Hölzel, Masa-aki Morikawa
+
+Journal/Conference: Nature Communications
+
+Type: journal-article
+
+DOI: 10.1038/s41467-025-61301-3
+
+URL: https://doi.org/10.1038/s41467-025-61301-3
+
+
+
+----------------------------------------------------------------------
+
+Publication #193
+============================================================
+
+Title: Electrical Catalysis of Forbidden Transitions in Single‐Molecule Devices
+
+Authors: Ruihao Li, Ran Liu, Shima Ghasemi, Pedro Ferreira, Dianting Zou
+
+Journal/Conference: Advanced Materials
+
+Type: journal-article
+
+DOI: 10.1002/adma.202511822
+
+URL: https://doi.org/10.1002/adma.202511822
+
+Abstract:
+<jats:title>Abstract</jats:title>
+                  <jats:p>Molecular orbital symmetry plays a pivotal role in determining chemical reaction mechanisms. The process of changing chemical reactants into products must transition along a pathway that conserves molecular orbital symmetry to ensure continuity. This principle is so fundamental that reactions that do not conserve symmetry are typically considered “forbidden” due to the high resultant energy barriers. Here, it is demonstrated that it is possible to electrically catalyze these forbidden transitions when a single molecule is bound between two electrodes in a nanoscale junction. A cycloaddition reaction is induced in a norbornadiene (NBD) derivative, converting it to quadricyclane (QC) by utilizing nanoconfinement to place the molecule into a configuration that is far from equilibrium and applying a small voltage to the molecular junction. Traditionally, this reaction can only be induced photochemically due to orbital symmetry selection rules. By directly tracking the reaction dynamics in situ using single‐molecule Raman spectroscopy, it is shown that for this reaction to be electrically catalyzed the molecule must be sterically maneuvered into a configuration near the transition state at the peak of the energy barrier prior to applying the voltage needed to successfully induce the forbidden transition is applied.</jats:p>
+
+
+----------------------------------------------------------------------
+

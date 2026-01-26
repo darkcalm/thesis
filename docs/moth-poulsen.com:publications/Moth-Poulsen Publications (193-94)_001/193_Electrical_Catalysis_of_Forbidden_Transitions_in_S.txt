@@ -1,0 +1,18 @@
+Publication #193
+============================================================
+
+Title: Electrical Catalysis of Forbidden Transitions in Single‐Molecule Devices
+
+Authors: Ruihao Li, Ran Liu, Shima Ghasemi, Pedro Ferreira, Dianting Zou
+
+Journal/Conference: Advanced Materials
+
+Type: journal-article
+
+DOI: 10.1002/adma.202511822
+
+URL: https://doi.org/10.1002/adma.202511822
+
+Abstract:
+<jats:title>Abstract</jats:title>
+                  <jats:p>Molecular orbital symmetry plays a pivotal role in determining chemical reaction mechanisms. The process of changing chemical reactants into products must transition along a pathway that conserves molecular orbital symmetry to ensure continuity. This principle is so fundamental that reactions that do not conserve symmetry are typically considered “forbidden” due to the high resultant energy barriers. Here, it is demonstrated that it is possible to electrically catalyze these forbidden transitions when a single molecule is bound between two electrodes in a nanoscale junction. A cycloaddition reaction is induced in a norbornadiene (NBD) derivative, converting it to quadricyclane (QC) by utilizing nanoconfinement to place the molecule into a configuration that is far from equilibrium and applying a small voltage to the molecular junction. Traditionally, this reaction can only be induced photochemically due to orbital symmetry selection rules. By directly tracking the reaction dynamics in situ using single‐molecule Raman spectroscopy, it is shown that for this reaction to be electrically catalyzed the molecule must be sterically maneuvered into a configuration near the transition state at the peak of the energy barrier prior to applying the voltage needed to successfully induce the forbidden transition is applied.</jats:p>

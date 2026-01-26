@@ -1,0 +1,17 @@
+Publication #145
+============================================================
+
+Title: Recyclable optical bioplastics platform for solid state red light harvesting<i>via</i>triplet–triplet annihilation photon upconversion
+
+Authors: Pankaj Bharmoria, Fredrik Edhborg, Hakan Bildirir, Yoichi Sasaki, Shima Ghasemi
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d2ta04810h
+
+URL: https://doi.org/10.1039/d2ta04810h
+
+Abstract:
+<jats:p>Sustainable red light harvesting has been achieved in recyclable protein–surfactant–chromophores co-assembled bioplastics with high efficiency due to the efficient diffusion of triplet excited chromophores, and oxygen blockage by protein fibers.</jats:p>

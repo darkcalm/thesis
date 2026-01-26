@@ -1,0 +1,34 @@
+Publication #191
+============================================================
+
+Title: Modulation of Photoluminescence and Solar Thermal Energy Storage in Norbornadiene–Quadricyclane Dimers
+
+Authors: Rebecca J. Salthouse, Jacob L. Elholm, Irene Cortellazzi, Helen Hölzel, Pedro Ferreira
+
+Published: [2026, 1, 2]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202516629
+
+URL: https://doi.org/10.1002/ange.202516629
+
+Abstract:
+<jats:title>Abstract</jats:title>
+                  <jats:p>
+                    The norbornadiene/quadricyclane (NBD/QC) photoswitch pair is a promising system for molecular solar thermal (MOST) energy storage. Multichromophoric systems with two or more photoswitches can offer red‐shifted absorption, higher energy densities, and additional functionality. Here, a series of
+                    <jats:italic>ortho</jats:italic>
+                    ‐ and
+                    <jats:italic>para</jats:italic>
+                    ‐substituted NBD dimers bearing methoxy, hexoxy (for solubility), and cyano groups were synthesised and evaluated for their MOST properties. Compared to monomers, the dimers display red‐shifted absorption and improved solar spectrum match, with onsets between 448–488 nm, owing to their donor–acceptor design and extended conjugation. A key finding is the tunable relationship between molecular structure, photoluminescence and photoisomerisation:
+                    <jats:italic>para</jats:italic>
+                    ‐dimers exhibit efficient fluorescence, whilst
+                    <jats:italic>ortho</jats:italic>
+                    ‐dimers are superior photoswitches with quantum yields of isomerisation, Φ
+                    <jats:sub>i</jats:sub>
+                    , up to 63%. Solvent choice further modulates behaviour; Φ
+                    <jats:sub>i</jats:sub>
+                    is higher in acetonitrile, whereas fluorescence is more efficient in toluene. This interplay allows tailoring for specific functions. The best‐performing photoswitches were studied in a liquid‐chip device, achieving a record solar conversion efficiency of 2.9%. Catalytic back‐conversion using cobalt phthalocyanine on carbon and macroscopic heat release experiments at 0.1 M yielded a 5.78 °C temperature increase. This first experimental macroscopic heat release of a dimeric system provides important insights into design challenges and opportunities for advancing multichromophoric systems towards MOST applications.
+                  </jats:p>

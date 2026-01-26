@@ -1,0 +1,17 @@
+Publication #128
+============================================================
+
+Title: Synthesis of highly monodisperse Pd nanoparticles using a binary surfactant combination and sodium oleate as a reductant
+
+Authors: Anna Pekkari, Xin Wen, Jessica Orrego-Hernández, Robson Rosa da Silva, Shun Kondo
+
+Journal/Conference: Nanoscale Advances
+
+Type: journal-article
+
+DOI: 10.1039/d1na00052g
+
+URL: https://doi.org/10.1039/d1na00052g
+
+Abstract:
+<p>This study presents the synthesis of monodisperse Pd nanoparticles (NPs) stabilized by sodium oleate (NaOL) and hexadecyltrimethylammonium chloride (CTAC).</p>

@@ -1,0 +1,19 @@
+Publication #187
+============================================================
+
+Title: Norbornadiene Quadricyclane as Multimode Photoswitches: Synergistic Light and Protonation‐Controlled Heat Release
+
+Authors: Adil S. Aslam, Monika Shamsabadi, Rebecca J. Salthouse, Joakim Andréasson, Kasper Moth‐Poulsen
+
+Published: [2025, 10]
+
+Journal/Conference: ChemSusChem
+
+Type: journal-article
+
+DOI: 10.1002/cssc.202501005
+
+URL: https://doi.org/10.1002/cssc.202501005
+
+Abstract:
+<jats:p>Two low molecular weight acceptor–acceptor norbornadiene (NBD) photoswitches functionalized with <jats:italic>meta</jats:italic>‐ and <jats:italic>ortho</jats:italic>‐substituted pyridine and cyano groups are presented. These molecular systems can be converted between four states in response to light, acid, base, and heat. Quantitative conversion to higher energy metastable quadricyclane (QC) photoisomers is achieved upon UV irradiation, with photoisomerization quantum yields of 37% and 24% for <jats:bold>NBD 1</jats:bold> and <jats:bold>2</jats:bold>. The thermal half‐lives, <jats:italic>t</jats:italic><jats:sub>1/2</jats:sub>, of 70 and 205 days greatly surpass those of previously reported pyridine‐functionalized norbornadiene switches, as well as other acceptor–acceptor systems. In particular, the <jats:italic>ortho</jats:italic>‐positioning of the pyridine has a profound effect on the half‐life; <jats:bold>QC 2</jats:bold> in its unprotonated form has the longest <jats:italic>t</jats:italic><jats:sub>1/2</jats:sub> of 205 days, while protonation to <jats:bold>QCH</jats:bold><jats:sup><jats:bold>+</jats:bold></jats:sup> <jats:bold>2</jats:bold> completely hinders the thermal back conversion, allowing energy to be stored in this state indefinitely. The stored energy can then be released as required upon the addition of a base, followed by thermal reversion to <jats:bold>NBD 2</jats:bold>. The energy storage densities are 162 and 393 kJ kg<jats:sup>−1</jats:sup> for <jats:bold>NBD 1</jats:bold> and <jats:bold>NBD 2</jats:bold>, respectively. This approach of multimodal photoswitches can be applied to molecular solar thermal energy storage devices to enable long‐term energy storage and on‐demand controlled release.</jats:p>

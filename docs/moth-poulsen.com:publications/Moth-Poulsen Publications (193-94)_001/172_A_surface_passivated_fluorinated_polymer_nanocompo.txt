@@ -1,0 +1,17 @@
+Publication #172
+============================================================
+
+Title: A surface passivated fluorinated polymer nanocomposite for carbon monoxide resistant plasmonic hydrogen sensing
+
+Authors: I. Östergren, I. Darmadi, S. Lerch, R. R. da Silva, M. Craighero
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d4ta00055b
+
+URL: https://doi.org/10.1039/d4ta00055b
+
+Abstract:
+<jats:p>Core:shell architecture of Teflon AF:Pd coated with PMMA, which generates a protective barrier against carbon monoxide, simultaneously allowing fast and selective hydrogen sensing.</jats:p>

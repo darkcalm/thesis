@@ -1,0 +1,17 @@
+Publication #144
+============================================================
+
+Title: Status and challenges for molecular solar thermal energy storage system based devices
+
+Authors: Zhihang Wang, Helen Hölzel, Kasper Moth-Poulsen
+
+Journal/Conference: Chemical Society Reviews
+
+Type: journal-article
+
+DOI: 10.1039/d1cs00890k
+
+URL: https://doi.org/10.1039/d1cs00890k
+
+Abstract:
+<jats:p>Molecular solar thermal energy storage systems (MOST) can store solar power <jats:italic>via</jats:italic> valence photoisomerization in molecular photoswitches. MOST concept based devices offer emission-free solar energy storage and release on-demand.</jats:p>

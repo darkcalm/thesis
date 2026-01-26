@@ -1,0 +1,17 @@
+Publication #94
+============================================================
+
+Title: Solvent-free lithium and sodium containing electrolytes based on pseudo-delocalized anions
+
+Authors: Juan Forero-Saboya, Elham Hosseini-Bab-Anari, Muhammad E. Abdelhamid, Kasper Moth-Poulsen, Patrik Johansson
+
+Journal/Conference: Chemical Communications
+
+Type: journal-article
+
+DOI: 10.1039/c8cc07076h
+
+URL: https://doi.org/10.1039/c8cc07076h
+
+Abstract:
+<p>Synthesis and characterisation of super-cooled solvent-free liquid electrolytes for Li and Na batteries.</p>

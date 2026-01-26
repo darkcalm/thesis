@@ -1,0 +1,17 @@
+Publication #113
+============================================================
+
+Title: Electrochemically controlled energy release from a norbornadiene-based solar thermal fuel: increasing the reversibility to 99.8% using HOPG as the electrode material
+
+Authors: Fabian Waidhas, Martyn Jevric, Michael Bosch, Tian Yang, Evanie Franz
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/d0ta00377h
+
+URL: https://doi.org/10.1039/d0ta00377h
+
+Abstract:
+<p>Solar energy conversion using molecular photoswitches holds great potential to store energy from sunlight in the form of chemical energy in a process that can be easily implemented in a direct solar energy storage device.</p>

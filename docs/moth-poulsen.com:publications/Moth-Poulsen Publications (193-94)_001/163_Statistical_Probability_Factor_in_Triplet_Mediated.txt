@@ -1,0 +1,17 @@
+Publication #163
+============================================================
+
+Title: The statistical probability factor in triplet mediated photon upconversion: a case study with perylene
+
+Authors: Lukas Naimovičius, Edvinas Radiunas, Manvydas Dapkevičius, Pankaj Bharmoria, Kasper Moth-Poulsen
+
+Journal/Conference: Journal of Materials Chemistry C
+
+Type: journal-article
+
+DOI: 10.1039/d3tc03158f
+
+URL: https://doi.org/10.1039/d3tc03158f
+
+Abstract:
+<jats:p>Experimentally determined statistical probability factor in TTA-mediated photon upconversion for perylene is ∼18%, predominantly dictated by the energy-gap law. This limits the maximum TTA-UC quantum yield to 9.0 % (out of 50%) for this annihilator.</jats:p>

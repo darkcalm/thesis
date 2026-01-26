@@ -1,0 +1,11 @@
+Publication #123
+============================================================
+
+Title: Evolution from Tunneling to Hopping Mediated Triplet Energy Transfer from Quantum Dots to Molecules
+
+Type: component
+
+DOI: 10.1021/jacs.0c07727.s001
+
+URL: https://doi.org/10.1021/jacs.0c07727.s001
+

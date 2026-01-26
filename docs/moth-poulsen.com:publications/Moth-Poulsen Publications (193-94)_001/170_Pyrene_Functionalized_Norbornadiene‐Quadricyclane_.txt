@@ -1,0 +1,19 @@
+Publication #170
+============================================================
+
+Title: Pyrene Functionalized Norbornadiene‐Quadricyclane Fluorescent Photoswitches: Characterization of their Spectral Properties and Application in Imaging of Amyloid Beta Plaques
+
+Authors: Shima Ghasemi, Monika Shamsabadi, Axel Olesund, Francisco Najera, Andreas Erbs Hillers‐Bendtsen
+
+Published: [2024, 6, 17]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202400322
+
+URL: https://doi.org/10.1002/chem.202400322
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>This study presents the synthesis and characterization of two fluorescent norbornadiene (NBD) photoswitches, each incorporating two conjugated pyrene units. Expanding on the limited repertoire of reported photoswitchable fluorescent NBDs, we explore their properties with a focus on applications in bioimaging of amyloid beta (Aβ) plaques. While the fluorescence emission of the NBD decreases upon photoisomerization, aligning with what has been previously reported, for the first time we observed luminescence after irradiation of the quadricyclane (QC) isomer. We deduce how the observed emission is induced by photoisomerization to the excited state of the parent isomer (NBD) which is then the emitting species. Thorough characterizations including NMR, UV‐Vis, fluorescence, X‐ray structural analysis and density functional theory (DFT) calculations provide a comprehensive understanding of these systems. Notably, one NBD‐QC system exhibits exceptional durability. Additionally, these molecules serve as effective fluorescent stains targeting Aβ plaques in situ, with observed NBD/QC switching within the plaques. Molecular docking simulations explore NBD interactions with amyloid, unveiling novel binding modes. These insights mark a crucial advancement in the comprehension and design of future photochromic NBDs for bioimaging applications and beyond, emphasizing their potential in studying and addressing protein aggregates.</jats:p>

@@ -1,0 +1,17 @@
+Publication #176
+============================================================
+
+Title: Two-way photoswitching norbornadiene derivatives for solar energy storage
+
+Authors: Liang Fei, Helen Hölzel, Zhihang Wang, Andreas Erbs Hillers-Bendtsen, Adil S. Aslam
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d4sc04247f
+
+URL: https://doi.org/10.1039/d4sc04247f
+
+Abstract:
+<jats:p>A series of two-way photoswitching norbornadiene derivatives is designed for efficient and robust energy conversion. A flow MOST device and MOST films demonstrate optically controlled energy release in solution and solid state, respectively.</jats:p>

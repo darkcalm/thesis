@@ -1,0 +1,17 @@
+Publication #100
+============================================================
+
+Title: Solar energy storage at an atomically defined organic-oxide hybrid interface
+
+Authors: Christian Schuschke, Chantal Hohner, Martyn Jevric, Anne Ugleholdt Petersen, Zhihang Wang
+
+Journal/Conference: Nature Communications
+
+Type: journal-article
+
+DOI: 10.1038/s41467-019-10263-4
+
+URL: https://doi.org/10.1038/s41467-019-10263-4
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Molecular photoswitches provide an extremely simple solution for solar energy conversion and storage. To convert stored energy to electricity, however, the photoswitch has to be coupled to a semiconducting electrode. In this work, we report on the assembly of an operational solar-energy-storing organic-oxide hybrid interface, which consists of a tailor-made molecular photoswitch and an atomically-defined semiconducting oxide film. The synthesized norbornadiene derivative 2-cyano-3-(4-carboxyphenyl)norbornadiene (CNBD) was anchored to a well-ordered Co<jats:sub>3</jats:sub>O<jats:sub>4</jats:sub>(111) surface by physical vapor deposition in ultrahigh vacuum. Using a photochemical infrared reflection absorption spectroscopy experiment, we demonstrate that the anchored CNBD monolayer remains operational, i.e., can be photo-converted to its energy-rich counterpart 2-cyano-3-(4-carboxyphenyl)quadricyclane (CQC). We show that the activation barrier for energy release remains unaffected by the anchoring reaction and the anchored photoswitch can be charged and discharged with high reversibility. Our atomically-defined solar-energy-storing model interface enables detailed studies of energy conversion processes at organic/oxide hybrid interfaces.</jats:p>

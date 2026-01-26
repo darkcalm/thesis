@@ -1,0 +1,19 @@
+Publication #124
+============================================================
+
+Title: Microwave‐heated γ‐Alumina Applied to the Reduction of Aldehydes to Alcohols
+
+Authors: Bhausaheb Dhokale, Arturo Susarrey‐Arce, Anna Pekkari, August Runemark, Kasper Moth‐Poulsen
+
+Published: [2020, 12, 16]
+
+Journal/Conference: ChemCatChem
+
+Type: journal-article
+
+DOI: 10.1002/cctc.202001284
+
+URL: https://doi.org/10.1002/cctc.202001284
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The development of cheap and robust heterogeneous catalysts for the Meerwein‐Ponndorf‐Verley (MPV) reduction is desirable due to the difficulties in product isolation and catalyst recovery associated with the traditional use of homogeneous catalysts for MPV. Herein, we show that microwave heated γ‐Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub> can be used for the reduction of aldehydes to alcohols. The reaction is efficient and has a broad substrates scope (19 entries). The products can be isolated by simple filtration, and the catalyst can be regenerated. With the use of microwave heating, we can direct the heating to the catalyst rather than to the whole reaction medium. Furthermore, DFT was used to study the reaction mechanism, and we can conclude that a dual‐site mechanism is operative where the aldehyde and 2‐propoxide are situated on two adjacent Al sites during the reduction. Additionally, volcano plots were used to rationalize the reactivity of Al<jats:sub>2</jats:sub>O<jats:sub>3</jats:sub> in comparison to other metal oxides.</jats:p>

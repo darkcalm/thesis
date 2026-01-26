@@ -1,0 +1,19 @@
+Publication #167
+============================================================
+
+Title: Unveiling the Potential of Heterogeneous Catalysts for Molecular Solar Thermal Systems
+
+Authors: Alberto Gimenez‐Gomez, Benjamin Rollins, Andrew Steele, Helen Hölzel, Nicolò Baggi
+
+Published: [2024, 1, 2]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202303230
+
+URL: https://doi.org/10.1002/chem.202303230
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Solar energy utilization has gained considerable attention due to its abundance and renewability. However, its intermittent nature presents a challenge in harnessing its full potential. The development of energy storing compounds capable of capturing and releasing solar energy on demand has emerged as a potential solution. These compounds undergo a photochemical transformation that results in a high‐energy metastable photoisomer, which stores solar energy in the form of chemical bonds and can release it as heat when required. Such systems are referred to as <jats:styled-content>MO</jats:styled-content>lecular <jats:styled-content>S</jats:styled-content>olar <jats:styled-content>T</jats:styled-content>hermal (MOST)‐systems. Although the photoisomerization of MOST systems has been vastly studied, its back‐conversion, particularly using heterogeneous catalysts, is still underexplored and the development of effective catalysts for releasing stored energy is crucial. Herein we compare the performance of 27 heterogeneous catalysts releasing the stored energy in an efficient Norbornadiene/Quadricyclane (NBD/QC) MOST system. We report the first benchmarking of heterogeneous catalysts for a MOST system using a robust comparison method of the catalysts’ activity and monitoring the conversion using UV‐Visible (UV‐Vis) spectroscopy. Our findings provide insights into the development of effective catalysts for MOST systems. We anticipate that our assay will reveal the necessity of further investigation on heterogeneous catalysis.</jats:p>

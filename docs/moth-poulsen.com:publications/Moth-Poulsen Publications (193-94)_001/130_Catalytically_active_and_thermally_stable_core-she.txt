@@ -1,0 +1,17 @@
+Publication #130
+============================================================
+
+Title: Catalytically active and thermally stable core–shell gold–silica nanorods for CO oxidation
+
+Authors: Yidong Chen, Sarah Lerch, Zafer Say, Christopher Tiburski, Christoph Langhammer
+
+Journal/Conference: RSC Advances
+
+Type: journal-article
+
+DOI: 10.1039/d1ra01577j
+
+URL: https://doi.org/10.1039/d1ra01577j
+
+Abstract:
+<p>Gold nanorods stabilized with mesoporous silica shells are characterized and used as the catalyst for a model CO oxidation reaction to counter the costly sintering phenomena found in many industrial nanoparticle catalysts.</p>

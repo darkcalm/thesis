@@ -1,0 +1,19 @@
+Publication #96
+============================================================
+
+Title: From Single Molecules to Thin Film Electronics, Nanofibers, e‐Textiles and Power Cables: Bridging Length Scales with Organic Semiconductors
+
+Authors: Christian Müller, Liangqi Ouyang, Anja Lund, Kasper Moth‐Poulsen, Mahiar M. Hamedi
+
+Published: [2019, 5]
+
+Journal/Conference: Advanced Materials
+
+Type: journal-article
+
+DOI: 10.1002/adma.201807286
+
+URL: https://doi.org/10.1002/adma.201807286
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Organic semiconductors are the centerpiece of several vibrant research fields from single‐molecule to organic electronics, and they are finding increasing use in bioelectronics and even classical polymer technology. The versatile chemistry and broad range of electronic functionalities of conjugated materials enable the bridging of length scales 15 orders of magnitude apart, ranging from a single nanometer (10<jats:sup>−9</jats:sup> m) to the size of continents (10<jats:sup>6</jats:sup> m). This work provides a taste of the diverse applications that can be realized with organic semiconductors. The reader will embark on a journey from single molecular junctions to thin film organic electronics, supramolecular assemblies, biomaterials such as amyloid fibrils and nanofibrillated cellulose, conducting fibers and yarns for e‐textiles, and finally to power cables that shuffle power across thousands of kilometers.</jats:p>

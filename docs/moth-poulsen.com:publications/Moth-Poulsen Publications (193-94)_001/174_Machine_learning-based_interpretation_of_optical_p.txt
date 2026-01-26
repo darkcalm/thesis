@@ -1,0 +1,11 @@
+Publication #174
+============================================================
+
+Title: Machine Learning-Based Interpretation of Optical Properties of Colloidal Gold with Convolutional Neural Networks
+
+Type: component
+
+DOI: 10.1021/acs.jpcc.4c02971.s001
+
+URL: https://doi.org/10.1021/acs.jpcc.4c02971.s001
+

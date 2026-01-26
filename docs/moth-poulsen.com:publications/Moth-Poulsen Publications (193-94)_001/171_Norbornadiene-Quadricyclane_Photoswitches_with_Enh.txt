@@ -1,0 +1,19 @@
+Publication #171
+============================================================
+
+Title: Norbornadiene‐Quadricyclane Photoswitches with Enhanced Solar Spectrum Match
+
+Authors: Adil S. Aslam, Lidiya M. Muhammad, Andreas Erbs Hillers‐Bendtsen, Kurt V. Mikkelsen, Kasper Moth‐Poulsen
+
+Published: [2024, 8, 19]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202401430
+
+URL: https://doi.org/10.1002/chem.202401430
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Herein, we report monomeric and dimeric norbornadiene‐quadricyclane molecular photoswitch systems intended for molecular solar thermal applications. A series of six new norbornadiene derivatives conjugated with benzothiadiazole as the acceptor unit and dithiafulvene as the donor unit were synthesized and fully characterized. The photoswitches were evaluated by experimentally and theoretically measuring optical absorption profiles and thermal conversion of quadricyclane to norbornadiene. Computational insight by density functional theory calculations at the M06‐2X/def2‐SVPD level of theory provided geometries, storage energies, UV‐vis absorption spectra, and HOMO‐LUMO levels that are used to describe the function of the molecular systems. The studied molecules exhibit absorption onset ranging from 416 nm to 595 nm due to a systemic change in their donor‐acceptor character. This approach was advantageous due to the introduction of benzothiadiazole and the dimeric nature of molecular structures. The best‐performing system has a half‐life of 3 days with quantum yields over 50 %.</jats:p>

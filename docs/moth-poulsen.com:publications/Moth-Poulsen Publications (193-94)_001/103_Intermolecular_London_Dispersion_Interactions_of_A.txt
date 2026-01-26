@@ -1,0 +1,19 @@
+Publication #103
+============================================================
+
+Title: Intermolecular London Dispersion Interactions of Azobenzene Switches for Tuning Molecular Solar Thermal Energy Storage Systems
+
+Authors: Anne Kunz, Andreas H. Heindl, Ambra Dreos, Zhihang Wang, Kasper Moth‐Poulsen
+
+Published: [2019, 8]
+
+Journal/Conference: ChemPlusChem
+
+Type: journal-article
+
+DOI: 10.1002/cplu.201900330
+
+URL: https://doi.org/10.1002/cplu.201900330
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The performance of molecular solar thermal energy storage systems (MOST) depends amongst others on the amount of energy stored. Azobenzenes have been investigated as high‐potential materials for MOST applications. In the present study it could be shown that intermolecular attractive London dispersion interactions stabilize the (<jats:italic>E</jats:italic>)‐isomer in bisazobenzene that is linked by different alkyl bridges. Differential scanning calorimetry (DSC) measurements revealed, that this interaction leads to an increased storage energy per azo‐unit of more than 3 kcal/mol compared to the parent azobenzene. The origin of this effect has been supported by computation as well as X‐ray analysis. In the solid state structure attractive London dispersion interactions between the C−H of the alkyl bridge and the π‐system of the azobenzene could be clearly assigned. This concept will be highly useful in designing more effective MOST systems in the future.</jats:p>

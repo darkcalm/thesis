@@ -1,0 +1,17 @@
+Publication #141
+============================================================
+
+Title: Chip-scale solar thermal electrical power generation
+
+Authors: Zhihang Wang, Zhenhua Wu, Zhiyu Hu, Jessica Orrego-Hernández, Erzhen Mu
+
+Published: [2022, 3]
+
+Journal/Conference: Cell Reports Physical Science
+
+Type: journal-article
+
+DOI: 10.1016/j.xcrp.2022.100789
+
+URL: https://doi.org/10.1016/j.xcrp.2022.100789
+

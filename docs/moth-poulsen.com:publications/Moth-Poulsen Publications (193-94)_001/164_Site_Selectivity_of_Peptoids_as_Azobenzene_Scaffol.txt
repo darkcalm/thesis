@@ -1,0 +1,19 @@
+Publication #164
+============================================================
+
+Title: Site Selectivity of Peptoids as Azobenzene Scaffold for Molecular Solar Thermal Energy Storage
+
+Authors: Benjamin Tassignon, Zhihang Wang, Agostino Galanti, Julien De Winter, Paolo Samorì
+
+Published: [2023, 12, 14]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202303168
+
+URL: https://doi.org/10.1002/chem.202303168
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Storing solar energy is a key challenge in modern science. MOlecular Solar Thermal (MOST) systems, in particular those based on azobenzene switches, have received great interest in the last decades. The energy storage properties of azobenzene (<jats:italic>t</jats:italic><jats:sub><jats:italic>1/2</jats:italic></jats:sub>&lt;4 days; ΔH~270 kJ/kg) must be improved for future applications. Herein, we introduce peptoids as programmable supramolecular scaffolds to improve the energy storage properties of azobenzene‐based MOST systems. We demonstrate with 3‐unit peptoids bearing a single azobenzene chromophore that dynamics of the MOST systems can be tuned depending on the anchoring position of the photochromic unit on the macromolecular backbone. We measured a remarkable increase of the half‐life of the metastable form up to 14 days at 20 °C for a specific anchoring site, significantly higher than the isolated azobenzene moiety, thus opening new perspectives for MOST development. We also highlight that liquid chromatography coupled to mass spectrometry does not only enable to monitor the different stereoisomers during the photoisomerization process as traditionally done, but also allows to determine the thermal back‐isomerization kinetics.</jats:p>

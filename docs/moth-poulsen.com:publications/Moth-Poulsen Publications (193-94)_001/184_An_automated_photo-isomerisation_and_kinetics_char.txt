@@ -1,0 +1,17 @@
+Publication #184
+============================================================
+
+Title: An automated photo-isomerisation and kinetics characterisation system for molecular photoswitches
+
+Authors: Jacob Lynge Elholm, Paulius Baronas, Paul A. Gueben, Victoria Gneiting, Helen Hölzel
+
+Journal/Conference: Digital Discovery
+
+Type: journal-article
+
+DOI: 10.1039/d5dd00031a
+
+URL: https://doi.org/10.1039/d5dd00031a
+
+Abstract:
+<jats:p>Physical chemistry parameters such as absorbance, photoconversion quantum yield, and thermal half-lives are crucial for the characterisation of new molecular photoswitch systems.</jats:p>

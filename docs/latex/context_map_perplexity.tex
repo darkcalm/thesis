@@ -1,0 +1,321 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{positioning,shapes.geometric,calc}
+
+\begin{document}
+
+\section*{Multi-Level Context Map Generator}
+\subsection*{Usage Instructions for Handoff}
+
+\paragraph{Conceptual Framework:}
+This visualization uses \textbf{elliptical coordinates} derived from polar coordinates $(r, \phi)$ at each stage to map concepts across abstraction levels. The circular coordinates are transformed into a flat oval shape to provide more horizontal space for text:
+\begin{itemize}
+    \item \textbf{Radius $r$}: Abstraction level (center = high abstraction, outer rings = lower abstraction/specific implementations)
+    \item \textbf{Angle $\phi$}: Aspect or dimension of the central concept
+    \item \textbf{Coordinate transformation}: $(r, \phi) \rightarrow (r \cos\phi \cdot s_x, r \sin\phi \cdot s_y)$ where $s_x = 1.4$ (horizontal stretch) and $s_y = 0.8$ (vertical compression) create a flat oval layout
+    \item \textbf{Visual style}: Nodes have no borders or backgrounds for a clean, minimal appearance
+    \item \textbf{Progression}: Each level zooms into a concept from the previous level, making it the new center
+\end{itemize}
+
+\paragraph{How to Extend:}
+\begin{enumerate}
+    \item \textbf{Add a new level}: Pick any medium-to-low radius concept from the current level
+    \item Make it the \textbf{new center} of the next level
+    \item Define 6--8 \textbf{aspects} (angular positions) related to this concept
+    \item For each aspect, place labels at different \textbf{radii} (abstraction levels):
+    \begin{itemize}
+        \item Center ($r = 0$): Central concept
+        \item Medium radius ($r = 2.6$): Intermediate concepts
+        \item Outer radius ($r = 4$): Concrete implementations/specifics
+    \end{itemize}
+\end{enumerate}
+
+\paragraph{Customization Guide:}
+\begin{itemize}
+    \item Modify \texttt{\textbackslash drawContextLevel} parameters: center text, petal labels, outer labels
+    \item Adjust \texttt{petalRadius} (default: 2.6), \texttt{outerRadius} (default: 5) for sizing
+    \item Change \texttt{numPetals} (default: 8) for more/fewer aspects
+    \item Adjust \texttt{ellipseStretchX} (default: 1.4) and \texttt{ellipseStretchY} (default: 0.8) to modify the oval shape
+    \item Connect levels with curved arrows showing progression
+    \item Note: All nodes are borderless and backgroundless by design
+\end{itemize}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+% Define custom command for drawing context levels
+\newcommand{\drawContextLevel}[6]{
+     % #1 = center x position
+     % #2 = center y position
+     % #3 = center text
+     % #4 = list of petal/bubble labels (comma separated)
+     % #5 = list of outer detail labels (comma separated)
+     % #6 = use linear y spacing (1=yes, 0=no)
+
+    \begin{scope}[shift={(#1,#2)}]
+        % Draw center circle (no border, no fill)
+        \node[circle, minimum size=2cm, align=center, font=\bfseries\small]
+            at (0,0) {#3};
+
+        % Parameters
+        \def\petalRadius{2.6}
+        \def\outerRadius{4}
+        \def\numPetals{8}
+        % Elliptical coordinate transformation: horizontal stretch factor
+        \def\ellipseStretchX{1.4}
+        \def\ellipseStretchY{0.8}
+
+        % Draw petals (medium abstraction bubbles) - no border, no fill
+        \foreach \i/\label in {#4} {
+            \pgfmathsetmacro{\angle}{360/\numPetals * \i}
+            \pgfmathsetmacro{\xpos}{\petalRadius * cos(\angle) * \ellipseStretchX}
+            \pgfmathsetmacro{\ypos}{\petalRadius * sin(\angle) * \ellipseStretchY}
+            \node[align=center, font=\scriptsize]
+                at (\xpos, \ypos) {\label};
+        }
+
+        % Draw outer labels with optional linear y-spacing
+         \if#61
+             % Dense ranking: 32 labels -> 17 unique y-levels (ranks 0-16)
+             % Index 2 = top (rank 0), index 6 = bottom (rank 16)
+             % Rank = distance from pole * 4: |i-2|*4 for i in [0,4], 16-|i-6|*4 for i in (4,8)
+             \pgfmathsetmacro{\topY}{\outerRadius * \ellipseStretchY}
+             \pgfmathsetmacro{\bottomY}{-\outerRadius * \ellipseStretchY}
+             \pgfmathsetmacro{\deltaY}{(\topY - \bottomY) / 16}
+             \foreach \i/\label in {#5} {
+                 \pgfmathsetmacro{\angle}{360/\numPetals * \i}
+                 \pgfmathsetmacro{\xpos}{\outerRadius * cos(\angle) * \ellipseStretchX}
+                 % Compute dense rank from index distance to poles
+                 \ifdim\i pt>4pt
+                     \pgfmathtruncatemacro{\denserank}{16 - abs(\i - 6) * 4}
+                 \else
+                     \pgfmathtruncatemacro{\denserank}{abs(\i - 2) * 4}
+                 \fi
+                 \pgfmathsetmacro{\ypos}{\topY - \denserank * \deltaY}
+                 % Top/bottom (xpos ≈ 0): center; Left (xpos < 0): align right; Right (xpos > 0): align left
+                 \pgfmathsetmacro{\absxpos}{abs(\xpos)}
+                 \ifdim\absxpos pt<0.1pt
+                     \node[align=center, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+                 \else
+                     \ifdim\xpos pt<0pt
+                         \node[align=right, anchor=east, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+                     \else
+                         \node[align=left, anchor=west, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+                     \fi
+                 \fi
+             }
+         \else
+             % Use original angle-based positioning
+             \foreach \i/\label in {#5} {
+                 \pgfmathsetmacro{\angle}{360/\numPetals * \i}
+                 \pgfmathsetmacro{\xpos}{\outerRadius * cos(\angle) * \ellipseStretchX}
+                 \pgfmathsetmacro{\ypos}{\outerRadius * sin(\angle) * \ellipseStretchY}
+                 \node[align=center, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+             }
+         \fi
+    \end{scope}
+}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+
+    % Level 1
+    \node[font=\Large\bfseries] at (-6, 5) {Context Level 1};
+
+    \drawContextLevel{0}{0}{Autonomous\\Chemistry\\Research}{
+        0/Robotic\\platforms,
+        1/AI/ML\\integration,
+        2/Safety \&\\control,
+        3/Digital\\twins,
+        4/Data\\infrastructure,
+        5/High-throughput\\screening,
+        6/Process\\analytics,
+        7/Multi-agent\\systems
+    }{
+        0/mobile chemists (002.001),
+        0.25/collaborative robots (001.009),
+        0.5/modular hardware (001.010),
+        0.75/gripper innovation (001.013),
+        1/LLM-driven agents (001.021),
+        1.25/neural networks (001.022),
+        1.5/optimization algorithms (001.037),
+        1.75/machine learning (001.040),
+        2/control barrier functions (003.011),
+        2.25/uncertainty handling (003.012),
+        2.5/safety verification (003.001),
+        2.75/real-time constraints (003.019),
+        3/MATTERIX framework (001.002),
+        3.25/simulation acceleration (001.004),
+        3.5/physics modeling (001.006),
+        3.75/sim-to-real transfer (001.002),
+        4/FAIR principles (001.068),
+        4.25/standardization (001.052),
+        4.5/cloud infrastructure (001.055),
+        4.75/federated networks (002.015),
+        5/microfluidics (001.042),
+        5.25/automated synthesis (001.026),
+        5.5/parallel screening (001.032),
+        5.75/droplet-based systems (001.043),
+        6/inline spectroscopy (001.046),
+        6.25/computer vision (001.035),
+        6.5/real-time monitoring (001.047),
+        6.75/process control (001.048),
+        7/ChemAgents (002.004),
+        7.25/collaborative intelligence (001.024),
+        7.5/task coordination (001.055),
+        7.75/autonomous decision-making (001.017)
+        }{1}
+
+    % Arrow to Level 2
+    \draw[->, ultra thick] (3.5, -3) to[out=-45, in=135] (5, -6);
+
+    % Level 2
+    \node[font=\Large\bfseries] at (-6, -6) {Context Level 2};
+
+    \drawContextLevel{0}{-11}{AI-Driven\\Robotic\\Chemistry}{
+        0/Platform\\architectures,
+        1/Optimization\\algorithms,
+        2/LLM\\agents,
+        3/Hardware\\integration,
+        4/Closed-loop\\control,
+        5/Materials\\discovery,
+        6/Synthesis\\automation,
+        7/Performance\\metrics
+    }{
+        0/ARChemist (001.010),
+        0.25/ORGANA (001.009),
+        0.5/Rainbow platform (001.015),
+        0.75/AlphaFlow (001.016),
+        1/Bayesian optimization (001.037),
+        1.25/reinforcement learning (001.073),
+        1.5/A* search (002.009),
+        1.75/multi-objective (001.038),
+        2/QFANG (001.021),
+        2.25/ChemBART (001.022),
+        2.5/Chemma (001.023),
+        2.75/literature mining (001.024),
+        3/robotic arms (001.011),
+        3.25/flow reactors (001.028),
+        3.5/analytical instruments (001.046),
+        3.75/soft grippers (001.013),
+        4/feedback loops (001.017),
+        4.25/autonomous planning (001.018),
+        4.5/parameter adaptation (003.003),
+        4.75/real-time decision (001.055),
+        5/quantum dots (002.006),
+        5.25/perovskites (001.015),
+        5.5/catalysts (002.008),
+        5.75/polymers (002.005),
+        6/flow chemistry (001.029),
+        6.25/batch reactors (001.032),
+        6.5/parallel synthesis (001.026),
+        6.75/protocol execution (001.052),
+        7/throughput gains (001.012),
+        7.25/discovery speed (002.001),
+        7.5/resource efficiency (001.020),
+        7.75/reproducibility (001.066)
+        }{1}
+
+    % Arrow to Level 3
+    \draw[->, ultra thick] (3.5, -14) to[out=-45, in=135] (5, -17);
+
+    % Level 3
+    \node[font=\Large\bfseries] at (-6, -17) {Context Level 3};
+
+    \drawContextLevel{0}{-22}{Autonomous\\Synthesis\\Optimization}{
+        0/Bayesian\\methods,
+        1/Reinforcement\\learning,
+        2/Parameter\\space,
+        3/Real-time\\analytics,
+        4/Flow\\chemistry,
+        5/Batch\\synthesis,
+        6/Multi-objective\\optimization,
+        7/Safety\\constraints
+    }{
+        0/Gaussian processes (001.037),
+        0.25/acquisition functions (001.037),
+        0.5/cost-informed BO (001.037),
+        0.75/uncertainty quantification (003.012),
+        1/policy gradient (001.073),
+        1.25/Q-learning (001.073),
+        1.5/model-based RL (001.073),
+        1.75/reward shaping (001.073),
+        2/design of experiments (001.038),
+        2.25/active learning (001.023),
+        2.5/adaptive sampling (001.040),
+        2.75/grid search (001.038),
+        3/FTIR spectroscopy (001.046),
+        3.25/NIR monitoring (001.048),
+        3.5/UV-Vis inline (001.047),
+        3.75/mass spectrometry (001.046),
+        4/microfluidic reactors (001.042),
+        4.25/continuous processing (001.029),
+        4.5/inline PAT (001.046),
+        4.75/plug flow dynamics (001.029),
+        5/high-throughput screening (001.026),
+        5.25/parallel reactors (001.032),
+        5.5/automated sampling (001.033),
+        5.75/temperature control (001.032),
+        6/Pareto frontier (001.038),
+        6.25/yield vs selectivity (001.038),
+        6.5/multi-task learning (001.041),
+        6.75/constraint handling (001.037),
+        7/control barrier functions (003.011),
+        7.25/filtered CBFs (003.002),
+        7.5/feasibility assurance (003.001),
+        7.75/robust control (003.010)
+        }{1}
+
+        \end{tikzpicture}
+\end{center}
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+
+\subsection*{Template for Adding Level 4}
+
+\begin{verbatim}
+% Choose a concept from Level 3 (e.g., "Control Barrier Functions")
+\drawContextLevel{x-position}{y-position}{Control Barrier\\Functions}{
+    0/Uncertainty\\handling,
+    1/High-order\\constraints,
+    2/Filtered\\CBFs,
+    3/Learning-based\\methods,
+    4/Multi-agent\\coordination,
+    5/Robustness\\guarantees,
+    6/Computational\\efficiency,
+    7/Feasibility\\assurance
+}{
+    0/adaptive DNNs (003.003),
+    0.25/parameter estimation (003.003),
+    0.5/worst-case bounds (003.010),
+    0.75/stochastic systems (003.012),
+    1/relative degree (003.004),
+    1.25/truncated Taylor (003.004),
+    1.5/rectified CBFs (003.005),
+    1.75/reciprocal CBFs (003.006),
+    2/input regularization (003.002),
+    2.25/Lipschitz continuity (003.002),
+    2.5/auxiliary dynamics (003.002),
+    2.75/smoothness guarantees (003.002),
+    ... (add more outer detail labels with (scope/item) tags)
+}
+\end{verbatim}
+
+\paragraph{Key Principle:} Each level represents a \textbf{zoom-in operation}—taking a specific concept and exploring its constituent aspects and implementation details. The elliptical coordinate structure ensures both breadth (different aspects via angles) and depth (abstraction levels via radius) are captured simultaneously, with the flat oval layout optimized for text readability.
+
+\paragraph{Context Map Content:} This map visualizes the autonomous chemistry research landscape from perplexity documentation, progressing from high-level research ecosystem (Level 1) through AI-driven robotic platforms (Level 2) to detailed synthesis optimization techniques (Level 3). Each level contains 8 aspect categories with 32 specific implementations distributed across the outer radius.
+
+\paragraph{Source Tagging:} Each outer ring item includes a tag in the format \texttt{(scope/item)} that references the source document:
+\begin{itemize}
+    \item \textbf{scope001}: Full research on automation efforts in the chemistry lab
+    \item \textbf{scope002}: Robotic Chemists - A Comprehensive Research Survey
+    \item \textbf{scope003}: Most recent reviews on Control Barrier Functions
+    \item Each \textbf{itemXXX} corresponds to a specific source file within the scope folder
+\end{itemize}
+
+\end{document}

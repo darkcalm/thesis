@@ -1,0 +1,17 @@
+Publication #165
+============================================================
+
+Title: Exploring the impact of select anchor groups for norbornadiene/quadricyclane single-molecule switches
+
+Authors: Shima Ghasemi, Luca Ornago, Zacharias Liasi, Magnus Bukhave Johansen, Theo Juncker von Buchwald
+
+Journal/Conference: Journal of Materials Chemistry C
+
+Type: journal-article
+
+DOI: 10.1039/d3tc02652c
+
+URL: https://doi.org/10.1039/d3tc02652c
+
+Abstract:
+<jats:p>To achieve the ultimate limit of device miniaturization, it is necessary to have a comprehensive understanding of the structure–property relationship in functional molecular systems used in single-molecule electronics.</jats:p>

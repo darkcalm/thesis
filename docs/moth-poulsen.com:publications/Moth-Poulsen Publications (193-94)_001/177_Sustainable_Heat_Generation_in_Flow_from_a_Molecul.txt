@@ -1,0 +1,19 @@
+Publication #177
+============================================================
+
+Title: Sustainable Heat Generation in Flow from a Molecular Solar Thermal Energy Storage System
+
+Authors: Lucien Magson, Dario Maggiolo, Angela Sasic Kalagasidis, Stefan Henninger, Gunther Munz
+
+Published: [2025, 1]
+
+Journal/Conference: Advanced Energy and Sustainability Research
+
+Type: journal-article
+
+DOI: 10.1002/aesr.202400230
+
+URL: https://doi.org/10.1002/aesr.202400230
+
+Abstract:
+<jats:p>As the global deployment of renewable technologies accelerate, finding efficient ways to store energy will aid in responding to shifting energy demands. A prospective option not only in harvesting solar energy but also in emission‐free heating is MOlecular Solar Thermal (MOST) energy storage. A central part of MOST applications is to develop methods to release the stored energy. Herein, the Quadricyclane (QC)‐to‐Norbornadiene catalyzed back reaction is explored in a specially designed packed‐bed reactor. Four distinctly sized and purposely synthesized platinum on activated carbon catalysts are studied to trigger the heat release from the energy‐dense QC isomer. The catalysts are fully characterized using a variety of structural, surface, and spectroscopic techniques. Parameters to optimize catalytic conversion and heat release in flow conditions are explored including particle size and packing behavior, flow rates, and molecular residence times. Moreover, using CO pulse chemisorption technique, site time yield values and a turnover number are reported. Complementary to the flow reactions, computational fluid dynamic simulations applying lattice Boltzmann methods to two catalytic packed beds of different size ranges are done to evaluate fluid‐dynamic behavior within the reactor bed to ascertain the ideal particle size and packing density for catalysis in MOST applications.</jats:p>

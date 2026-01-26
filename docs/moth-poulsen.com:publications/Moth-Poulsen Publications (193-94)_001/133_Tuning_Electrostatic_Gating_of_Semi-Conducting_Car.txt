@@ -1,0 +1,19 @@
+Publication #133
+============================================================
+
+Title: Tuning Electrostatic Gating of Semiconducting Carbon Nanotubes by Controlling Protein Orientation in Biosensing Devices
+
+Authors: Xinzhao Xu, Benjamin J. Bowen, Rebecca E. A. Gwyther, Mark Freeley, Bella Grigorenko
+
+Published: [2021, 9, 6]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202104044
+
+URL: https://doi.org/10.1002/ange.202104044
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The ability to detect proteins through gating conductance by their unique surface electrostatic signature holds great potential for improving biosensing sensitivity and precision. Two challenges are: (1) defining the electrostatic surface of the incoming ligand protein presented to the conductive surface; (2) bridging the Debye gap to generate a measurable response. Herein, we report the construction of nanoscale protein‐based sensing devices designed to present proteins in defined orientations; this allowed us to control the local electrostatic surface presented within the Debye length, and thus modulate the conductance gating effect upon binding incoming protein targets. Using a β‐lactamase binding protein (BLIP2) as the capture protein attached to carbon nanotube field effect transistors in different defined orientations. Device conductance had influence on binding TEM‐1, an important β‐lactamase involved in antimicrobial resistance (AMR). Conductance increased or decreased depending on TEM‐1 presenting either negative or positive local charge patches, demonstrating that local electrostatic properties, as opposed to protein net charge, act as the key driving force for electrostatic gating. This, in turn can, improve our ability to tune the gating of electrical biosensors toward optimized detection, including for AMR as outlined herein.</jats:p>

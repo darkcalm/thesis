@@ -1,0 +1,17 @@
+Publication #153
+============================================================
+
+Title: Triplet–triplet annihilation mediated photon upconversion solar energy systems
+
+Authors: Lukas Naimovičius, Pankaj Bharmoria, Kasper Moth-Poulsen
+
+Journal/Conference: Materials Chemistry Frontiers
+
+Type: journal-article
+
+DOI: 10.1039/d3qm00069a
+
+URL: https://doi.org/10.1039/d3qm00069a
+
+Abstract:
+<jats:p>Triplet–triplet annihilation mediated solar energy harvesting systems for a global transition toward carbon-neutral energy technologies.</jats:p>

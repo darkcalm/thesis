@@ -1,0 +1,17 @@
+Publication #102
+============================================================
+
+Title: Electrochemically controlled energy storage in a norbornadiene-based solar fuel with 99% reversibility
+
+Authors: Fabian Waidhas, Martyn Jevric, Lukas Fromm, Manon Bertram, Andreas Görling
+
+Published: [2019, 9]
+
+Journal/Conference: Nano Energy
+
+Type: journal-article
+
+DOI: 10.1016/j.nanoen.2019.103872
+
+URL: https://doi.org/10.1016/j.nanoen.2019.103872
+

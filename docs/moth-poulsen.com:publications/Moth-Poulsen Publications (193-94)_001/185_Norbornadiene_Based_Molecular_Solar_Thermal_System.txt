@@ -1,0 +1,19 @@
+Publication #185
+============================================================
+
+Title: Tuning Electrocatalytic Energy Release in Norbornadiene Based Molecular Solar Thermal Systems Through Substituent Effects
+
+Authors: Evanie Franz, Nils Oberhof, Daniel Krappmann, Nicolò Baggi, Zarah Hussain
+
+Published: [2025, 9]
+
+Journal/Conference: Chemistry – A European Journal
+
+Type: journal-article
+
+DOI: 10.1002/chem.202502294
+
+URL: https://doi.org/10.1002/chem.202502294
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Molecular solar thermal (MOST) systems, such as the norbornadiene/quadricyclane (NBD/QC) pair, combine solar energy conversion, storage, and release in a simple one‐molecule process. The energy‐releasing reaction QC to NBD can be controlled electrochemically. In this study, we used in‐situ photoelectrochemical infrared spectroscopy (PEC‐IRRAS) together with density functional theory (DFT) calculations to investigate how electron donating (EDG) and electron withdrawing (EWG) groups in the push‐pull system of the MOST pair affect the electrocatalytic properties of the electrochemically triggered back‐conversion. Specifically, we investigated cyano, tosyl, and methyl ester groups as EWGs, and methoxy, dimethylamine, thioether, and diphenylamine groups located in the <jats:italic>para</jats:italic>‐position of a phenyl group as EDGs. We characterized the onset potential, electrochemical stability window, and selectivity. We found that these properties strongly depend on the strength of electron donation of the EDG, as it exclusively locates the highest occupied molecular orbital (HOMO) and raises its energy level. We obtained the highest selectivity for compounds with <jats:italic>p</jats:italic>‐methoxyphenyl functionality.</jats:p>

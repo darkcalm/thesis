@@ -1,0 +1,17 @@
+Publication #178
+============================================================
+
+Title: Photon upconversion crystals doped bacterial cellulose composite films as recyclable photonic bioplastics
+
+Authors: Pankaj Bharmoria, Lukas Naimovičius, Deyaa Abol-Fotouh, Mila Miroshnichenko, Justas Lekavičius
+
+Journal/Conference: Communications Materials
+
+Type: journal-article
+
+DOI: 10.1038/s43246-024-00638-6
+
+URL: https://doi.org/10.1038/s43246-024-00638-6
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Biopolymers currently utilized as substitutes for synthetic polymers in photonics applications are predominantly confined to linear optical color responses. Herein we expand their applications in non-linear optics by integrating with triplet-triplet annihilation photon upconversion crystals. A photon upconverting biomaterial is prepared by cultivating Pd(II) meso-tetraphenyl tetrabenzoporphine: 9,10-diphenyl anthracene (sensitizer: annihilator) crystals on bacterial cellulose hydrogel that serves both as host and template for the crystallization of photon upconversion chromophores. Coating with gelatin improves the material’s optical transparency by adjusting the refractive indices. The prepared material shows an upconversion of 633 nm red light to 443 nm blue light, indicated by quadratic to linear dependence on excitation power density (non-linearly). Notably, components of this material are physically dis-assembled to retrieve 66 ± 1% of annihilator, at the end of life. Whereas, the residual clean biomass is subjected to biodegradation, showcasing the sustainability of the developed photonics material.</jats:p>

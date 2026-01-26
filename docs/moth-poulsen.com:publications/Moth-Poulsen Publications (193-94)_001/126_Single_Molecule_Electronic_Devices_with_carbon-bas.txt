@@ -1,0 +1,17 @@
+Publication #126
+============================================================
+
+Title: Single molecule electronic devices with carbon-based materials: status and opportunity
+
+Authors: Shima Ghasemi, Kasper Moth-Poulsen
+
+Journal/Conference: Nanoscale
+
+Type: journal-article
+
+DOI: 10.1039/d0nr07844a
+
+URL: https://doi.org/10.1039/d0nr07844a
+
+Abstract:
+<p>The field of single molecule electronics has progressed remarkably in the past decades by allowing for more versatile molecular functions and improving device fabrication techniques.</p>

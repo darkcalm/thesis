@@ -1,0 +1,19 @@
+Publication #162
+============================================================
+
+Title: Flow‐Integrated Preparation of Norbornadiene Precursors for Solar Thermal Energy Storage
+
+Authors: Nicolò Baggi, Helen Hölzel, Hannes Schomaker, Kevin Moreno, Kasper Moth‐Poulsen
+
+Published: [2024, 1, 22]
+
+Journal/Conference: ChemSusChem
+
+Type: journal-article
+
+DOI: 10.1002/cssc.202301184
+
+URL: https://doi.org/10.1002/cssc.202301184
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Molecular solar thermal (MOST) energy storage systems are getting increased attention related to renewable energy storage applications. Particularly, 2,3‐difunctionalized norbornadiene‐quadricyclane (NBD‐QC) switches bearing a nitrile (CN) group as one of the two substituents are investigated as promising MOST candidates thanks to their high energy storage densities and their red‐shifted absorbance. Moreover, such NBD systems can be prepared in large quantities (a requirement for MOST‐device applications) in flow through Diels‐Alder reaction between cyclopentadiene and appropriately functionalized propynenitriles. However, these acetylene precursors are traditionally prepared in batch from their corresponding acetophenones using reactive chemicals potentially leading to health and physical hazards, especially when working on a several‐grams scale. Here, we develop a multistep flow‐chemistry route to enhance the production of these crucial precursors. Furthermore, we assess the atom economy (AE) and the E‐factor showing improved green metrics compared to classical batch methods. Our results pave the way for a complete flow synthesis of NBDs with a positive impact on green chemistry aspects.</jats:p>

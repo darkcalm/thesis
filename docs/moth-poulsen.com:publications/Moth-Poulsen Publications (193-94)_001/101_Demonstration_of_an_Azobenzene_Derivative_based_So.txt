@@ -1,0 +1,17 @@
+Publication #101
+============================================================
+
+Title: Demonstration of an azobenzene derivative based solar thermal energy storage system
+
+Authors: Zhihang Wang, Raul Losantos, Diego Sampedro, Masa-aki Morikawa, Karl Börjesson
+
+Journal/Conference: Journal of Materials Chemistry A
+
+Type: journal-article
+
+DOI: 10.1039/c9ta04905c
+
+URL: https://doi.org/10.1039/c9ta04905c
+
+Abstract:
+<p>Molecules capable of reversible storage of solar energy have recently attracted increasing interest. Here, a liquid azobenzene molecule has been studied for solar thermal energy storage applications and integrated into flow-chemistry devices.</p>

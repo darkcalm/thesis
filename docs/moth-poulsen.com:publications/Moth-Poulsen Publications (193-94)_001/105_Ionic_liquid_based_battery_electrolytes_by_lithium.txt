@@ -1,0 +1,17 @@
+Publication #105
+============================================================
+
+Title: Ionic liquid based battery electrolytes using lithium and sodium pseudo-delocalized pyridinium anion salts
+
+Authors: Elham Hosseini-Bab-Anari, Adriana M. Navarro-Suárez, Kasper Moth-Poulsen, Patrik Johansson
+
+Journal/Conference: Physical Chemistry Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1039/c9cp03445e
+
+URL: https://doi.org/10.1039/c9cp03445e
+
+Abstract:
+<p>Ionic liquid based electrolytes using a novel pseudo-delocalized anion – 1-methylpyridinum 2,6-dicarboxylate (MM26py) – are presented and tested for modern battery usage.</p>

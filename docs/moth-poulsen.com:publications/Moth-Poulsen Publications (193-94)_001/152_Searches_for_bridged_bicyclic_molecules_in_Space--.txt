@@ -1,0 +1,17 @@
+Publication #152
+============================================================
+
+Title: Searches for bridged bicyclic molecules in space—norbornadiene and its cyano derivatives
+
+Authors: Marie-Aline Martin-Drumel, Jean-Thibaut Spaniol, Helen Hölzel, Marcelino Agúndez, Jose Cernicharo
+
+Journal/Conference: Faraday Discussions
+
+Type: journal-article
+
+DOI: 10.1039/d3fd00016h
+
+URL: https://doi.org/10.1039/d3fd00016h
+
+Abstract:
+<jats:p>Laboratory rotational spectra of norbornadiene and its cyano derivatives were recorded using chirped-pulse millimetre-wave spectroscopy. These molecules were then searched for in the starless core TMC-1 using the QUIJOTE line survey.</jats:p>

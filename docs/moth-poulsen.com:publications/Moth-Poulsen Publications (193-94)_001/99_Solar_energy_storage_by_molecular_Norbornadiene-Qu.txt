@@ -1,0 +1,19 @@
+Publication #99
+============================================================
+
+Title: Solar Energy Storage by Molecular Norbornadiene–Quadricyclane Photoswitches: Polymer Film Devices
+
+Authors: Anne Ugleholdt Petersen, Anna I. Hofmann, Méritxell Fillols, Mads Mansø, Martyn Jevric
+
+Published: [2019, 6]
+
+Journal/Conference: Advanced Science
+
+Type: journal-article
+
+DOI: 10.1002/advs.201900367
+
+URL: https://doi.org/10.1002/advs.201900367
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Devices that can capture and convert sunlight into stored chemical energy are attractive candidates for future energy technologies. A general challenge is to combine efficient solar energy capture with high energy densities and energy storage time into a processable composite for device application. Here, norbornadiene (NBD)–quadricyclane (QC) molecular photoswitches are embedded into polymer matrices, with possible applications in energy storing coatings. The NBD–QC photoswitches that are capable of absorbing sunlight with estimated solar energy storage efficiencies of up to 3.8% combined with attractive energy storage densities of up to 0.48 MJ kg<jats:sup>−1</jats:sup>. The combination of donor and acceptor units leads to an improved solar spectrum match with an onset of absorption of up to 529 nm and a lifetime (<jats:italic>t</jats:italic><jats:sub>1/2</jats:sub>) of up to 10 months. The NBD–QC systems with properties matched to a daily energy storage cycle are further investigated in the solid state by embedding the molecules into a series of polymer matrices revealing that polystyrene is the preferred choice of matrix. These polymer devices, which can absorb sunlight and over a daily cycle release the energy as heat, are investigated for their cyclability, showing multicycle reusability with limited degradation that might allow them to be applied as window laminates.</jats:p>

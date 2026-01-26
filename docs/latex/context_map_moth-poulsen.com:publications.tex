@@ -1,0 +1,317 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{positioning,shapes.geometric,calc}
+
+\begin{document}
+
+\section*{Multi-Level Context Map Generator}
+\subsection*{Usage Instructions for Handoff}
+
+\paragraph{Conceptual Framework:}
+This visualization uses \textbf{elliptical coordinates} derived from polar coordinates $(r, \phi)$ at each stage to map concepts across abstraction levels. The circular coordinates are transformed into a flat oval shape to provide more horizontal space for text:
+\begin{itemize}
+    \item \textbf{Radius $r$}: Abstraction level (center = high abstraction, outer rings = lower abstraction/specific implementations)
+    \item \textbf{Angle $\phi$}: Aspect or dimension of the central concept
+    \item \textbf{Coordinate transformation}: $(r, \phi) \rightarrow (r \cos\phi \cdot s_x, r \sin\phi \cdot s_y)$ where $s_x = 1.4$ (horizontal stretch) and $s_y = 0.8$ (vertical compression) create a flat oval layout
+    \item \textbf{Visual style}: Nodes have no borders or backgrounds for a clean, minimal appearance
+    \item \textbf{Progression}: Each level zooms into a concept from the previous level, making it the new center
+\end{itemize}
+
+\paragraph{How to Extend:}
+\begin{enumerate}
+    \item \textbf{Add a new level}: Pick any medium-to-low radius concept from the current level
+    \item Make it the \textbf{new center} of the next level
+    \item Define 6--8 \textbf{aspects} (angular positions) related to this concept
+    \item For each aspect, place labels at different \textbf{radii} (abstraction levels):
+    \begin{itemize}
+        \item Center ($r = 0$): Central concept
+        \item Medium radius ($r = 2.6$): Intermediate concepts
+        \item Outer radius ($r = 4$): Concrete implementations/specifics
+    \end{itemize}
+\end{enumerate}
+
+\paragraph{Customization Guide:}
+\begin{itemize}
+    \item Modify \texttt{\textbackslash drawContextLevel} parameters: center text, petal labels, outer labels
+    \item Adjust \texttt{petalRadius} (default: 2.6), \texttt{outerRadius} (default: 5) for sizing
+    \item Change \texttt{numPetals} (default: 8) for more/fewer aspects
+    \item Adjust \texttt{ellipseStretchX} (default: 1.4) and \texttt{ellipseStretchY} (default: 0.8) to modify the oval shape
+    \item Connect levels with curved arrows showing progression
+    \item Note: All nodes are borderless and backgroundless by design
+\end{itemize}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+% Define custom command for drawing context levels
+\newcommand{\drawContextLevel}[6]{
+     % #1 = center x position
+     % #2 = center y position
+     % #3 = center text
+     % #4 = list of petal/bubble labels (comma separated)
+     % #5 = list of outer detail labels (comma separated)
+     % #6 = use linear y spacing (1=yes, 0=no)
+
+    \begin{scope}[shift={(#1,#2)}]
+        % Draw center circle (no border, no fill)
+        \node[circle, minimum size=2cm, align=center, font=\bfseries\small]
+            at (0,0) {#3};
+
+        % Parameters
+        \def\petalRadius{2.6}
+        \def\outerRadius{4}
+        \def\numPetals{8}
+        % Elliptical coordinate transformation: horizontal stretch factor
+        \def\ellipseStretchX{1.4}
+        \def\ellipseStretchY{0.8}
+
+        % Draw petals (medium abstraction bubbles) - no border, no fill
+        \foreach \i/\label in {#4} {
+            \pgfmathsetmacro{\angle}{360/\numPetals * \i}
+            \pgfmathsetmacro{\xpos}{\petalRadius * cos(\angle) * \ellipseStretchX}
+            \pgfmathsetmacro{\ypos}{\petalRadius * sin(\angle) * \ellipseStretchY}
+            \node[align=center, font=\scriptsize]
+                at (\xpos, \ypos) {\label};
+        }
+
+        % Draw outer labels with optional linear y-spacing
+         \if#61
+             % Dense ranking: 32 labels -> 17 unique y-levels (ranks 0-16)
+             % Index 2 = top (rank 0), index 6 = bottom (rank 16)
+             % Rank = distance from pole * 4: |i-2|*4 for i in [0,4], 16-|i-6|*4 for i in (4,8)
+             \pgfmathsetmacro{\topY}{\outerRadius * \ellipseStretchY}
+             \pgfmathsetmacro{\bottomY}{-\outerRadius * \ellipseStretchY}
+             \pgfmathsetmacro{\deltaY}{(\topY - \bottomY) / 16}
+             \foreach \i/\label in {#5} {
+                 \pgfmathsetmacro{\angle}{360/\numPetals * \i}
+                 \pgfmathsetmacro{\xpos}{\outerRadius * cos(\angle) * \ellipseStretchX}
+                 % Compute dense rank from index distance to poles
+                 \ifdim\i pt>4pt
+                     \pgfmathtruncatemacro{\denserank}{16 - abs(\i - 6) * 4}
+                 \else
+                     \pgfmathtruncatemacro{\denserank}{abs(\i - 2) * 4}
+                 \fi
+                 \pgfmathsetmacro{\ypos}{\topY - \denserank * \deltaY}
+                 % Top/bottom (xpos ≈ 0): center; Left (xpos < 0): align right; Right (xpos > 0): align left
+                 \pgfmathsetmacro{\absxpos}{abs(\xpos)}
+                 \ifdim\absxpos pt<0.1pt
+                     \node[align=center, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+                 \else
+                     \ifdim\xpos pt<0pt
+                         \node[align=right, anchor=east, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+                     \else
+                         \node[align=left, anchor=west, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+                     \fi
+                 \fi
+             }
+         \else
+             % Use original angle-based positioning
+             \foreach \i/\label in {#5} {
+                 \pgfmathsetmacro{\angle}{360/\numPetals * \i}
+                 \pgfmathsetmacro{\xpos}{\outerRadius * cos(\angle) * \ellipseStretchX}
+                 \pgfmathsetmacro{\ypos}{\outerRadius * sin(\angle) * \ellipseStretchY}
+                 \node[align=center, font=\tiny, inner sep=2pt] at (\xpos, \ypos) {\label};
+             }
+         \fi
+    \end{scope}
+}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+
+    % Level 1
+    \node[font=\Large\bfseries] at (-6, 5) {Context Level 1};
+
+    \drawContextLevel{0}{0}{Molecular Solar\\Thermal Energy\\Storage (MOST)}{
+        0/Photoswitch\\design,
+        1/Catalytic\\systems,
+        2/Device\\integration,
+        3/Energy\\metrics,
+        4/Material\\matrices,
+        5/Photon\\upconversion,
+        6/Characterization,
+        7/Synthesis\\methods
+    }{
+        0/norbornadiene-QC 119.001,
+        0.25/azobenzene systems 101.001,
+        0.5/donor-acceptor pairs 109.001,
+        0.75/bicyclic dienes 158.001,
+        1/heterogeneous catalysts 167.001,
+        1.25/noble metal catalysts 182.001,
+        1.5/carbon-based catalysts 168.001,
+        1.75/electrochemical control 102.001,
+        2/polymer film devices 099.001,
+        2.25/flow systems 177.001,
+        2.5/hybrid solar devices 173.001,
+        2.75/chip scale power 141.001,
+        3/storage density 099.001,
+        3.25/energy conversion efficiency 173.001,
+        3.5/heat release tuning 151.001,
+        3.75/solar spectrum match 171.001,
+        4/polystyrene matrix 099.001,
+        4.25/bioplastics 127.001,
+        4.5/lyotropic liquid crystals 186.001,
+        4.75/organogels 125.001,
+        5/triplet-triplet annihilation 153.001,
+        5.25/triplet sensitization 122.001,
+        5.5/visible-to-UV upconversion 142.001,
+        5.75/NIR photoswitching 192.001,
+        6/photoisomerization kinetics 184.001,
+        6.25/high-throughput screening 150.001,
+        6.5/spectroscopic methods 100.001,
+        6.75/thermal performance 140.001,
+        7/flow chemistry synthesis 134.001,
+        7.25/automated platforms 179.001,
+        7.5/scalable preparation 180.001,
+        7.75/continuous processing 162.001
+        }{1}
+
+    % Arrow to Level 2
+    \draw[->, ultra thick] (3.5, -3) to[out=-45, in=135] (5, -6);
+
+    % Level 2
+    \node[font=\Large\bfseries] at (-6, -6) {Context Level 2};
+
+    \drawContextLevel{0}{-11}{Photoswitch\\Design \&\\Engineering}{
+        0/Molecular\\structure,
+        1/Optical\\properties,
+        2/Kinetic\\stability,
+        3/Energy\\density,
+        4/Photochemical\\mechanisms,
+        5/Solvent\\effects,
+        6/Anchoring\\strategies,
+        7/Substituent\\effects
+    }{
+        0/norbornadiene scaffold 097.001,
+        0.25/quadricyclane metastable 097.001,
+        0.5/azobenzene Z-E isomers 101.001,
+        0.75/dithiafulvene derivatives 095.001,
+        1/red-shifted absorption 095.001,
+        1.25/enhanced solar match 171.001,
+        1.5/photoluminescence 191.001,
+        1.75/fluorescent probes 170.001,
+        2/half-life tuning 151.001,
+        2.25/sub-zero operation 143.001,
+        2.5/10-month stability 099.001,
+        2.75/Wagner-Meerwein rearrangement 097.001,
+        3/0.48 MJ\/kg storage 099.001,
+        3.25/3.8\% solar efficiency 099.001,
+        3.5/phase change storage 181.001,
+        3.75/multimode switching 187.001,
+        4/photoisomerization pathways 129.001,
+        4.25/two-way switching 176.001,
+        4.5/triplet sensitization 161.001,
+        4.75/strong coupling regime 129.001,
+        5/toluene solvent effects 098.001,
+        5.25/aqueous surfactant systems 190.001,
+        5.5/polymer matrix embedding 099.001,
+        5.75/ionic liquid media 105.001,
+        6/carboxylic acid anchors 100.001,
+        6.25/oxide surface binding 108.001,
+        6.5/single molecule junctions 165.001,
+        6.75/Au(111) self-assembly 183.001,
+        7/cyano substituent effects 097.001,
+        7.25/bulky group stabilization 097.001,
+        7.5/donor-acceptor tuning 109.001,
+        7.75/pyrene functionalization 170.001
+        }{1}
+
+    % Arrow to Level 3
+    \draw[->, ultra thick] (3.5, -14) to[out=-45, in=135] (5, -17);
+
+    % Level 3
+    \node[font=\Large\bfseries] at (-6, -17) {Context Level 3};
+
+    \drawContextLevel{0}{-22}{Norbornadiene-\\Quadricyclane\\Systems}{
+        0/Structural\\modifications,
+        1/Catalytic\\energy release,
+        2/Device\\applications,
+        3/Computational\\design,
+        4/Synthetic\\routes,
+        5/Kinetic\\control,
+        6/Interfacial\\chemistry,
+        7/Performance\\optimization
+    }{
+        0/2-cyano-3-anisyl NBD 097.001,
+        0.25/acrylonitrile extension 097.001,
+        0.5/7-position steric bulk 097.001,
+        0.75/multi-site functionalization 180.001,
+        1/Pt nanoparticle catalysts 182.001,
+        1.25/Pd alloy catalysts 182.001,
+        1.5/gamma-alumina support 124.001,
+        1.75/linear free-energy relations 112.001,
+        2/polystyrene films 099.001,
+        2.25/window laminate coatings 099.001,
+        2.5/flow reactor systems 177.001,
+        2.75/memristive devices 115.001,
+        3/bicyclic diene screening 158.001,
+        3.25/DFT energy predictions 150.001,
+        3.5/structure-property mapping 150.001,
+        3.75/high-throughput virtual screening 150.001,
+        4/dicyclopentadiene cracking 134.001,
+        4.25/Diels-Alder cycloaddition 162.001,
+        4.5/flow synthesis integration 162.001,
+        4.75/practical multi-step preparation 180.001,
+        5/automated kinetics platform 184.001,
+        5.25/activation barrier measurement 100.001,
+        5.5/temperature-dependent rates 112.001,
+        5.75/photolytic stability studies 149.001,
+        6/Co3O4 oxide anchoring 100.001,
+        6.25/Au(111) monolayers 183.001,
+        6.5/electrode interface control 113.001,
+        6.75/ultrahigh vacuum studies 108.001,
+        7/99.8\% reversibility 113.001,
+        7.25/daily cycle optimization 099.001,
+        7.5/multicycle stability 099.001,
+        7.75/degradation minimization 140.001
+        }{1}
+
+        \end{tikzpicture}
+\end{center}
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+
+\subsection*{Template for Adding Level 4}
+
+\begin{verbatim}
+% Choose a concept from Level 3 (e.g., "Catalytic energy release")
+\drawContextLevel{x-position}{y-position}{Catalytic\\Energy\\Release}{
+    0/Catalyst\\types,
+    1/Support\\materials,
+    2/Reaction\\kinetics,
+    3/Activation\\barriers,
+    4/Temperature\\effects,
+    5/Catalyst\\stability,
+    6/Selectivity,
+    7/Scale-up\\strategies
+}{
+    0/platinum nanoparticles 182.001,
+    0.25/palladium alloys 182.001,
+    0.5/carbon-based catalysts 168.001,
+    0.75/oxide-supported metals 182.001,
+    1/gamma-alumina 124.001,
+    1.25/silica supports 130.001,
+    1.5/electrode materials 113.001,
+    1.75/surface functionalization 168.001,
+    ... (add more outer detail labels with xxx.yyy tags)
+}{1}
+\end{verbatim}
+
+\paragraph{Key Principle:} Each level represents a \textbf{zoom-in operation}—taking a specific concept and exploring its constituent aspects and implementation details. The elliptical coordinate structure ensures both breadth (different aspects via angles) and depth (abstraction levels via radius) are captured simultaneously, with the flat oval layout optimized for text readability.
+
+\paragraph{Context Map Content:} This map visualizes the Moth-Poulsen research group's work on Molecular Solar Thermal Energy Storage, progressing from the overarching MOST concept (Level 1) through photoswitch design and engineering (Level 2) to detailed norbornadiene-quadricyclane systems (Level 3). Each level contains 8 aspect categories with 32 specific implementations distributed across the outer radius.
+
+\paragraph{Source Tagging:} Each outer ring item includes a tag in the format \texttt{xxx.yyy} that references the source publication:
+\begin{itemize}
+    \item \textbf{xxx}: Publication number from the Moth-Poulsen Publications list (193 most recent to 094 oldest)
+    \item Example: \texttt{119.001} refers to publication \#119 "Engineering of Norbornadiene-Quadricyclane Photoswitches"
+    \item Example: \texttt{099.001} refers to publication \#99 "Solar Energy Storage by Molecular Norbornadiene-Quadricyclane Photoswitches: Polymer Film Devices"
+    \item The summaries are available in: \texttt{moth-poulsen.com:publications/Moth-Poulsen Publications (193-94)\_summaries/}
+\end{itemize}
+
+\end{document}

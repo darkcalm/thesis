@@ -1,0 +1,19 @@
+Publication #148
+============================================================
+
+Title: Optically Controlled Thermochromic Switching for Multi‐Input Molecular Logic
+
+Authors: Liang Fei, Weidong Yu, Zonghuai Wu, Yunjie Yin, Kasper Moth‐Poulsen
+
+Published: [2022, 11, 2]
+
+Journal/Conference: Angewandte Chemie
+
+Type: journal-article
+
+DOI: 10.1002/ange.202212483
+
+URL: https://doi.org/10.1002/ange.202212483
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Leuco dye‐based thermochromic materials offer enormous potential for visible molecular logic due to the appealing reversible color‐changing effect. The stable color state is uncontrollable as it depends only on the spontaneous protonation of the leuco dye and color developer. There is still a challenge to propose an effective approach to control bistable color function at required temperature. A family of azobenzenes with various alkyl chains (AZO(n)) is designed for protonation competition with leuco dye. The hydrogen bond and Van der Waals forces are formed between color developer and AZO(n). The color developer can be locked to provide the proton for the leuco dye by <jats:italic>Z</jats:italic>‐AZO(n), while it can be released upon <jats:italic>Z</jats:italic>‐to‐<jats:italic>E</jats:italic> photoisomerization. The locked state can be lasted for more than 16 hours. This optically controlled leuco dye‐based system demonstrates a visible sequential logic operation with four‐input signals, and provides a new type of protonation‐based optical control.</jats:p>

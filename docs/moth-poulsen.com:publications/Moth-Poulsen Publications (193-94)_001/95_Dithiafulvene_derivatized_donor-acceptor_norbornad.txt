@@ -1,0 +1,17 @@
+Publication #95
+============================================================
+
+Title: Dithiafulvene derivatized donor–acceptor norbornadienes with redshifted absorption
+
+Authors: Mads Mansø, Martin Drøhse Kilde, Sandeep Kumar Singh, Paul Erhart, Kasper Moth-Poulsen
+
+Journal/Conference: Physical Chemistry Chemical Physics
+
+Type: journal-article
+
+DOI: 10.1039/c8cp07744d
+
+URL: https://doi.org/10.1039/c8cp07744d
+
+Abstract:
+<p>Norbornadiene monomers and dimers incorporating an electron-donating dithiafulvene unit were prepared and studied for their absorption properties and photoswitching abilities.</p>

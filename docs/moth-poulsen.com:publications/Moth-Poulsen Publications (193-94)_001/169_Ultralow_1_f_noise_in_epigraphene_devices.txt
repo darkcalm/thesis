@@ -1,0 +1,19 @@
+Publication #169
+============================================================
+
+Title: Ultralow 1/f noise in epigraphene devices
+
+Authors: N. Shetty, F. Chianese, H. He, J. Huhtasaari, S. Ghasemi
+
+Published: [2024, 2, 26]
+
+Journal/Conference: Applied Physics Letters
+
+Type: journal-article
+
+DOI: 10.1063/5.0185890
+
+URL: https://doi.org/10.1063/5.0185890
+
+Abstract:
+<jats:p>We report the lowest recorded levels of 1/f noise for graphene-based devices, at the level of SV/V2=SI/I2=4.4×10−16 (1/Hz), measured at f = 10 Hz (SV/V2=SI/I2 &amp;lt; 10−16 1/Hz for f &amp;gt; 100 Hz) in large-area epitaxial graphene on silicon carbide (epigraphene) Hall sensors. This performance is made possible through the combination of high material quality, low contact resistance achieved by edge contact fabrication process, homogeneous doping, and stable passivation of the graphene layer. Our study explores the nature of 1/f noise as a function of carrier density and device geometry and includes data from Hall sensors with device area range spanning over six orders of magnitude, with characteristic device length ranging from L = 1 μm to 1 mm. In optimized graphene Hall sensors, we demonstrate arrays to be a viable route to improve further the magnetic field detection: a simple parallel connection of two devices displays record-high magnetic field sensitivity at room temperature, with minimum detectable magnetic field levels down to Bmin = 9.5 nT/√Hz. The remarkable low levels of 1/f noise observed in epigraphene devices hold immense capacity for the design and fabrication of scalable epigraphene-based sensors with exceptional performance.</jats:p>

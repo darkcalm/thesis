@@ -1,0 +1,19 @@
+Publication #136
+============================================================
+
+Title: Liquid‐Based Multijunction Molecular Solar Thermal Energy Collection Device
+
+Authors: Zhihang Wang, Henry Moïse, Martina Cacciarini, Mogens Brøndsted Nielsen, Masa‐aki Morikawa
+
+Published: [2021, 11]
+
+Journal/Conference: Advanced Science
+
+Type: journal-article
+
+DOI: 10.1002/advs.202103060
+
+URL: https://doi.org/10.1002/advs.202103060
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>Photoswitchable molecules‐based solar thermal energy storage system (<jats:bold>MOST</jats:bold>) can potentially be a route to store solar energy for future use. Herein, the use of a multijunction <jats:bold>MOST</jats:bold> device that combines various photoswitches with different onsets of absorption to push the efficiency limit on solar energy collection and storage is explored. With a parametric model calculation, it is shown that the efficiency limit of <jats:bold>MOST</jats:bold> concept can be improved from 13.0% to 18.2% with a double‐junction system and to 20.5% with a triple‐junction system containing ideal, red‐shifted <jats:bold>MOST</jats:bold> candidates. As a proof‐of‐concept, the use of a three‐layered <jats:bold>MOST</jats:bold> device is experimentally demonstrated. The device uses different photoswitches including a norbornadiene derivative, a dihydroazulene derivative, and an azobenzene derivative in liquid state with different <jats:bold>MOST</jats:bold>properties, to increase the energy capture and storage behavior. This conceptional device introduces a new way of thinking and designing optimal molecular candidates for <jats:bold>MOST</jats:bold>, as much improvement can be made by tailoring molecules to efficiently store solar energy at specific wavelengths.</jats:p>

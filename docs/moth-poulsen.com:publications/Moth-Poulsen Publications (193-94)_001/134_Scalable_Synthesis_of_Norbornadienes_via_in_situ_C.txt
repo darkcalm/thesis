@@ -1,0 +1,19 @@
+Publication #134
+============================================================
+
+Title: Scalable Synthesis of Norbornadienes via <i>in situ</i> Cracking of Dicyclopentadiene Using Continuous Flow Chemistry
+
+Authors: Jessica Orrego‐Hernández, Helen Hölzel, Maria Quant, Zhihang Wang, Kasper Moth‐Poulsen
+
+Published: [2021, 10, 14]
+
+Journal/Conference: European Journal of Organic Chemistry
+
+Type: journal-article
+
+DOI: 10.1002/ejoc.202100795
+
+URL: https://doi.org/10.1002/ejoc.202100795
+
+Abstract:
+<jats:title>Abstract</jats:title><jats:p>The norbornadiene (NBD)‐quadricyclane (QC) photoswitch has recently attracted attention due to its use in molecular solar thermal energy systems (MOST). Normally for device testing, several grams are needed. One way of synthesizing NBDs efficiently is through the Diels‐Alder reaction between alkynes and cyclopentadiene. However, scaling up the reaction can be troublesome in a research lab environment. Also, dicyclopentadiene needs cracking before utilization which is a time‐consuming step. Here, we developed a method where we both scale up the synthesis in a single reaction step that involves both <jats:italic>in situ</jats:italic> cracking of dicyclopentadiene and the direct reaction of cyclopentadiene with acetylene derivatives using a tubular coiled stainless steel flow reactor. As a proof‐of‐concept, we synthesized six different NBD compounds and scaled the synthesis to produce 87 g of a novel NBD in 9 h. The NBD is further characterized, showing promising properties for MOST applications. Our new method shows that flow chemistry is an attractive technique for the fast and efficient synthesis of large quantities of NBDs, needed to develop future real‐life devices and applications.</jats:p>

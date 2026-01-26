@@ -1,0 +1,19 @@
+Publication #97
+============================================================
+
+Title: Tuning Molecular Solar Thermal Properties by Modification of a Promising Norbornadiene Photoswitch
+
+Authors: Martyn Jevric, Zhihang Wang, Anne U. Petersen, Mads Mansø, Christopher J. Sumby
+
+Published: [2019, 4, 9]
+
+Journal/Conference: European Journal of Organic Chemistry
+
+Type: journal-article
+
+DOI: 10.1002/ejoc.201801781
+
+URL: https://doi.org/10.1002/ejoc.201801781
+
+Abstract:
+<jats:p>Carefully targeted modifications to the norbornadiene‐quadricyclane couple should give molecules with great potential for solar energy storage. Here we report the synthesis of derivatives of a well‐studied compound, 2‐cyano‐3‐anisyl norbornadiene (<jats:bold>NBD5</jats:bold>). The conjugation was extended by conversion of the nitrile into acrylonitrile and acrylate derivatives over two steps. Despite red‐shifting the absorbance properties, the metastable quadricyclanes exhibited extremely short lifetimes. Meanwhile, treatment of <jats:bold>NBD5</jats:bold> with acetyl halides in the presence of aluminum trihalides led to the formation of 7‐acetyl norbornenes through a Wagner–Meerwein rearrangement. Subsequent transformations made it possible to synthesise norbornadienes with varying degrees of steric bulk at the 7‐position of the molecular scaffold. It was found that the bulkier this group was, the more stable the quadricyclane form. This reaction sequence allows for the synthesis of norbornadiene derivatives which are more suited to molecular solar thermal applications in domestic heating despite providing a slightly lower energy density.</jats:p>

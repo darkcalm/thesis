@@ -1,0 +1,17 @@
+Publication #190
+============================================================
+
+Title: Surfactant-enabled strategy for molecular solar thermal energy storage systems in water
+
+Authors: Lorette Fernandez, Helen Hölzel, Pedro Ferreira, Nicolò Baggi, Kévin Moreno
+
+Journal/Conference: Green Chemistry
+
+Type: journal-article
+
+DOI: 10.1039/d5gc04357c
+
+URL: https://doi.org/10.1039/d5gc04357c
+
+Abstract:
+<jats:p>A surfactant-water-based approach is applied as a safer and more environmentally friendly alternative to toluene for molecular solar thermal energy storage using norbornadiene-quadricyclane derivatives.</jats:p>

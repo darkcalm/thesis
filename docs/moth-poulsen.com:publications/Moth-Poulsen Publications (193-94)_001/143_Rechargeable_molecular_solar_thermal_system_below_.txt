@@ -1,0 +1,17 @@
+Publication #143
+============================================================
+
+Title: A rechargeable molecular solar thermal system below 0 °C
+
+Authors: Zhichun Shangguan, Wenjin Sun, Zhao-Yang Zhang, Dong Fang, Zhihang Wang
+
+Journal/Conference: Chemical Science
+
+Type: journal-article
+
+DOI: 10.1039/d2sc01873j
+
+URL: https://doi.org/10.1039/d2sc01873j
+
+Abstract:
+<jats:p>We demonstrate rationally designed arylazopyrazoles as MOST-PCM that can be circularly charged and discharged below 0 °C with visible light.</jats:p>
