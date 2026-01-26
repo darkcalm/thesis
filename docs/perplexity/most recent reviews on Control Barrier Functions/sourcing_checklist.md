@@ -2,7 +2,7 @@
 2. [] https://www.mdpi.com/2227-9717/13/6/1791
 3. [x] https://aipublications.com/ijhaf/detail/a-review-on-recent-advances-of-packaging-in-food-industry/
 4. [x] https://www.nature.com/articles/s12276-023-01022-z
-5. [] https://journals.lww.com/10.1097/MCO.0000000000000709
+5. [x] https://journals.lww.com/10.1097/MCO.0000000000000709
 6. [] https://link.springer.com/10.1007/s10853-025-10705-z
 7. [] https://www.mdpi.com/1422-0067/21/23/9199
 8. [x] https://www.nature.com/articles/nri3707
@@ -26,11 +26,11 @@
 26. [] https://ieeexplore.ieee.org/document/10981640/
 27. [] https://ieeexplore.ieee.org/document/10305174/
 28. [] https://ieeexplore.ieee.org/document/10492989/
-29. [] https://arxiv.org/abs/2503.10641
+29. [x] https://arxiv.org/abs/2503.10641
 30. [x] https://arxiv.org/pdf/2305.03608.pdf
 31. [x] http://arxiv.org/pdf/2401.05629.pdf
-32. [] https://arxiv.org/abs/2408.16144
-33. [] https://arxiv.org/abs/2011.04112
+32. [x] https://arxiv.org/abs/2408.16144
+33. [x] https://arxiv.org/abs/2011.04112
 34. [x] https://arxiv.org/pdf/1912.10099.pdf
 35. [x] https://arxiv.org/pdf/2004.03315.pdf
 36. [x] http://arxiv.org/pdf/2111.09971.pdf
@@ -38,9 +38,9 @@
 38. [] https://ieeexplore.ieee.org/document/9838179/
 39. [] https://ieeexplore.ieee.org/document/11082490/
 40. [] https://ieeexplore.ieee.org/document/10363111/
-41. [] https://arxiv.org/abs/2503.15014
+41. [x] https://arxiv.org/abs/2503.15014
 42. [] https://ieeexplore.ieee.org/document/11054265/
-43. [] https://arxiv.org/abs/2510.22514
+43. [x] https://arxiv.org/abs/2510.22514
 44. [] https://ieeexplore.ieee.org/document/10802967/
 45. [] https://ieeexplore.ieee.org/document/10311096/
 46. [] https://ieeexplore.ieee.org/document/11221809/
@@ -50,4 +50,4 @@
 50. [x] http://arxiv.org/pdf/2111.11277.pdf
 51. [x] https://arxiv.org/pdf/2201.01347.pdf
 52. [x] https://arxiv.org/pdf/2203.07978.pdf
-53. [] https://arxiv.org/html/2410.14528v1
+53. [x] https://arxiv.org/html/2410.14528v1

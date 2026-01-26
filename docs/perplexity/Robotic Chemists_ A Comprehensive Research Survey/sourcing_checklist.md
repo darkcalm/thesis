@@ -5,8 +5,8 @@
 5. [] https://pubs.acs.org/doi/10.1021/jacs.5c12241
 6. [x] https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202001626
 7. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC8192940/
-8. [] https://www.nature.com/articles/s44160-023-00424-1
-9. [] https://www.nature.com/articles/s41467-025-62994-2
+8. [x] https://www.nature.com/articles/s44160-023-00424-1
+9. [x] https://www.nature.com/articles/s41467-025-62994-2
 10. [] https://www.nature.com/articles/s41578-023-00615-4
 11. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC9228554/
 12. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC7141037/
@@ -16,11 +16,11 @@
 16. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC10789233/
 17. [x] http://arxiv.org/pdf/2311.10776.pdf
 18. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC8620554/
-19. [] https://www.sciengine.com/doi/10.1360/SSC-2025-0093
+19. [x] https://www.sciengine.com/doi/10.1360/SSC-2025-0093
 20. [x] https://www.science.org/doi/10.1126/sciadv.adj0461
 21. [] https://linkinghub.elsevier.com/retrieve/pii/S0262407921010241
 22. [] https://linkinghub.elsevier.com/retrieve/pii/S2590238525000529
-23. [] https://www.nature.com/articles/s44160-024-00488-7
+23. [x] https://www.nature.com/articles/s44160-024-00488-7
 24. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC10619927/
 25. [x] https://www.science.org/doi/10.1126/sciadv.abo2626
 26. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC9544322/
