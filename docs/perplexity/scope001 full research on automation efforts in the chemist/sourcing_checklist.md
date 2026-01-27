@@ -21,7 +21,7 @@
 21. [] https://www.semanticscholar.org/paper/fa1149943d592ec80bf20c3003016b643127d1c7
 22. [] https://www.semanticscholar.org/paper/48148c6efd672f61cf94d1f51e7870431743efd5
 23. [x] https://www.nature.com/articles/s42256-025-01066-y
-24. [] https://pubs.acs.org/doi/10.1021/acscentsci.3c01087
+24. [x] https://pubs.acs.org/doi/10.1021/acscentsci.3c01087
 25. [x] https://pmc.ncbi.nlm.nih.gov/articles/PMC11585555/
 26. [] https://onlinelibrary.wiley.com/doi/10.1002/anie.202308838
 27. [] https://pubs.acs.org/doi/10.1021/acs.analchem.4c04731
