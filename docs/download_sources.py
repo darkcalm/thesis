@@ -1293,6 +1293,71 @@ def find_elements_by_vision_description(page, vision_result):
     return sorted(candidates, key=lambda x: x[0], reverse=True)
 
 
+def dismiss_cookie_consent(page, timeout=5000):
+    """
+    Attempt to dismiss cookie consent dialogs that may obstruct download interactions.
+    Tries multiple common patterns used by publishers (Wiley, Springer, Elsevier, etc.).
+    """
+    try:
+        # List of common cookie consent button selectors (in priority order)
+        dismiss_selectors = [
+            # Wiley Advanced (as seen in screenshot)
+            'button:has-text("Accept All")',
+            'button:has-text("Reject Non-Essential")',
+
+            # Generic patterns
+            'button:has-text("Accept")',
+            'button:has-text("Accept all")',
+            'button:has-text("Accept All Cookies")',
+            'button:has-text("Reject All")',
+            'button:has-text("Reject")',
+            'button:has-text("Close")',
+
+            # Common CSS classes/IDs
+            '#onetrust-accept-btn-handler',
+            '.optanon-alert-box-close',
+            'button[id*="accept"]',
+            'button[class*="accept"]',
+            'button[id*="cookie"]',
+            'button[class*="cookie"]',
+            '.cookie-consent-accept',
+            '.cc-dismiss',
+            '.cc-allow',
+
+            # Springer Nature
+            'button[data-cc-action="accept"]',
+            'button.cc-banner__button--accept',
+
+            # Elsevier
+            'button#onetrust-accept-btn-handler',
+
+            # Generic ARIA patterns
+            'button[aria-label*="Accept"]',
+            'button[aria-label*="Close"]',
+        ]
+
+        for selector in dismiss_selectors:
+            try:
+                # Check if element exists and is visible
+                element = page.query_selector(selector)
+                if element and element.is_visible():
+                    thread_print(f"  [Cookie] Found consent button with selector: {selector[:50]}")
+                    element.click(timeout=timeout)
+                    page.wait_for_timeout(1000)  # Wait for dialog to dismiss
+                    thread_print(f"  [Cookie] Successfully dismissed cookie consent")
+                    return True
+            except Exception as e:
+                # Selector didn't match or click failed, try next
+                continue
+
+        # No cookie consent found or already dismissed
+        return False
+
+    except Exception as e:
+        thread_print(f"  [Cookie] Error dismissing consent: {str(e)[:50]}")
+        return False
+
+
 def try_browser_download(url, output_path, timeout=30):
     """Intelligent exhaustive browser automation - scores and tries ALL promising download elements."""
     if not PLAYWRIGHT_AVAILABLE:
@@ -1473,7 +1538,10 @@ def try_browser_download(url, output_path, timeout=30):
                     
                     current_url = new_page.url
                     thread_print(f"  [Vision] New tab URL (after redirects): {current_url[:150]}")
-                    
+
+                    # Dismiss cookie consent in new tab before interacting with page
+                    dismiss_cookie_consent(new_page)
+
                     # Check if this is a PDF viewer page (PDF displayed in browser)
                     is_pdf_viewer = False
                     try:
@@ -1788,7 +1856,10 @@ def try_browser_download(url, output_path, timeout=30):
                     
                     # Wait for download to complete
                     page.wait_for_timeout(5000)
-                    
+
+                    # Dismiss any cookie consent dialogs that may obstruct interactions
+                    dismiss_cookie_consent(page)
+
                     # If download was captured, save it
                     if downloads_captured:
                         download = downloads_captured[0]
@@ -1969,8 +2040,11 @@ def try_browser_download(url, output_path, timeout=30):
 
                                             if not redirect_detected:
                                                 thread_print(f"  [Vision] No redirect detected after 15s, URL unchanged")
-                                                # Still wait a bit in case redirect is slow
-                                                new_page.wait_for_timeout(3000)
+
+                                            # Dismiss any cookie consent on new page
+                                            dismiss_cookie_consent(new_page)
+                                            # Still wait a bit in case redirect is slow
+                                            new_page.wait_for_timeout(3000)
 
                                             # Check if download was triggered
                                             if download_happened and download_obj:
@@ -2064,7 +2138,11 @@ def try_browser_download(url, output_path, timeout=30):
                     # Check if screenshots already exist
                     vision_top_path = output_dir / f"item{item_num}_vision_top.png"
                     vision_bottom_path = output_dir / f"item{item_num}_vision_bottom.png"
-                    
+
+                    # Ensure cookie consent is dismissed before taking screenshots
+                    # (Second attempt in case it appeared after initial page load)
+                    dismiss_cookie_consent(page)
+
                     # Try 1: Top of page (viewport-sized screenshot)
                     if not vision_top_path.exists():
                         screenshot_name = f"item{item_num}_vision_top.png"

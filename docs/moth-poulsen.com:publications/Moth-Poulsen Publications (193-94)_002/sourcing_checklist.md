@@ -5,7 +5,7 @@
 5. [x] https://doi.org/10.1039/d5sc05248c
 6. [] https://doi.org/10.1016/j.ccr.2025.217186
 7. [] https://doi.org/10.1002/cssc.202501005
-8. [] https://doi.org/10.1021/jacs.5c09267
+8. [x] https://doi.org/10.1021/jacs.5c09267
 9. [] https://doi.org/10.1002/chem.202502294
 10. [x] https://doi.org/10.1039/d5dd00031a
 11. [] https://doi.org/10.1016/j.apsusc.2025.163744
@@ -20,7 +20,7 @@
 20. [x] https://doi.org/10.1021/acs.jpcc.4c02971
 21. [x] https://doi.org/10.1016/j.joule.2024.06.012
 22. [x] https://doi.org/10.1039/d4ta00055b
-23. [] https://doi.org/10.1002/chem.202401430
+23. [x] https://doi.org/10.1002/chem.202401430
 24. [x] https://doi.org/10.1002/chem.202400322
 25. [x] https://doi.org/10.1063/5.0185890
 26. [x] https://doi.org/10.1021/acsami.3c16855
@@ -41,7 +41,7 @@
 41. [x] https://doi.org/10.1039/D3QM00069A
 42. [x] https://doi.org/10.1039/d3fd00016h
 43. [x] https://pubs.acs.org/doi/abs/10.1021/acscatal.2c03043
-44. [] https://doi.org/10.1039/d2cp03032b
+44. [x] https://doi.org/10.1039/d2cp03032b
 45. [] https://doi.org/10.1021/acs.jpca.2c03583
 46. [] https://doi.org/10.1002/ange.202212483
 47. [] https://doi.org/10.1021/acsnano.2c06505
@@ -71,10 +71,10 @@
 71. [] https://doi.org/10.1021/jacs.0c07727
 72. [x] https://doi.org/10.1039/D0CS00257G
 73. [] https://doi.org/10.1021/acsanm.0c01907
-74. [] https://doi.org/10.1002/anie.202005662
+74. [x] https://doi.org/10.1002/anie.202005662
 75. [] https://pubs.acs.org/doi/10.1021/acs.accounts.0c00235
 76. [] https://doi.org/10.1021/jacs.0c03748
-77. [] https://doi.org/10.1021/acs.jpclett.0c01198
+77. [x] https://doi.org/10.1021/acs.jpclett.0c01198
 78. [x] https://doi.org/10.1039/d0nr02787a
 79. [] https://doi.org/10.1002/ange.202002300
 80. [] https://doi.org/10.1021/acsanm.0c00020
@@ -88,7 +88,7 @@
 88. [] https://doi.org/10.1021/acsami.9b09701
 89. [] https://doi.org/10.1039/c9cp03445e
 90. [] https://doi.org/10.1039/c9ob01545k
-91. [] https://doi.org/10.1002/cplu.201900330
+91. [x] https://doi.org/10.1002/cplu.201900330
 92. [] https://doi.org/10.1016/j.nanoen.2019.103872
 93. [x] https://doi.org/10.1039/C9TA04905C
 94. [x] https://www.nature.com/articles/s41467-019-10263-4
