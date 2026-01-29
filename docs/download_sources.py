@@ -2,6 +2,11 @@
 """
 Download papers from a sourcing checklist using multiple strategies.
 
+Pre-Found PDFs (Step 0):
+    If you've already found a PDF manually, place it in the output directory
+    named as itemXXX.pdf (e.g., item001.pdf). The script will detect, validate,
+    and mark it as checked automatically.
+
 Download Methods (in priority order):
 1. Direct downloads (PDF URLs)
 2. Open access sources (arXiv, MDPI, Frontiers, PLoS, RSC, Unpaywall)
@@ -16,8 +21,6 @@ Download Methods (in priority order):
 11. Sci-Hub (fallback)
 12. Google Scholar (browser-based)
 13. Browser automation with stealth (rotating user-agents, referrers)
-
-Expected success rate: 75-85% (vs ~50% baseline)
 
 Usage:
     python download_sources.py <sourcing_checklist_path> [options]
@@ -51,6 +54,14 @@ try:
     ANTHROPIC_AVAILABLE = True
 except ImportError:
     ANTHROPIC_AVAILABLE = False
+
+# Try to import browser-use for autonomous browser automation
+try:
+    import browser_use
+    from browser_use import Browser
+    BROWSER_USE_AVAILABLE = True
+except ImportError:
+    BROWSER_USE_AVAILABLE = False
 
 # Load .env file if it exists
 def load_env_file():
@@ -124,13 +135,12 @@ screenshots_only = False
 #    - Maintenance burden too high
 #    - Status: Removed, kept as reference only
 #
-# To enable browser-use when implemented:
+# To enable browser-use:
 #   1. pip install browser-use
 #   2. playwright install chromium
 #   3. Set BROWSER_USE_ENABLED = True
-#   4. Implement try_browser_use_download() function
 #
-BROWSER_USE_ENABLED = False  # TODO: Set to True when implemented
+BROWSER_USE_ENABLED = False  # Disabled for now (implementation complete)
 AGENT_BROWSER_ENABLED = False  # Currently disabled
 # =============================================================================
 
@@ -1418,21 +1428,9 @@ def try_browser_use_download(url, output_path, timeout=30):
     3. Find and click the download button
     4. Save the PDF
 
-    TODO: Implement browser-use integration
-
     Installation:
         pip install browser-use
         playwright install chromium
-
-    Example implementation:
-        from browser_use import Browser
-
-        async def download_pdf(url, output_path):
-            browser = Browser()
-            result = await browser.run(
-                f"Go to {url} and download the PDF to {output_path}"
-            )
-            return result.success
 
     Args:
         url: Article page URL
@@ -1442,8 +1440,52 @@ def try_browser_use_download(url, output_path, timeout=30):
     Returns:
         (success: bool, message: str, furthest_screenshot: Path | None, stage: str)
     """
-    # TODO: Implement browser-use
-    return False, "browser-use not implemented yet", None, "not_implemented"
+    if not BROWSER_USE_AVAILABLE:
+        return False, "browser-use not installed (pip install browser-use)", None, "not_available"
+
+    import asyncio
+    from pathlib import Path
+
+    # Create screenshots directory for debugging
+    output_dir = output_path.parent
+    item_num = output_path.stem.split('_')[0].replace('item', '')
+    screenshots_dir = output_dir / f"item{item_num}_screenshots"
+    screenshots_dir.mkdir(exist_ok=True)
+
+    async def download_task():
+        try:
+            browser = Browser(headless=True)
+
+            # Simple, autonomous prompt
+            prompt = f"""
+Navigate to {url}
+This is an academic paper page.
+Find the PDF download button/link and download the paper.
+Save the PDF to {output_path}
+
+Handle any popups, cookie consents, or access dialogs appropriately.
+If you encounter Cloudflare or CAPTCHA, wait for it to complete.
+"""
+
+            result = await browser.run(prompt, timeout=timeout)
+
+            # Save final screenshot for debugging
+            if hasattr(result, 'screenshot'):
+                final_screenshot = screenshots_dir / "browser_use_final.png"
+                with open(final_screenshot, 'wb') as f:
+                    f.write(result.screenshot)
+
+            # Check if download succeeded
+            if output_path.exists() and is_valid_pdf(output_path):
+                return True, "browser-use autonomous download", None, "success"
+            else:
+                return False, f"browser-use: {result.message}", None, "failed"
+
+        except Exception as e:
+            return False, f"browser-use error: {str(e)[:100]}", None, "error"
+
+    # Run async task
+    return asyncio.run(download_task())
 
 
 def try_agent_browser_download(url, output_path, timeout=30):
@@ -1871,6 +1913,14 @@ Report success or failure."""
 def process_item_fast(index, url, output_dir, checklist_path):
     """Process item with fast methods only (no browser, no agent)."""
     doi = extract_doi_from_url(url)
+    
+    # Check for plain item###.pdf (without DOI suffix)
+    plain_pdf = output_dir / f"item{index:03d}.pdf"
+    if plain_pdf.exists() and is_valid_pdf(plain_pdf):
+        update_checklist(checklist_path, index, checked=True)
+        register_doi(doi, index)
+        thread_print(f"[{index}] ✓ Found existing item{index:03d}.pdf")
+        return (index, True, "plain_exists", url, doi)
     
     # Check for duplicate
     if check_duplicate(doi, index, output_dir):
