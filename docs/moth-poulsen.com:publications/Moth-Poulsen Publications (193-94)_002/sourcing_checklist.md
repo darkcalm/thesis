@@ -1,4 +1,4 @@
-1. [] https://doi.org/10.1002/adma.202511822
+1. [x] https://doi.org/10.1002/adma.202511822
 2. [x] https://www.nature.com/articles/s41467-025-61301-3
 3. [] https://doi.org/10.1002/ange.202516629
 4. [x] https://doi.org/10.1039/d5gc04357c
