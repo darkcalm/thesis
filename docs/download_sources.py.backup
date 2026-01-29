@@ -98,42 +98,6 @@ doi_lock = threading.Lock()
 # Global flag for screenshots-only mode (no vision analysis)
 screenshots_only = False
 
-# =============================================================================
-# BROWSER AUTOMATION CONFIGURATION
-# =============================================================================
-# Available browser automation methods:
-#
-# 1. browser-use (https://docs.browser-use.com) - RECOMMENDED
-#    - Autonomous LLM-powered browser automation
-#    - Handles Cloudflare, CAPTCHAs, dynamic content
-#    - Simple prompt-based interface: "Download the PDF from this page"
-#    - No manual element identification needed
-#    - Installation: pip install browser-use
-#    - Status: TODO (stub implemented)
-#
-# 2. agent-browser (https://github.com/vercel-labs/agent-browser) - DISABLED
-#    - Manual multi-stage workflow with snapshot + refs
-#    - Requires explicit element identification
-#    - Cannot solve Cloudflare/CAPTCHA challenges
-#    - Good for: simple pages, debugging with screenshots
-#    - Installation: npm install -g agent-browser
-#    - Status: DISABLED (implementation kept for reference)
-#
-# 3. Legacy Playwright - DEPRECATED
-#    - Complex manual element scoring (~1000 lines)
-#    - Maintenance burden too high
-#    - Status: Removed, kept as reference only
-#
-# To enable browser-use when implemented:
-#   1. pip install browser-use
-#   2. playwright install chromium
-#   3. Set BROWSER_USE_ENABLED = True
-#   4. Implement try_browser_use_download() function
-#
-BROWSER_USE_ENABLED = False  # TODO: Set to True when implemented
-AGENT_BROWSER_ENABLED = False  # Currently disabled
-# =============================================================================
-
 
 def thread_print(*args, **kwargs):
     """Thread-safe print with flush."""
@@ -1394,79 +1358,24 @@ def dismiss_cookie_consent(page, timeout=5000):
         return False
 
 
-def try_browser_use_download(url, output_path, timeout=30):
-    """
-    Use browser-use (https://docs.browser-use.com) for autonomous browser automation.
-
-    Browser-use is an LLM-powered browser automation tool that can:
-    - Autonomously navigate complex pages
-    - Handle dynamic content and popups
-    - Download PDFs without explicit element identification
-    - Solve CAPTCHAs and bot detection (Cloudflare, etc.)
-
-    Unlike agent-browser which requires:
-    - Manual snapshot analysis
-    - Element scoring and ref identification
-    - Multi-stage workflows
-
-    Browser-use simply takes a prompt like:
-    "Download the PDF from this academic paper page"
-
-    And autonomously figures out how to:
-    1. Navigate the page
-    2. Dismiss popups/cookies
-    3. Find and click the download button
-    4. Save the PDF
-
-    TODO: Implement browser-use integration
-
-    Installation:
-        pip install browser-use
-        playwright install chromium
-
-    Example implementation:
-        from browser_use import Browser
-
-        async def download_pdf(url, output_path):
-            browser = Browser()
-            result = await browser.run(
-                f"Go to {url} and download the PDF to {output_path}"
-            )
-            return result.success
-
-    Args:
-        url: Article page URL
-        output_path: Where to save the PDF
-        timeout: Max time in seconds
-
-    Returns:
-        (success: bool, message: str, furthest_screenshot: Path | None, stage: str)
-    """
-    # TODO: Implement browser-use
-    return False, "browser-use not implemented yet", None, "not_implemented"
-
-
 def try_agent_browser_download(url, output_path, timeout=30):
     """
-    [DISABLED] Use agent-browser CLI for browser automation.
+    Use agent-browser CLI for simpler, more maintainable browser automation.
 
-    Disabled because:
-    - Requires manual multi-stage workflows
-    - Cannot solve Cloudflare/CAPTCHA challenges
-    - Complex element identification needed
-    - browser-use.com offers better autonomous navigation
+    Takes progressive screenshots at each stage and returns furthest screenshot
+    on failure with structured error message.
 
-    See try_browser_use_download() for better alternative.
-
-    Original implementation kept for reference but returns early.
+    Stages:
+    1. Initial page load
+    2. After cookie dismissal
+    3. Snapshot analysis
+    4. Before clicking download element
+    5. After click (if applicable)
+    6. Final state
 
     Returns:
         (success: bool, message: str, furthest_screenshot: Path | None, stage: str)
     """
-    # DISABLED: Return early without attempting
-    return False, "agent-browser disabled (use browser-use instead)", None, "disabled"
-
-    # Original implementation below (disabled)
     # Check if agent-browser is available
     try:
         result = subprocess.run(['agent-browser', '--version'], capture_output=True, timeout=5)
@@ -1775,34 +1684,17 @@ def try_agent_browser_download(url, output_path, timeout=30):
 
 def try_browser_download(url, output_path, timeout=30):
     """
-    Browser automation dispatcher. Tries available browser automation tools.
-
-    Priority:
-    1. browser-use (autonomous, LLM-powered) - TODO: implement
-    2. agent-browser (manual stages) - DISABLED
-    3. Legacy Playwright - deprecated
+    Wrapper for backward compatibility. Tries agent-browser first, falls back to message.
 
     Returns: (success: bool, message: str)
     """
-    # Try browser-use if enabled and implemented
-    if BROWSER_USE_ENABLED:
-        success, message, furthest_screenshot, stage = try_browser_use_download(url, output_path, timeout)
-        if success:
-            return success, message
-        # If browser-use failed, try fallback methods
+    success, message, furthest_screenshot, stage = try_agent_browser_download(url, output_path, timeout)
 
-    # Try agent-browser if enabled
-    if AGENT_BROWSER_ENABLED:
-        success, message, furthest_screenshot, stage = try_agent_browser_download(url, output_path, timeout)
-        if success:
-            return success, message
-        # If failed, enhance message with screenshot info
-        if furthest_screenshot and furthest_screenshot.exists():
-            message = f"{message} | Screenshot: {furthest_screenshot.name} | Stage: {stage}"
-        return success, message
+    # If failed, enhance message with screenshot info
+    if not success and furthest_screenshot and furthest_screenshot.exists():
+        message = f"{message} | Screenshot: {furthest_screenshot.name} | Stage: {stage}"
 
-    # No browser automation enabled
-    return False, "Browser automation disabled (enable BROWSER_USE_ENABLED or AGENT_BROWSER_ENABLED)"
+    return success, message
 
 
 # Legacy Playwright browser automation (kept for reference, not used by default)
@@ -1820,6 +1712,810 @@ def try_playwright_browser_download(url, output_path, timeout=30):
 def score_element_legacy(element):
     """Legacy element scoring (not used with agent-browser)."""
     return 0  # Placeholder
+
+
+
+
+            # === HIGH PRIORITY PATTERNS (45-70 points) ===
+
+            # Perfect matches
+            if text == 'pdf' and tag == 'a':
+                score += 70
+            elif text in ['download pdf', 'open pdf', 'view pdf']:
+                score += 68
+            elif text == 'download' and ('pdf' in href or 'pdf' in classes):
+                score += 65
+
+            # Publisher-specific high-value patterns
+            elif 'article__btn__secondary--pdf' in classes:
+                score += 65  # ACS Open PDF
+            elif 'galley-link' in classes and 'pdf' in all_text:
+                score += 65  # OJS/PKP
+            elif 'ud_articlepdf' in classes:
+                score += 65  # MDPI dropdown
+            elif 'c-pdf-download' in classes:
+                score += 60  # Nature/Springer
+
+            # Strong URL patterns
+            elif '/doi/pdf/' in href or '/doi/epdf/' in href:
+                score += 60
+            elif href.endswith('.pdf'):
+                score += 58
+            elif '/pdf/download' in href or 'download' in href and '.pdf' in href:
+                score += 55
+
+            # Strong text + context combinations
+            elif 'download' in text and 'pdf' in text:
+                score += 55
+            elif ('pdf' in text or text == 'pdf') and tag in ['a', 'button']:
+                score += 50
+            elif 'articlepdf' in href or 'article-pdf' in href:
+                score += 50
+
+            # === MEDIUM PRIORITY PATTERNS (25-44 points) ===
+
+            elif 'pdf' in text and len(text) < 15:  # Short PDF text
+                score += 40
+            elif '/pdf' in href and tag == 'a':
+                score += 38
+            elif 'download' in text and tag in ['a', 'button']:
+                score += 35
+            elif 'pdf' in classes and tag in ['a', 'button']:
+                score += 33
+            elif 'pdf' in title or 'pdf' in aria_label:
+                score += 30
+            elif 'download' in classes and 'pdf' in all_text:
+                score += 28
+
+            # === LOWER PRIORITY (10-24 points) ===
+
+            elif 'pdf' in href:
+                score += 24
+            elif 'download' in all_text:
+                score += 20
+            elif 'view' in text and 'pdf' in all_text:
+                score += 18
+            elif tag == 'button' and 'download' in data_attrs:
+                score += 15
+            elif 'full text' in text or 'fulltext' in text:
+                score += 12
+
+            # === BONUS MODIFIERS (up to +20) ===
+
+            # Dropdown indicators (need second click)
+            if 'dropdown' in classes or 'drop-down' in classes:
+                score += 8
+
+            # Publisher-specific class bonuses
+            if 'coolbar' in classes and 'pdf' in all_text:
+                score += 10  # Wiley
+            elif 'obj_galley' in classes:
+                score += 10  # OJS
+
+            # Icon indicators
+            if 'icon' in classes and 'pdf' in all_text:
+                score += 5
+
+            # Button with download data attribute
+            if 'data-download' in data_attrs or 'data-l10n-id="download"' in data_attrs:
+                score += 10
+
+            # Penalize vague or risky elements
+            if len(text) > 50:  # Too much text, probably not a button
+                score -= 10
+            if 'abstract' in text or 'citation' in text:
+                score -= 15
+            if 'supplementary' in text or 'supporting' in text:
+                score -= 5  # Might be supp materials, not main PDF
+
+            return max(0, min(score, 100))  # Clamp to 0-100
+
+        except Exception as e:
+            return 0
+
+    try:
+        with sync_playwright() as p:
+            # Use Firefox instead of Chromium for better PDF handling
+            browser = p.firefox.launch(headless=True)
+
+            import random
+            user_agents = [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:120.0) Gecko/20100101 Firefox/120.0',
+                'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0',
+                'Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0',
+            ]
+
+            context = browser.new_context(
+                user_agent=random.choice(user_agents),
+                accept_downloads=True,
+                extra_http_headers={
+                    'Referer': 'https://www.google.com/',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                }
+            )
+            page = context.new_page()
+            page.set_default_timeout(timeout * 1000)
+
+            # Track all pages for new tab detection
+            all_pages = [page]
+
+            def handle_new_page(new_page):
+                all_pages.append(new_page)
+
+            context.on('page', handle_new_page)
+            
+            # Set up context-level download listener to catch downloads from any page
+            downloads = []
+            def handle_download(download):
+                downloads.append(download)
+            context.on('download', handle_download)
+
+            def try_download_from_new_tab(new_page):
+                """Handle new tab opened by vision-identified element - download PDFs from viewer or direct links."""
+                try:
+                    # Wait for navigation and any redirects to complete
+                    new_page.wait_for_load_state('networkidle', timeout=30000)
+                    new_page.wait_for_timeout(5000)  # Extra wait for redirects and PDF viewer to load
+                    
+                    current_url = new_page.url
+                    thread_print(f"  [Vision] New tab URL (after redirects): {current_url[:150]}")
+
+                    # Dismiss cookie consent in new tab before interacting with page
+                    dismiss_cookie_consent(new_page)
+
+                    # Check if this is a PDF viewer page (PDF displayed in browser)
+                    is_pdf_viewer = False
+                    try:
+                        # Check if page title or content suggests PDF viewer
+                        page_title = new_page.title().lower()
+                        if 'pdf' in page_title or '.pdf' in current_url.lower():
+                            # Check if there's an embedded PDF or PDF viewer
+                            pdf_embed = new_page.query_selector('embed[type="application/pdf"], object[type="application/pdf"], iframe[src*=".pdf"]')
+                            if pdf_embed:
+                                is_pdf_viewer = True
+                                thread_print(f"  [Vision] Detected PDF viewer page with embedded PDF")
+                            # Also check if the page itself is serving PDF content
+                            elif '.pdf' in current_url.lower():
+                                # Try to detect if it's a viewer vs direct download
+                                try:
+                                    content_type = new_page.evaluate("document.contentType || ''")
+                                    if 'pdf' in content_type.lower():
+                                        is_pdf_viewer = True
+                                        thread_print(f"  [Vision] Detected PDF viewer page (content-type: {content_type})")
+                                except:
+                                    # If .pdf in URL, assume it might be a viewer
+                                    if 'viewer' in current_url.lower() or 'watermark' in current_url.lower():
+                                        is_pdf_viewer = True
+                                        thread_print(f"  [Vision] Detected PDF viewer page (based on URL)")
+                    except:
+                        pass
+                    
+                    # If it's a PDF viewer, look for download button
+                    if is_pdf_viewer:
+                        thread_print(f"  [Vision] Looking for download button in PDF viewer...")
+                        # Common PDF viewer download button selectors
+                        download_selectors = [
+                            'button[title*="Download"]',
+                            'button[aria-label*="Download"]',
+                            'a[title*="Download"]',
+                            'a[aria-label*="Download"]',
+                            'button:has-text("Download")',
+                            'a:has-text("Download")',
+                            # Adobe Acrobat viewer
+                            'button#download',
+                            'button.download',
+                            # Generic PDF.js viewer
+                            'button[data-l10n-id="download"]',
+                            # Chrome PDF viewer
+                            'button[aria-label*="download" i]',
+                        ]
+                        
+                        for selector in download_selectors:
+                            try:
+                                download_btn = new_page.query_selector(selector)
+                                if download_btn and download_btn.is_visible():
+                                    thread_print(f"  [Vision] Found download button: {selector}")
+                                    # Set up download listener before clicking
+                                    with new_page.expect_download(timeout=15000) as download_info:
+                                        download_btn.click()
+                                        new_page.wait_for_timeout(3000)
+                                    
+                                    download = download_info.value
+                                    download_path = Path(download_dir) / download.suggested_filename
+                                    download.save_as(download_path)
+                                    
+                                    if download_path.exists() and download_path.stat().st_size > 50000:
+                                        thread_print(f"  [Vision] Download from PDF viewer! File: {download.suggested_filename} ({download_path.stat().st_size} bytes)")
+                                        shutil.move(str(download_path), str(output_path))
+                                        if is_valid_pdf(output_path):
+                                            thread_print(f"  [Vision] ✓ Valid PDF downloaded from PDF viewer")
+                                            return True, "Browser+Vision+PDFViewer"
+                            except:
+                                continue
+                        
+                        # If no download button found, try keyboard automation (Ctrl+S / Command+S)
+                        thread_print(f"  [Vision] No download button found, trying keyboard automation (Ctrl+S)...")
+                        try:
+                            # Set up download listener before triggering save
+                            download_happened = False
+                            download_obj = None
+
+                            def on_download(download):
+                                nonlocal download_happened, download_obj
+                                download_happened = True
+                                download_obj = download
+                                thread_print(f"  [Vision] Keyboard save triggered download: {download.suggested_filename}")
+
+                            new_page.on("download", on_download)
+
+                            # Detect OS for keyboard shortcut
+                            import platform
+                            is_mac = platform.system() == 'Darwin'
+
+                            # Press Ctrl+S (or Command+S on Mac) to trigger save dialog
+                            if is_mac:
+                                new_page.keyboard.press('Meta+s')
+                            else:
+                                new_page.keyboard.press('Control+s')
+
+                            # Wait for download to trigger
+                            new_page.wait_for_timeout(5000)
+
+                            if download_happened and download_obj:
+                                thread_print(f"  [Vision] Download triggered via keyboard, saving...")
+                                download_path = Path(download_dir) / download_obj.suggested_filename
+                                download_obj.save_as(download_path)
+
+                                if download_path.exists() and download_path.stat().st_size > 50000:
+                                    thread_print(f"  [Vision] Keyboard save successful! File: {download_obj.suggested_filename} ({download_path.stat().st_size} bytes)")
+                                    shutil.move(str(download_path), str(output_path))
+                                    if is_valid_pdf(output_path):
+                                        thread_print(f"  [Vision] ✓ Valid PDF saved via keyboard automation")
+                                        return True, "Browser+Vision+Keyboard"
+                        except Exception as e:
+                            thread_print(f"  [Vision] Keyboard automation failed: {str(e)[:80]}")
+
+                        # If keyboard automation didn't work, try to extract PDF URL from viewer
+                        thread_print(f"  [Vision] Keyboard automation failed, trying to extract PDF URL...")
+                        try:
+                            # Try to get PDF URL from embed/iframe
+                            pdf_url = new_page.evaluate("""
+                                () => {
+                                    const embed = document.querySelector('embed[type="application/pdf"]');
+                                    if (embed) return embed.src;
+                                    const iframe = document.querySelector('iframe[src*=".pdf"]');
+                                    if (iframe) return iframe.src;
+                                    // If page itself is PDF, return current URL
+                                    if (window.location.href.includes('.pdf')) return window.location.href;
+                                    return null;
+                                }
+                            """)
+                            if pdf_url:
+                                thread_print(f"  [Vision] Extracted PDF URL from viewer: {pdf_url[:150]}")
+                                success, _ = direct_download(pdf_url, output_path, use_stealth=True)
+                                if success:
+                                    return True, "Browser+Vision+PDFViewerURL"
+                        except:
+                            pass
+
+                    # Skip if chrome error page
+                    if 'chrome-error' in current_url.lower():
+                        thread_print(f"  [Vision] New tab shows error page, waiting for redirect...")
+                        new_page.wait_for_timeout(5000)
+                        new_page.wait_for_load_state('networkidle', timeout=30000)
+                        current_url = new_page.url
+                        thread_print(f"  [Vision] URL after waiting: {current_url[:150]}")
+                    
+                    # If this is a direct PDF URL, try downloading using browser context (has cookies/session)
+                    if '.pdf' in current_url.lower() or '/article-pdf/' in current_url.lower():
+                        thread_print(f"  [Vision] New tab is direct PDF URL, waiting for redirects...")
+                        # Wait for any redirects to complete
+                        try:
+                            new_page.wait_for_load_state('networkidle', timeout=30000)
+                        except:
+                            pass
+
+                        # Actively wait for URL to change (indicating redirect)
+                        initial_url = current_url
+                        redirect_detected = False
+                        for i in range(15):
+                            new_page.wait_for_timeout(1000)
+                            current_url = new_page.url
+                            if current_url != initial_url:
+                                thread_print(f"  [Vision] Redirect detected after {i+1}s: {current_url[:150]}")
+                                redirect_detected = True
+                                # Wait a bit more for page to stabilize
+                                new_page.wait_for_timeout(3000)
+                                current_url = new_page.url  # Update again
+                                break
+
+                        if not redirect_detected:
+                            thread_print(f"  [Vision] No redirect detected after 15s")
+                            new_page.wait_for_timeout(3000)
+                            current_url = new_page.url
+
+                        thread_print(f"  [Vision] Final URL after redirects: {current_url[:150]}")
+                        
+                        # If URL still has .pdf, it might be a PDF viewer - check for download button first
+                        if '.pdf' in current_url.lower():
+                            # Check if it's a PDF viewer page
+                            is_pdf_viewer = False
+                            try:
+                                # Check page content
+                                page_content = new_page.content()
+                                if 'pdf' in page_content.lower()[:1000]:  # Check first 1000 chars
+                                    is_pdf_viewer = True
+                            except:
+                                pass
+                            
+                            if is_pdf_viewer:
+                                thread_print(f"  [Vision] Detected PDF viewer, looking for download button...")
+                                # Try download button selectors
+                                download_selectors = [
+                                    'button[title*="Download" i]',
+                                    'button[aria-label*="Download" i]',
+                                    'a[title*="Download" i]',
+                                    'button#download',
+                                    'button.download',
+                                ]
+                                for selector in download_selectors:
+                                    try:
+                                        btn = new_page.query_selector(selector)
+                                        if btn and btn.is_visible():
+                                            with new_page.expect_download(timeout=15000) as dl_info:
+                                                btn.click()
+                                                new_page.wait_for_timeout(3000)
+                                            dl = dl_info.value
+                                            dl_path = Path(download_dir) / dl.suggested_filename
+                                            dl.save_as(dl_path)
+                                            if dl_path.exists() and dl_path.stat().st_size > 50000:
+                                                shutil.move(str(dl_path), str(output_path))
+                                                if is_valid_pdf(output_path):
+                                                    return True, "Browser+Vision+PDFViewerBtn"
+                                    except:
+                                        continue
+                        
+                        # Try downloading using browser context
+                        thread_print(f"  [Vision] Trying download via browser context...")
+                        
+                        # Try to fetch PDF using JavaScript in page context (has cookies)
+                        try:
+                            content_base64 = new_page.evaluate(f"""
+                                async () => {{
+                                    const response = await fetch('{current_url}');
+                                    const blob = await response.blob();
+                                    return new Promise((resolve) => {{
+                                        const reader = new FileReader();
+                                        reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                                        reader.readAsDataURL(blob);
+                                    }});
+                                }}
+                            """)
+                            
+                            if content_base64:
+                                import base64
+                                content = base64.b64decode(content_base64)
+                                if len(content) > 50000:
+                                    output_path.write_bytes(content)
+                                    if is_valid_pdf(output_path):
+                                        thread_print(f"  [Vision] ✓ PDF downloaded via browser context ({len(content)} bytes)")
+                                        return True, "Browser+Vision+BrowserContext"
+                                    else:
+                                        thread_print(f"  [Vision] ✗ Downloaded content is not a valid PDF")
+                                else:
+                                    thread_print(f"  [Vision] ✗ Downloaded content too small ({len(content)} bytes)")
+                        except Exception as e:
+                            thread_print(f"  [Vision] Browser context download failed: {str(e)[:80]}")
+                        
+                        # Fallback: try direct download
+                        thread_print(f"  [Vision] Trying direct download from new tab URL...")
+                        success, _ = direct_download(current_url, output_path, use_stealth=True)
+                        if success:
+                            return True, "Browser+Vision+DirectPDF"
+                    
+                    # Check if page contains PDF viewer or PDF link
+                    try:
+                        # Look for PDF download links in the new page
+                        pdf_links = new_page.query_selector_all('a[href*=".pdf"], a[href*="/pdf"], a[href*="/article-pdf/"]')
+                        for link in pdf_links[:3]:  # Try first 3 PDF links
+                            try:
+                                link_href = link.get_attribute('href') or ''
+                                if link_href:
+                                    # Make absolute
+                                    if link_href.startswith('/'):
+                                        from urllib.parse import urljoin
+                                        link_href = urljoin(current_url, link_href)
+                                    elif not link_href.startswith('http'):
+                                        from urllib.parse import urljoin
+                                        link_href = urljoin(current_url, link_href)
+                                    
+                                    if '.pdf' in link_href.lower() or '/article-pdf/' in link_href.lower():
+                                        thread_print(f"  [Vision] Found PDF link in new tab: {link_href[:150]}")
+                                        success, _ = direct_download(link_href, output_path, use_stealth=True)
+                                        if success:
+                                            return True, "Browser+Vision+PDFLink"
+                            except:
+                                continue
+                    except:
+                        pass
+                    
+                    # Try downloading the current page URL anyway (might be a PDF served without .pdf extension)
+                    if '/pdf' in current_url.lower() or '/article-pdf/' in current_url.lower():
+                        thread_print(f"  [Vision] Trying to download new tab URL as PDF...")
+                        success, _ = direct_download(current_url, output_path, use_stealth=True)
+                        if success:
+                            return True, "Browser+Vision+NewTabURL"
+                    
+                    return None
+
+                except Exception as e:
+                    thread_print(f"  [Vision] Error handling new tab: {str(e)[:50]}")
+                    return None
+
+            try:
+                # Navigate to the article page - handle download events that may occur
+                try:
+                    # Set up download listener to capture PDF downloads
+                    downloads_captured = []
+                    
+                    def handle_download(download):
+                        downloads_captured.append(download)
+                        thread_print(f"  [Download] Captured download: {download.suggested_filename}")
+                    
+                    page.on('download', handle_download)
+                    page.on('popup', lambda popup: popup.close() if popup else None)
+                    
+                    # Try to navigate
+                    try:
+                        page.goto(url, wait_until='domcontentloaded', timeout=timeout * 1000)
+                    except Exception as nav_error:
+                        # If navigation fails due to download, that's expected
+                        if 'download' in str(nav_error).lower():
+                            thread_print(f"  [Download] Page triggered auto-download during navigation")
+                        else:
+                            raise
+                    
+                    # Wait for download to complete
+                    page.wait_for_timeout(5000)
+
+                    # Dismiss any cookie consent dialogs that may obstruct interactions
+                    dismiss_cookie_consent(page)
+
+                    # If download was captured, save it
+                    if downloads_captured:
+                        download = downloads_captured[0]
+                        try:
+                            # Use a temp directory specific to this browser session
+                            temp_dl_dir = Path(download_dir)
+                            temp_dl_dir.mkdir(parents=True, exist_ok=True)
+                            download_path = temp_dl_dir / download.suggested_filename
+                            download.save_as(str(download_path))
+                            page.wait_for_timeout(2000)  # Wait for file to be fully written
+                            
+                            if download_path.exists():
+                                file_size = download_path.stat().st_size
+                                thread_print(f"  [Download] Downloaded file size: {file_size} bytes")
+                                if file_size > 50000 and is_valid_pdf(download_path):
+                                    thread_print(f"  [Download] ✓ Auto-downloaded PDF: {download.suggested_filename}")
+                                    shutil.move(str(download_path), str(output_path))
+                                    return True, "Browser+AutoDownload"
+                                else:
+                                    thread_print(f"  [Download] File invalid or too small ({file_size} bytes), not a PDF")
+                                    download_path.unlink()
+                            else:
+                                thread_print(f"  [Download] Downloaded file not found at {download_path}")
+                        except Exception as e:
+                            thread_print(f"  [Download] Error saving auto-download: {str(e)[:80]}")
+                            if download_path.exists():
+                                try:
+                                    download_path.unlink()
+                                except:
+                                    pass
+                
+                except Exception as e:
+                    thread_print(f"  [Vision] Page load error: {str(e)[:80]}")
+                    page.wait_for_timeout(2000)
+
+                # STRATEGY 1: Use vision analysis to identify PDF download element
+                # Save screenshot to output directory for inspection
+                output_dir = output_path.parent
+                item_num = output_path.stem.split('_')[0].replace('item', '')
+                
+                def try_vision_analysis(screenshot_path, region="top"):
+                    """Try vision analysis on a screenshot and attempt download if found."""
+                    thread_print(f"  [Vision] Calling Claude API for {region} screenshot...")
+                    vision_result = analyze_screenshot_with_claude(screenshot_path, url)
+                    
+                    if vision_result:
+                        thread_print(f"  [Vision] Found: '{vision_result.get('element_text', 'N/A')}' ({vision_result.get('confidence', 'N/A')} confidence)")
+                        
+                        # Find matching elements based on vision analysis
+                        vision_candidates = find_elements_by_vision_description(page, vision_result)
+                        
+                        if not vision_candidates:
+                            thread_print(f"  [Vision] No matching DOM elements found for vision result")
+                            return False
+                        
+                        thread_print(f"  [Vision] Found {len(vision_candidates)} matching DOM elements:")
+                        for idx, (score, elem) in enumerate(vision_candidates[:5], 1):
+                            try:
+                                elem_text = (elem.inner_text() or '').strip()[:50]
+                                elem_href = (elem.get_attribute('href') or '')[:100]
+                                elem_class = (elem.get_attribute('class') or '')[:50]
+                                elem_tag = elem.evaluate('el => el.tagName.toLowerCase()')
+                                thread_print(f"    [{idx}] Score: {score} | Tag: {elem_tag} | Text: '{elem_text}' | Href: '{elem_href}' | Class: '{elem_class}'")
+                            except:
+                                thread_print(f"    [{idx}] Score: {score} | (could not get element details)")
+                        
+                        # Try clicking vision-identified elements first
+                        for idx, (score, elem) in enumerate(vision_candidates[:5], 1):  # Try top 5 matches
+                            try:
+                                elem_text = (elem.inner_text() or '').strip()
+                                href = elem.get_attribute('href') or ''
+                                elem_class = (elem.get_attribute('class') or '')
+                                elem_tag = elem.evaluate('el => el.tagName.toLowerCase()')
+                                thread_print(f"  [Vision] Processing element #{idx} (score: {score}): {elem_tag} with text '{elem_text[:50]}' and href '{href[:100]}'")
+                                
+                                # FIRST: Try fast download methods on the href BEFORE clicking
+                                if href:
+                                    # Make absolute URL
+                                    if href.startswith('/'):
+                                        from urllib.parse import urljoin
+                                        href_absolute = urljoin(page.url, href)
+                                    elif not href.startswith('http'):
+                                        from urllib.parse import urljoin
+                                        href_absolute = urljoin(page.url, href)
+                                    else:
+                                        href_absolute = href
+                                    
+                                    # Check if it's a PDF link
+                                    if '.pdf' in href_absolute.lower() or '/pdf' in href_absolute.lower() or '/article-pdf/' in href_absolute.lower():
+                                        thread_print(f"  [Vision] Element #{idx} has PDF href, trying fast download methods first...")
+                                        
+                                        # Try 1: Direct download with stealth
+                                        success, msg = direct_download(href_absolute, output_path, use_stealth=True)
+                                        if success:
+                                            thread_print(f"  [Vision] ✓ Direct download (stealth) successful from element #{idx} href")
+                                            return True
+                                        
+                                        # Try 2: Direct download without stealth
+                                        success, msg = direct_download(href_absolute, output_path, use_stealth=False)
+                                        if success:
+                                            thread_print(f"  [Vision] ✓ Direct download successful from element #{idx} href")
+                                            return True
+                                        
+                                        # Try 3: Extract DOI and try other methods
+                                        doi = extract_doi_from_url(href_absolute) or extract_doi_from_url(page.url)
+                                        if doi:
+                                            thread_print(f"  [Vision] Trying fast methods with DOI: {doi}")
+                                            # Try OpenAlex
+                                            success, _ = try_openalex(doi, None, output_path)
+                                            if success:
+                                                thread_print(f"  [Vision] ✓ OpenAlex download successful")
+                                                return True
+                                            # Try CORE
+                                            success, _ = try_core_api(href_absolute, output_path, doi)
+                                            if success:
+                                                thread_print(f"  [Vision] ✓ CORE download successful")
+                                                return True
+                                            # Try Semantic Scholar
+                                            success, _ = try_semantic_scholar(doi, None, output_path)
+                                            if success:
+                                                thread_print(f"  [Vision] ✓ Semantic Scholar download successful")
+                                                return True
+                                        
+                                        thread_print(f"  [Vision] Fast methods failed for element #{idx} href, will try clicking...")
+                                
+                                # SECOND: Navigate directly to href URL instead of clicking
+                                if href:
+                                    # Make absolute URL
+                                    if href.startswith('/'):
+                                        from urllib.parse import urljoin
+                                        href_absolute = urljoin(page.url, href)
+                                    elif not href.startswith('http'):
+                                        from urllib.parse import urljoin
+                                        href_absolute = urljoin(page.url, href)
+                                    else:
+                                        href_absolute = href
+                                    
+                                    # Check if it's a PDF link
+                                    if '.pdf' in href_absolute.lower() or '/pdf' in href_absolute.lower() or '/article-pdf/' in href_absolute.lower():
+                                        thread_print(f"  [Vision] Element #{idx} has PDF href, navigating directly: {href_absolute[:150]}")
+
+                                        # Navigate directly to the PDF URL in a new page
+                                        new_page = None
+                                        try:
+                                            new_page = context.new_page()
+                                            thread_print(f"  [Vision] Created new page, navigating to PDF URL...")
+
+                                            # Track if download happens
+                                            download_happened = False
+                                            download_obj = None
+
+                                            def on_download(download):
+                                                nonlocal download_happened, download_obj
+                                                download_happened = True
+                                                download_obj = download
+                                                thread_print(f"  [Vision] Download detected: {download.suggested_filename}")
+
+                                            new_page.on("download", on_download)
+
+                                            # Navigate and wait for page to load (but don't block on download)
+                                            new_page.goto(href_absolute, wait_until='networkidle', timeout=60000)
+
+                                            # Wait for redirects - actively monitor URL changes
+                                            initial_url = new_page.url
+                                            thread_print(f"  [Vision] Initial URL after navigation: {initial_url[:150]}")
+
+                                            # Wait up to 15 seconds for URL to change (indicating redirect)
+                                            redirect_detected = False
+                                            for i in range(15):
+                                                new_page.wait_for_timeout(1000)
+                                                current_url = new_page.url
+                                                if current_url != initial_url:
+                                                    thread_print(f"  [Vision] Redirect detected after {i+1}s: {current_url[:150]}")
+                                                    redirect_detected = True
+                                                    # Wait a bit more for page to stabilize after redirect
+                                                    new_page.wait_for_timeout(3000)
+                                                    break
+
+                                            if not redirect_detected:
+                                                thread_print(f"  [Vision] No redirect detected after 15s, URL unchanged")
+
+                                            # Dismiss any cookie consent on new page
+                                            dismiss_cookie_consent(new_page)
+                                            # Still wait a bit in case redirect is slow
+                                            new_page.wait_for_timeout(3000)
+
+                                            # Check if download was triggered
+                                            if download_happened and download_obj:
+                                                thread_print(f"  [Vision] Download triggered, saving...")
+                                                download_path = Path(download_dir) / download_obj.suggested_filename
+                                                download_obj.save_as(download_path)
+
+                                                if download_path.exists() and download_path.stat().st_size > 50000:
+                                                    thread_print(f"  [Vision] Download successful! File: {download_obj.suggested_filename} ({download_path.stat().st_size} bytes)")
+                                                    shutil.move(str(download_path), str(output_path))
+                                                    if is_valid_pdf(output_path):
+                                                        thread_print(f"  [Vision] ✓ Valid PDF downloaded via direct navigation")
+                                                        new_page.close()
+                                                        return True
+
+                                            # No download triggered - check if it's a PDF viewer page
+                                            current_url = new_page.url
+                                            thread_print(f"  [Vision] No download triggered. Final URL: {current_url[:150]}")
+
+                                            # Skip if navigation failed
+                                            if 'chrome-error' in current_url.lower() or 'about:blank' in current_url.lower():
+                                                thread_print(f"  [Vision] Navigation failed (error page)")
+                                                new_page.close()
+                                                continue
+
+                                            # If URL still has .pdf, likely a PDF viewer - try keyboard automation first
+                                            if '.pdf' in current_url.lower():
+                                                thread_print(f"  [Vision] PDF viewer detected, trying keyboard save (Ctrl+S)...")
+                                                try:
+                                                    import platform
+                                                    is_mac = platform.system() == 'Darwin'
+
+                                                    # Press Ctrl+S (or Command+S on Mac) to trigger save
+                                                    if is_mac:
+                                                        new_page.keyboard.press('Meta+s')
+                                                    else:
+                                                        new_page.keyboard.press('Control+s')
+
+                                                    # Wait for download to trigger
+                                                    new_page.wait_for_timeout(5000)
+
+                                                    if download_happened and download_obj:
+                                                        thread_print(f"  [Vision] Keyboard save triggered download: {download_obj.suggested_filename}")
+                                                        download_path = Path(download_dir) / download_obj.suggested_filename
+                                                        download_obj.save_as(download_path)
+
+                                                        if download_path.exists() and download_path.stat().st_size > 50000:
+                                                            thread_print(f"  [Vision] Keyboard save successful! File: {download_obj.suggested_filename} ({download_path.stat().st_size} bytes)")
+                                                            shutil.move(str(download_path), str(output_path))
+                                                            if is_valid_pdf(output_path):
+                                                                thread_print(f"  [Vision] ✓ Valid PDF saved via keyboard automation")
+                                                                new_page.close()
+                                                                return True
+                                                except Exception as e:
+                                                    thread_print(f"  [Vision] Keyboard automation failed: {str(e)[:80]}")
+
+                                            # Try PDF viewer detection and download (includes more keyboard attempts)
+                                            thread_print(f"  [Vision] Checking if page is PDF viewer...")
+                                            result = try_download_from_new_tab(new_page)
+                                            if result:
+                                                new_page.close()
+                                                return True
+
+                                            # Last resort: direct download from final URL
+                                            if '.pdf' in current_url.lower():
+                                                thread_print(f"  [Vision] Final URL is PDF, trying direct download: {current_url[:150]}")
+                                                success, _ = direct_download(current_url, output_path, use_stealth=True)
+                                                if success:
+                                                    thread_print(f"  [Vision] ✓ Direct download from final URL successful")
+                                                    new_page.close()
+                                                    return True
+
+                                            new_page.close()
+                                        except Exception as e:
+                                            thread_print(f"  [Vision] PDF navigation failed: {str(e)[:80]}")
+                                            if new_page:
+                                                try:
+                                                    new_page.close()
+                                                except:
+                                                    pass
+                            
+                            except Exception as e:
+                                continue
+                        
+                        thread_print(f"  [Vision] Vision-identified elements failed - no download found")
+                        return False
+                    else:
+                        return False
+                
+                try:
+                    # Check if screenshots already exist
+                    vision_top_path = output_dir / f"item{item_num}_vision_top.png"
+                    vision_bottom_path = output_dir / f"item{item_num}_vision_bottom.png"
+
+                    # Ensure cookie consent is dismissed before taking screenshots
+                    # (Second attempt in case it appeared after initial page load)
+                    dismiss_cookie_consent(page)
+
+                    # Try 1: Top of page (viewport-sized screenshot)
+                    if not vision_top_path.exists():
+                        screenshot_name = f"item{item_num}_vision_top.png"
+                        screenshot_path = output_dir / screenshot_name
+                        page.screenshot(path=str(screenshot_path), full_page=False)
+                        thread_print(f"  [Vision] Top screenshot saved: {screenshot_name}")
+                        thread_print(f"  [Vision] Analyzing top of page...")
+                        
+                        if try_vision_analysis(screenshot_path, "top"):
+                            return True, "Browser+Vision(top)"
+                    else:
+                        thread_print(f"  [Vision] Using existing top screenshot")
+                        if try_vision_analysis(vision_top_path, "top"):
+                            return True, "Browser+Vision(top-cached)"
+                    
+                    # Try 2: Bottom of page (scroll down and take screenshot)
+                    if not vision_bottom_path.exists():
+                        thread_print(f"  [Vision] Top analysis failed, trying bottom of page...")
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        page.wait_for_timeout(2000)
+                        
+                        screenshot_name = f"item{item_num}_vision_bottom.png"
+                        screenshot_path = output_dir / screenshot_name
+                        page.screenshot(path=str(screenshot_path), full_page=False)
+                        thread_print(f"  [Vision] Bottom screenshot saved: {screenshot_name}")
+                        thread_print(f"  [Vision] Analyzing bottom of page...")
+                        
+                        if try_vision_analysis(screenshot_path, "bottom"):
+                            return True, "Browser+Vision(bottom)"
+                    else:
+                        thread_print(f"  [Vision] Using existing bottom screenshot")
+                        if try_vision_analysis(vision_bottom_path, "bottom"):
+                            return True, "Browser+Vision(bottom-cached)"
+                    
+                    thread_print(f"  [Vision] No PDF element identified by vision analysis (tried top and bottom)")
+
+                except Exception as e:
+                    thread_print(f"  [Vision] Vision analysis failed: {str(e)[:40]}")
+
+                # No fallback - vision-only approach
+                return False, "Vision system could not identify PDF download element"
+
+            finally:
+                browser.close()
+
+    except Exception as e:
+        return False, f"Browser: {str(e)[:40]}"
+    finally:
+        shutil.rmtree(download_dir, ignore_errors=True)
+
+
 
 
 
