@@ -12,7 +12,7 @@ def cleanup_scope(scope_dir):
     scope_path = Path(scope_dir)
     if not scope_path.exists():
         print(f"Skipping {scope_dir} (not found)")
-        return
+        return 0
     
     # Find all item*.pdf files
     pdf_files = list(scope_path.glob('item*.pdf'))
@@ -50,7 +50,7 @@ def main():
         print(f"\nTotal PNG files removed: {total_removed}")
         return
     
-    base_dir = Path('/Users/para/Desktop/thesis/docs/moth-poulsen.com/publications')
+    base_dir = Path('/Users/para/Desktop/thesis/docs/moth-poulsen.com:publications')
     
     scopes = [
         base_dir / 'Moth-Poulsen Publications (193-94)_002'
