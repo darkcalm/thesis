@@ -1489,12 +1489,18 @@ Download the full PDF file completely."""
                 try:
                     shutil.copy2(str(newest_pdf), str(output_path))
                     if is_valid_pdf(output_path):
+                        # Success - clean up debug screenshots
+                        if screenshots_dir.exists():
+                            shutil.rmtree(screenshots_dir)
                         return True, "browser-use autonomous download", None, "success"
                 except Exception as copy_err:
                     thread_print(f"  [browser-use] Copy failed: {str(copy_err)[:80]}")
             
             # Also check if output_path was created directly
             if output_path.exists() and is_valid_pdf(output_path):
+                # Success - clean up debug screenshots
+                if screenshots_dir.exists():
+                    shutil.rmtree(screenshots_dir)
                 return True, "browser-use autonomous download", None, "success"
             
             return False, f"browser-use: No PDF found in temp dirs", None, "failed"
