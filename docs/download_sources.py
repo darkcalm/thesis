@@ -140,7 +140,7 @@ screenshots_only = False
 #   2. playwright install chromium
 #   3. Set BROWSER_USE_ENABLED = True
 #
-BROWSER_USE_ENABLED = False  # Disabled for now (implementation complete)
+BROWSER_USE_ENABLED = True  # Enabled for browser automation
 AGENT_BROWSER_ENABLED = False  # Currently disabled
 # =============================================================================
 
@@ -1454,32 +1454,50 @@ def try_browser_use_download(url, output_path, timeout=30):
 
     async def download_task():
         try:
-            browser = Browser(headless=True)
+            from browser_use import Agent
+            import shutil
+            
+            # Create agent - let it auto-detect LLM and browser
+            # Agent will use OPENAI_API_KEY, ANTHROPIC_API_KEY, or others from env
+            prompt = f"""Navigate to {url}
+This is an academic paper page. Find and download the PDF.
+Handle cookie consents, popups, and access dialogs if present.
+Wait for any Cloudflare/CAPTCHA to complete before proceeding.
+Download the full PDF file completely."""
 
-            # Simple, autonomous prompt
-            prompt = f"""
-Navigate to {url}
-This is an academic paper page.
-Find the PDF download button/link and download the paper.
-Save the PDF to {output_path}
+            agent = Agent(task=prompt)
+            
+            result = await agent.run()
 
-Handle any popups, cookie consents, or access dialogs appropriately.
-If you encounter Cloudflare or CAPTCHA, wait for it to complete.
-"""
-
-            result = await browser.run(prompt, timeout=timeout)
-
-            # Save final screenshot for debugging
-            if hasattr(result, 'screenshot'):
-                final_screenshot = screenshots_dir / "browser_use_final.png"
-                with open(final_screenshot, 'wb') as f:
-                    f.write(result.screenshot)
-
-            # Check if download succeeded
+            # Agent downloads to /tmp/browser-use-downloads-*/ 
+            # Find the most recent PDF in any browser-use temp directory
+            import glob
+            import os
+            
+            temp_pdfs = []
+            for tmp_dir in glob.glob('/tmp/browser-use-downloads-*/'):
+                for pdf_file in Path(tmp_dir).glob('*.pdf'):
+                    if pdf_file.exists():
+                        stat = pdf_file.stat()
+                        temp_pdfs.append((stat.st_mtime, pdf_file))
+            
+            if temp_pdfs:
+                # Sort by modification time (newest first)
+                temp_pdfs.sort(reverse=True, key=lambda x: x[0])
+                newest_pdf = temp_pdfs[0][1]
+                
+                try:
+                    shutil.copy2(str(newest_pdf), str(output_path))
+                    if is_valid_pdf(output_path):
+                        return True, "browser-use autonomous download", None, "success"
+                except Exception as copy_err:
+                    thread_print(f"  [browser-use] Copy failed: {str(copy_err)[:80]}")
+            
+            # Also check if output_path was created directly
             if output_path.exists() and is_valid_pdf(output_path):
                 return True, "browser-use autonomous download", None, "success"
-            else:
-                return False, f"browser-use: {result.message}", None, "failed"
+            
+            return False, f"browser-use: No PDF found in temp dirs", None, "failed"
 
         except Exception as e:
             return False, f"browser-use error: {str(e)[:100]}", None, "error"
@@ -1827,8 +1845,10 @@ def try_browser_download(url, output_path, timeout=30):
     Returns: (success: bool, message: str)
     """
     # Try browser-use if enabled and implemented
+    thread_print(f"  [DEBUG] BROWSER_USE_ENABLED={BROWSER_USE_ENABLED}, BROWSER_USE_AVAILABLE={BROWSER_USE_AVAILABLE}")
     if BROWSER_USE_ENABLED:
         success, message, furthest_screenshot, stage = try_browser_use_download(url, output_path, timeout)
+        thread_print(f"  [DEBUG] browser-use result: {success}, {message[:80]}")
         if success:
             return success, message
         # If browser-use failed, try fallback methods
