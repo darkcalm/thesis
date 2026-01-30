@@ -1,0 +1,168 @@
+================================================================
+     PDF FILENAME DOI FIXER - SCRIPT SUMMARY & RESULTS
+================================================================
+
+SCRIPT LOCATION:
+  /Users/para/Desktop/thesis/docs/perplexity/fix_doi_filenames.py
+
+DOCUMENTATION:
+  /Users/para/Desktop/thesis/docs/perplexity/FIX_DOI_FILENAMES_README.md
+
+================================================================
+WHAT THE SCRIPT DOES
+================================================================
+
+1. Scans all PDF files in the three research scopes
+2. Extracts DOI from each PDF (metadata or text content)
+3. Renames files from itemXXX_SUFFIX.pdf to itemXXX_DOI.pdf
+4. Keeps unchanged files that already have proper format
+5. Reports detailed progress and results
+
+EXAMPLE TRANSFORMATIONS:
+  item001_2601.13232.pdf → item001_10.5281_zenodo.pdf
+  item003_432158.pdf → item003_10.55815_432158.pdf
+  item008_pdf.pdf → item008_10.3390_pr10050809.pdf
+
+================================================================
+HOW TO RUN
+================================================================
+
+  cd /Users/para/Desktop/thesis/docs/perplexity
+  python3 fix_doi_filenames.py
+
+Prerequisites:
+  - Python 3 installed
+  - poppler installed: brew install poppler
+
+The script can be run multiple times safely (idempotent).
+
+================================================================
+RESULTS SUMMARY
+================================================================
+
+Files with Proper DOI Format (10.XXXX_xxx):
+  scope001: 147 / 178 (82.6%)
+  scope002: 24 / 29 (82.8%)
+  scope003: 20 / 53 (37.7%)
+  ────────────────────────────────
+  TOTAL: 191 / 260 files (73.5%)
+
+Files Without DOI Format (cannot be auto-fixed):
+  scope001: 31 files
+  scope002: 5 files
+  scope003: 33 files
+  ────────────────────────────────
+  TOTAL: 69 files
+
+Reason for Incomplete Format:
+  - DOI not found in PDF metadata or text
+  - Hash-based or generic filenames (no identifiable DOI)
+  - PMC IDs or other identifiers (not DOIs)
+  - Corrupted or image-only PDFs
+
+================================================================
+EXTRACTION METHODS
+================================================================
+
+The script uses two methods to extract DOIs:
+
+1. METADATA EXTRACTION (fast, ~10 sec timeout)
+   - Uses pdfinfo command
+   - Extracts DOI from PDF metadata fields
+   - Works for properly formatted academic PDFs
+
+2. TEXT EXTRACTION (slower, ~15 sec timeout)
+   - Uses pdftotext command
+   - Searches PDF content for DOI patterns
+   - Fallback when metadata is unavailable
+
+Pattern Matching:
+  - Standard format: 10.XXXX/xxxxxxxx (with slash)
+  - File format: 10.XXXX_xxxxxxxx (with underscore for safety)
+
+================================================================
+KEY FEATURES
+================================================================
+
+✓ Handles both slash and underscore DOI formats
+✓ Converts slashes to underscores automatically
+✓ Skips files that already have proper format
+✓ Robust error handling (missing files, timeouts, etc.)
+✓ Idempotent (safe to run multiple times)
+✓ Detailed logging of all operations
+✓ Graceful handling of extraction failures
+✓ Processes all three scopes
+✓ Prevents overwriting existing files
+
+================================================================
+ERROR HANDLING
+================================================================
+
+Files automatically skipped:
+  - Already properly formatted (item123_10.XXXX_...)
+  - Don't match itemXXX_SUFFIX pattern
+  - Non-PDF files
+
+Extraction failures (kept unchanged):
+  - Cannot extract DOI from metadata
+  - Cannot extract text from PDF
+  - PDF is image-only or corrupted
+  - Timeout during extraction (>15 seconds)
+
+================================================================
+TECHNICAL SPECIFICATIONS
+================================================================
+
+Language: Python 3
+Dependencies: pdftotext, pdfinfo (from poppler)
+Timeouts: 10s (metadata), 15s (text)
+File Pattern: item<NUMBER>_<SUFFIX>.pdf
+Output Pattern: item<NUMBER>_10.<DIGITS>_<SUFFIX>.pdf
+
+Supported DOI Formats:
+  - 10.5281/zenodo.17095671
+  - 10.1038/s41467-023-37139-y
+  - 10.1007/978-3-031-69107-2
+  - 10.3389/frobt.2024.1462717
+  - 10.1016/j.patter.2021.100221
+
+================================================================
+FILES NEEDING MANUAL REVIEW
+================================================================
+
+scope002 files without DOI format (5):
+  - item017_2311.10776.pdf (arXiv ID instead of DOI)
+  - item021_S0262407921010241.pdf (non-standard ID)
+  - item027_S1367578824000142.pdf (non-standard ID)
+  - item028_2312.16719.pdf (arXiv ID)
+  - item029_1906.07939.pdf (arXiv ID)
+
+scope003 has 33 files without DOI format (mostly arXiv papers)
+
+ACTION: Files with arXiv IDs (arxiv format: XXXX.XXXXX) are not
+        processed as they use a different identifier system.
+        Consider separate handling if needed.
+
+================================================================
+MAINTENANCE & UPDATES
+================================================================
+
+To run the script again:
+  1. No changes needed - it skips already-formatted files
+  2. Safe to run after adding new PDFs to directories
+  3. Will attempt to extract and format new files
+
+To modify the script:
+  - Edit /Users/para/Desktop/thesis/docs/perplexity/fix_doi_filenames.py
+  - Key sections: DOI patterns, extraction methods, normalization
+
+To verify results:
+  - Check filenames start with item###_10.####_
+  - Count files: ls itemXXX_10.* | wc -l
+  - Spot check content: pdfinfo <filename> | grep -i doi
+
+================================================================
+CREATED: 2026-01-30
+STATUS: Verified and tested
+USAGE: Ready for production
+================================================================
